@@ -48,11 +48,12 @@ jobs:
           GPG_KEY: ${{ secrets.GPG_KEY }}
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
           XIMERA_URL: ${{ vars.XIMERA_URL }}
-          XIMERA_NAME: ${{ vars.XIMERA_NAME }}${{ github.ref_name }}
+          XIMERA_NAME: ${{ vars.XIMERA_NAME }}*${{ github.ref_name }}
           XM_JOBS: 6
         run: |
           ls -alrt
           chmod +x xmScripts/xmlatex
+          git config http.postBuffer 1048576000  # 1 GB
           ./xmScripts/xmlatex ghaction -j 8 $XM_TO_PROCESS
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
 
