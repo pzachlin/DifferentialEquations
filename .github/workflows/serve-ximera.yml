@@ -54,8 +54,6 @@ jobs:
           ls -alrt
           chmod +x xmScripts/xmlatex
           git config http.postBuffer 1048576000  # 1 GB
-          export GIT_TRACE_PACKET=1 GIT_CURL_VERBOSE=1
-          env
           ./xmScripts/xmlatex ghaction -j 8 $XM_TO_PROCESS
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
 
