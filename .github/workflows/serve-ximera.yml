@@ -54,14 +54,10 @@ jobs:
         run: |
           ls -alrt
           chmod +x xmScripts/xmlatex
-          git config http.postBuffer 1048576000  # 1 GB
-          git config --list
           # ./xmScripts/xmlatex ghaction -j 8 --compile html,pdf $XM_TO_PROCESS
-          ./xmScripts/xmlatex name         
-          ./xmScripts/xmlatex bake $XM_TO_PROCESS
+          ./xmScripts/xmlatex bake -f $XM_TO_PROCESS
           ./xmScripts/xmlatex frost $XM_TO_PROCESS
-          # ./xmScripts/xmlatex serve $XM_TO_PROCESS
-          echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
+          # echo "✅ Build" >> $GITHUB_STEP_SUMMARY
 
       - name: Setup ximera serve cache (only .git)
         id: serve-cache
@@ -74,7 +70,7 @@ jobs:
 
 
   publish-ximera-preview:
-    name: Publish Ximera Courses
+    name: Publish Preview Ximera Courses
     needs: build-ximera # Waits for the build job to complete
     runs-on: ubuntu-latest
     steps:
@@ -99,12 +95,14 @@ jobs:
           # XIMERA_NAME: ${{ vars.XIMERA_NAME }}
         run: |
           chmod +x xmScripts/xmlatex
+          git config http.postBuffer 1048576000  # 1 GB
+          git config --list
           ./xmScripts/xmlatex name         
-          ./xmScripts/xmlatex serve -f $XM_TO_PROCESS
+          ./xmScripts/xmlatex serve $XM_TO_PROCESS
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
   
   publish-ximera-prod:
-    name: Publish Ximera Courses
+    name: Publish Production Ximera Courses
     needs: build-ximera # Waits for the build job to complete
     runs-on: ubuntu-latest
     environment: production
