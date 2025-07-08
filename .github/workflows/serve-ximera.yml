@@ -54,7 +54,8 @@ jobs:
           ls -alrt
           chmod +x xmScripts/xmlatex
           git config http.postBuffer 1048576000  # 1 GB
-          ./xmScripts/xmlatex ghaction -j 8 $XM_TO_PROCESS
+          git config --list
+          ./xmScripts/xmlatex ghaction -j 8 --compile html,pdf $XM_TO_PROCESS
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
 
       - name: Setup ximera serve cache (only .git)
