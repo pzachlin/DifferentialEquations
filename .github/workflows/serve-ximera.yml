@@ -55,7 +55,7 @@ jobs:
           ls -alrt
           chmod +x xmScripts/xmlatex
           # ./xmScripts/xmlatex ghaction -j 8 --compile html,pdf $XM_TO_PROCESS
-          ./xmScripts/xmlatex bake -f $XM_TO_PROCESS
+          ./xmScripts/xmlatex bake $XM_TO_PROCESS
           ./xmScripts/xmlatex frost $XM_TO_PROCESS
           # echo "✅ Build" >> $GITHUB_STEP_SUMMARY
 
@@ -98,7 +98,7 @@ jobs:
           git config http.postBuffer 1048576000  # 1 GB
           git config --list
           ./xmScripts/xmlatex name         
-          ./xmScripts/xmlatex serve $XM_TO_PROCESS
+          ./xmScripts/xmlatex serve -f $XM_TO_PROCESS
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
   
   publish-ximera-prod:
