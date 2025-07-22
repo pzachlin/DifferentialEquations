@@ -28,7 +28,22 @@ The link below takes you to a spreadsheet which can be used to complete this exe
      
 \href{https://docs.google.com/spreadsheets/d/1UZyfR-vJ-ALm6GqvgHudH_0z-KIjuA2OZvAzZBKa4hc/edit?usp=sharing}{LINK TO SPREADSHEET}
 
-This time we do not provide a video, as it is valuable for you to try to implement this method using a spreadsheet.
+This time we do not provide a video, as it is valuable for you to try to implement this method on your own!  You have everything you need to take on this task.  Here we remind you of the process as described before Example~\ref{exer:3.3.1}.
+
+The Runge-Kutta method computes approximate values
+$y_1, y_2, \dots, y_n$ of the solution of $\eqref{eq:3.3.1}$
+at $x_0, x_0+h, \dots, x_0+nh$ as follows: Given $y_i$,
+compute
+\begin{eqnarray*} k_{1i}&=&f(x_i,y_i),\\
+k_{2i}&=&f\left(x_i+\frac{h}{2},y_i+\frac{h}{2}k_{1i}\right),\\
+k_{3i}&=&f\left(x_i+\frac{h}{2},y_i+\frac{h}{2}k_{2i}\right),\\
+k_{4i}&=&f(x_i+h,y_i+hk_{3i}),
+\end{eqnarray*}
+and
+$$
+y_{i+1}=y_i+\frac{h}{6}(k_{1i}+2k_{2i}+2k_{3i}+k_{4i}).
+$$
+
 \end{exploration}
 
 
