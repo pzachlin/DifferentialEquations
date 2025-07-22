@@ -50,7 +50,11 @@ jobs:
           chmod +x xmScripts/xmlatex
           # git config --global http.postBuffer 524288000
           # git config --global core.compression 9
-          ./xmScripts/xmlatex ghaction
+          ./xmScripts/xmlatex bake
+          ./xmScripts/xmlatex frost
+          ./xmScripts/xmlatex name
+          ./xmScripts/xmlatex serve
+          # ./xmScripts/xmlatex ghaction
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
 
       - name: Setup ximera serve cache (only .git)
