@@ -27,8 +27,7 @@ $O(h^{k+1})$ has global truncation error $O(h^k)$. In
 \href{https://ximera.osu.edu/ode/main/eulersMethod/eulersMethod}{Trench 3.1} and \href{https://ximera.osu.edu/ode/main/improvedEuler/improvedEuler}{Trench 3.2} we studied numerical
 methods where
 $k=1$ and $k=2$. We'll skip methods for which $k=3$ and proceed to the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Runge.html}
-{Runge}-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Kutta.html}{Kutta} method, the most widely used
+\href{https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods}{Runge-Kutta method}, the most widely used
 method, for which $k=4$. The magnitude of the local truncation error is
 determined by the fifth derivative $y^{(5)}$ of the solution of the
 initial value problem. Therefore the local truncation error will be
@@ -36,7 +35,7 @@ larger where $|y^{(5)}|$ is large, or smaller where $|y^{(5)}|$ is
 small.
 
 The Runge-Kutta method computes approximate values
-$y_1, y_2, \dots, y_n$ of the solution of \eqref{eq:3.3.1}
+$y_1, y_2, \dots, y_n$ of the solution of $\eqref{eq:3.3.1}$
 at $x_0, x_0+h, \dots, x_0+nh$ as follows: Given $y_i$,
 compute
 \begin{eqnarray*} k_{1i}&=&f(x_i,y_i),\\
@@ -64,11 +63,11 @@ at $x=0.1,0.2$.
 
 
 \begin{explanation}
-Again we rewrite \eqref{eq:3.3.2}  as
+Again we rewrite $\eqref{eq:3.3.2}$  as
 $$
 y'=-2y+x^3e^{-2x},\quad y(0)=1,
 $$
-which is of the form \eqref{eq:3.3.1}, with
+which is of the form $\eqref{eq:3.3.1}$, with
 $$
 f(x,y)=-2y+x^3e^{-2x},\ x_0=0,\quad\mbox{and}\quad y_0=1.
 $$
@@ -311,10 +310,10 @@ So far in this chapter we've considered numerical methods
 y'=f(x,y),\quad y(x_0)=y_0
 \end{equation}
 on an interval $[x_0,b]$, for which $x_0$ is the left endpoint. We
-haven't discussed numerical methods for solving \eqref{eq:3.3.3}
+haven't discussed numerical methods for solving $\eqref{eq:3.3.3}$
 on an interval $[a,x_0]$, for which $x_0$ is the
 right endpoint. To be specific, how can we obtain approximate values
-$y_{-1}, y_{-2}, \dots, y_{-n}$ of the solution of \eqref{eq:3.3.3} at
+$y_{-1}, y_{-2}, \dots, y_{-n}$ of the solution of $\eqref{eq:3.3.3}$ at
 $x_0-h, \dots,x_0-nh$,
 where $h=(x_0-a)/n$?  Here's the answer to this question:
 
@@ -333,8 +332,8 @@ $x_0-h, x_0-2h, \dots, x_0-nh=a$.
 
 The justification for this answer is sketched in
 Exercise~\ref{exer:3.3.23}. Note how easy it is to make the change
-the given problem \eqref{eq:3.3.3} to the modified problem
-\eqref{eq:3.3.4}: first replace $f$ by $-f$ and then replace $x$,
+the given problem $\eqref{eq:3.3.3}$ to the modified problem
+$\eqref{eq:3.3.4}$: first replace $f$ by $-f$ and then replace $x$,
 $x_0$, and $y$ by $-x$, $-x_0$, and $z$, respectively.
 
 
@@ -348,7 +347,7 @@ at $x=0, 0.1, 0.2, \dots, 1$.
 
 
 \begin{explanation} 
-We first rewrite \eqref{eq:3.3.5} in the form \eqref{eq:3.3.3}
+We first rewrite $\eqref{eq:3.3.5}$ in the form $\eqref{eq:3.3.3}$
 as
 \begin{equation} \label{eq:3.3.6}
 y'=\frac{2x+3}{(y-1)^2},\quad y(1)=4.
@@ -360,8 +359,8 @@ initial value problem
 z'=\frac{2x-3}{(z-1)^2},\quad z(-1)=4
 \end{equation}
 on the interval $[-1,0]$.
-(You should verify that \eqref{eq:3.3.7} is related to \eqref{eq:3.3.6} as
-\eqref{eq:3.3.4} is related to \eqref{eq:3.3.3}.)
+(You should verify that $\eqref{eq:3.3.7}$ is related to $\eqref{eq:3.3.6}$ as
+$\eqref{eq:3.3.4}$ is related to $\eqref{eq:3.3.3}$.)
  The following table shows the results.  
  
 $$
@@ -392,7 +391,7 @@ are given by
 $$
 y=1+(3x^2+9x+15)^{1/3}.
 $$
-(Since the differential equation in \eqref{eq:3.3.6} is separable,
+(Since the differential equation in $\eqref{eq:3.3.6}$ is separable,
 this formula can be obtained by the method of \href{https://ximera.osu.edu/ode/main/separableEquations/separableEquations}{Trench 2.2}.)
 
 
@@ -421,7 +420,7 @@ $$
 \end{example}
 
 We leave it to you to develop a procedure for handling the
-numerical solution of \eqref{eq:3.3.3} on an interval $[a,b]$
+numerical solution of $\eqref{eq:3.3.3}$ on an interval $[a,b]$
 such that $a<x_0<b$. %(Exercises~\ref{exer:3.3.26} and \ref{exer:3.3.27}).
 
 
