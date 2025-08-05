@@ -1060,3 +1060,7 @@ div.center > .tabular {
   border: none;
   border-left: none;
 }
+
+.main-title .logo {
+    background-color: unset;
+ }
