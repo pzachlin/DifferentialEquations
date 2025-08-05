@@ -44,7 +44,7 @@ jobs:
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
           # XIMERA_URL: ${{ vars.XIMERA_URL }}
           # XIMERA_URL: "https://test.xronos.clas.ufl.edu/"
-          XIMERA_URL: "http://xerxes.ximera.org/"
+          XIMERA_URL: "https://xerxes.ximera.org/"
           XIMERA_NAME: ${{ vars.XIMERA_NAME }}*${{ github.ref_name }}
           XM_COMPILE_SEQUENCE: "html,handout"
         run: |
@@ -53,7 +53,7 @@ jobs:
           rm -rf ximera-downloads/with-answers
           # git config --global http.postBuffer 524288000
           # git config --global core.compression 9
-          ./xmScripts/xmlatex bake
+          ./xmScripts/xmlatex bake --compile "html,handout"
           ./xmScripts/xmlatex frost
           ./xmScripts/xmlatex name
           ./xmScripts/xmlatex serve
@@ -93,7 +93,7 @@ jobs:
           GPG_KEY: ${{ secrets.GPG_KEY }}
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
           # XIMERA_URL: ${{ vars.XIMERA_URL }}
-          XIMERA_URL: "http://xerxes.ximera.org/"
+          XIMERA_URL: "https://xerxes.ximera.org/"
           XIMERA_NAME: ${{ vars.XIMERA_NAME }}
         run: |
           chmod +x xmScripts/xmlatex
