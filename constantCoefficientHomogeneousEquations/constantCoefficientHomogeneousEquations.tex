@@ -26,15 +26,15 @@ coefficient equation
 \begin{equation} \label{eq:5.2.1}
 ay''+by'+cy=0.
 \end{equation}
-As we'll see, all solutions of \eqref{eq:5.2.1} are defined on
+As we'll see, all solutions of $\eqref{eq:5.2.1}$ are defined on
 $(-\infty,\infty)$.  This being the case, we'll omit references to the
 interval on which solutions are defined, or on which a given set of
 solutions is a fundamental set, etc., since the interval will always
 be $(-\infty,\infty)$.
  
-The key to solving \eqref{eq:5.2.1} is  that if
- $y=e^{rx}$ where $r$ is a constant  then the left side of
-\eqref{eq:5.2.1} is a  multiple of $e^{rx}$;   thus, if $y=e^{rx}$
+The key to solving $\eqref{eq:5.2.1}$ is that if
+ $y=e^{rx}$ where $r$ is a constant, then the left side of
+$\eqref{eq:5.2.1}$ is a multiple of $e^{rx}$;   thus, if $y=e^{rx}$
  then $y'=re^{rx}$ and $y''=r^2e^{rx}$, so
 \begin{equation} \label{eq:5.2.2}
 ay''+by'+cy=ar^2e^{rx}+bre^{rx}+ce^{rx}=(ar^2+br+c)e^{rx}.
@@ -43,11 +43,11 @@ The quadratic polynomial
 $$
 p(r)=ar^2+br+c
 $$
-is  the \textit{characteristic polynomial} of \eqref{eq:5.2.1}, and
+is the \textit{characteristic polynomial} of $\eqref{eq:5.2.1}$, and
 $p(r)=0$
 is the \textit{characteristic equation}.
-From \eqref{eq:5.2.2} we can see that $y=e^{rx}$ is a solution of
-\eqref{eq:5.2.1}  if and only if $p(r)=0$.
+From $\eqref{eq:5.2.2}$ we can see that $y=e^{rx}$ is a solution of
+$\eqref{eq:5.2.1}$ if and only if $p(r)=0$.
  
 The roots of the characteristic equation are given by the quadratic
 formula
@@ -84,36 +84,36 @@ y''+6y'+5y=0, \quad   y(0)=3,\;  y'(0)=-1.
 \begin{explanation}
 \ref{item:5.2.1a}   The characteristic
 polynomial of
- \eqref{eq:5.2.4} is
+$\eqref{eq:5.2.4}$ is
 $$
 p(r)=r^2+6r+5=(r+1)(r+5).
 $$
 Since $p(-1)=p(-5)=0$,  $y_1=e^{-x}$ and $y_2=e^{-5x}$
-are solutions of \eqref{eq:5.2.4}. Since $y_2/y_1=e^{-4x}$  is
+are solutions of $\eqref{eq:5.2.4}$. Since $y_2/y_1=e^{-4x}$  is
 nonconstant, \ref{thmtype:5.1.6} implies that the general solution
-of \eqref{eq:5.2.4} is
+of $\eqref{eq:5.2.4}$ is
 \begin{equation} \label{eq:5.2.6}
 y=c_1e^{-x}+c_2e^{-5x}.
 \end{equation}
  
 \ref{item:5.2.1b} We  must determine $c_1$ and $c_2$
-in  \eqref{eq:5.2.6} so that $y$ satisfies the initial conditions in
- \eqref{eq:5.2.5}. Differentiating  \eqref{eq:5.2.6} yields
+in  $\eqref{eq:5.2.6}$ so that $y$ satisfies the initial conditions in
+$\eqref{eq:5.2.5}$. Differentiating  $\eqref{eq:5.2.6}$ yields
 \begin{equation} \label{eq:5.2.7}
 y'=-c_1e^{-x}-5c_2e^{-5x}.
 \end{equation}
-Imposing the initial conditions $y(0)=3,\, y'(0)=-1$ in \eqref{eq:5.2.6}
-and \eqref{eq:5.2.7} yields
+Imposing the initial conditions $y(0)=3,\, y'(0)=-1$ in $\eqref{eq:5.2.6}$
+and $\eqref{eq:5.2.7}$ yields
 $$\begin{array}{rcr}
 c_1+c_2 & = & 3\\
 -c_1-5c_2 & = & -1.
 \end{array}$$
  The solution of this system is $c_1=7/2,c_2=-1/2$.  Therefore
-the solution of  \eqref{eq:5.2.5} is
+the solution of  $\eqref{eq:5.2.5}$ is
 $$
 y=\frac{7}{2}e^{-x}-\frac{1}{2}e^{-5x}.
 $$
- the figure below is a graph
+The figure below is a graph
 of this solution.
 
 \begin{center}
@@ -181,14 +181,14 @@ y''+6y'+9y=0, \quad   y(0)=3,  y'(0)=-1.
  
 \begin{explanation}
 \ref{item:5.2.2a}  The characteristic polynomial of
- \eqref{eq:5.2.8} is
+$\eqref{eq:5.2.8}$ is
 $$
 p(r)=r^2+6r+9=(r+3)^2,
 $$
 so the characteristic equation has the repeated real root $r_1=-3$.
-Therefore $y_1=e^{-3x}$ is a solution of \eqref{eq:5.2.8}. Since the
-characteristic equation has no other roots, \eqref{eq:5.2.8}
-has no other  solutions of the form $e^{rx}$.
+Therefore, $y_1=e^{-3x}$ is a solution of $\eqref{eq:5.2.8}$. Since the
+characteristic equation has no other roots, $\eqref{eq:5.2.8}$
+has no other solutions of the form $e^{rx}$.
  We  look for  solutions of the form
 $y=uy_1=ue^{-3x}$,
 where $u$ is a function that we'll now
@@ -214,28 +214,28 @@ so
 y''+6y'+9y&=&e^{-3x}\left[(u''-6u'+9u)+6(u'-3u)+9u\right]\\
 &=&e^{-3x}\left[u''-(6-6)u'+(9-18+9)u\right]=u''e^{-3x}.
 \end{eqnarray*}
-Therefore $y=ue^{-3x}$ is a solution of \eqref{eq:5.2.8} if and only if
+Therefore, $y=ue^{-3x}$ is a solution of $\eqref{eq:5.2.8}$ if and only if
 $u''=0$, which is equivalent to $u=c_1+c_2x$, where $c_1$ and $c_2$
 are constants. Therefore any function of the form
 \begin{equation} \label{eq:5.2.10}
 y=e^{-3x}(c_1+c_2x)
 \end{equation}
-is  a solution of \eqref{eq:5.2.8}.
+is  a solution of $\eqref{eq:5.2.8}$.
 Letting $c_1=1$ and $c_2=0$  yields the solution
  $y_1=e^{-3x}$ that we already knew. Letting $c_1=0$ and $c_2=1$
 yields the second solution $y_2=xe^{-3x}$. Since
 $y_2/y_1=x$
 is nonconstant, \ref{thmtype:5.1.6} implies that   $\{y_1,y_2\}$ is
-fundamental set of solutions of \eqref{eq:5.2.8}, and \eqref{eq:5.2.10}
+fundamental set of solutions of $\eqref{eq:5.2.8}$, and $\eqref{eq:5.2.10}$
 is the general solution.
  
-\ref{item:5.2.2b}  Differentiating   \eqref{eq:5.2.10} yields
+\ref{item:5.2.2b}  Differentiating   $\eqref{eq:5.2.10}$ yields
 \begin{equation} \label{eq:5.2.11}
 y'=-3e^{-3x}(c_1+c_2x)+c_2e^{-3x}.
 \end{equation}
-Imposing the initial conditions $y(0)=3,\, y'(0)=-1$ in \eqref{eq:5.2.10}
-and \eqref{eq:5.2.11} yields $c_1=3$ and $-3c_1+c_2=-1$, so
-$c_2=8$. Therefore the solution of \eqref{eq:5.2.9} is
+Imposing the initial conditions $y(0)=3,\, y'(0)=-1$ in $\eqref{eq:5.2.10}$
+and $\eqref{eq:5.2.11}$ yields $c_1=3$ and $-3c_1+c_2=-1$, so
+$c_2=8$. Therefore, the solution of $\eqref{eq:5.2.9}$ is
 $$
 y=e^{-3x}(3+8x).
 $$
@@ -294,8 +294,8 @@ y''-2r_1y'+r_1^2y=0.
 \end{equation}
  
 Since $p(r_1)=0$, t $y_1=e^{r_1x}$ is a solution of
-$ay''+by'+cy=0$, and therefore of \eqref{eq:5.2.12}. Proceeding as in
-Example~\ref{example:5.2.2}, we look for other solutions of \eqref{eq:5.2.12}
+$ay''+by'+cy=0$, and therefore of $\eqref{eq:5.2.12}$. Proceeding as in
+Example~\ref{example:5.2.2}, we look for other solutions of $\eqref{eq:5.2.12}$
 of the form $y=ue^{r_1x}$; then
 $$
 y'=u'e^{r_1x}+rue^{r_1x}\quad\mbox{and}\quad
@@ -307,19 +307,19 @@ y''-2r_1y'+r_1^2y&=&e^{rx}\left[(u''+2r_1u'+r_1^2u)-
 2r_1(u'+r_1u)+r_1^2u\right]\\
 &=&e^{r_1x}\left[u''+(2r_1-2r_1)u'+(r_1^2-2r_1^2+r_1^2)u\right]=u''e^{r_1x}.
 \end{eqnarray*}
-Therefore $y=ue^{r_1x}$ is a solution of \eqref{eq:5.2.12} if and only if
+Therefore, $y=ue^{r_1x}$ is a solution of $\eqref{eq:5.2.12}$ if and only if
 $u''=0$, which is equivalent to $u=c_1+c_2x$, where $c_1$ and $c_2$
 are constants. Hence, any function of the form
 \begin{equation} \label{eq:5.2.13}
 y=e^{r_1x}(c_1+c_2x)
 \end{equation}
-is  a solution of \eqref{eq:5.2.12}.
+is  a solution of $\eqref{eq:5.2.12}$.
 Letting $c_1=1$ and $c_2=0$ here yields the solution
  $y_1=e^{r_1x}$ that we already knew. Letting $c_1=0$ and $c_2=1$
 yields the second solution $y_2=xe^{r_1x}$. Since
 $y_2/y_1=x$
 is nonconstant, \ref{thmtype:5.1.6} implies that   $\{y_1,y_2\}$ is
-a fundamental set of solutions of \eqref{eq:5.2.12}, and \eqref{eq:5.2.13}
+a fundamental set of solutions of $\eqref{eq:5.2.12}$, and $\eqref{eq:5.2.13}$
 is the general solution.
  
  
@@ -343,14 +343,14 @@ y''+4y'+13y=0, \quad   y(0)=2,  y'(0)=-3.
 \begin{explanation}
 \ref{item:5.2.3a} The characteristic
 polynomial of
- \eqref{eq:5.2.14} is
+$\eqref{eq:5.2.14}$ is
 $$
 p(r)=r^2+4r+13=r^2+4r+4+9=(r+2)^2+9.
 $$
 The roots of the characteristic equation are $r_1=-2+3i$ and
 $r_2=-2-3i$. By analogy with Case 1, it's reasonable to expect that
-$e^{(-2+3i)x}$ and $e^{(-2-3i)x}$ are solutions of \eqref{eq:5.2.14}. This
-is true %(see Exercise~\ref{exer:5.2.34});    
+$e^{(-2+3i)x}$ and $e^{(-2-3i)x}$ are solutions of $\eqref{eq:5.2.14}$. This
+is true (see Exercise~\ref{exer:5.2.34});    
 however, there are
 difficulties here, since you are probably not familiar with
 exponential functions with complex arguments, and even if you are, it's
@@ -375,7 +375,7 @@ so
 y''+4y'+13y&=&e^{-2x}\left[(u''-4u'+4u)+4(u'-2u)+13u\right]\\
 &=&e^{-2x}\left[u''-(4-4)u'+(4-8+13)u\right]=e^{-2x}(u''+9u).
 \end{eqnarray*}
-Therefore $y=ue^{-2x}$ is a solution of \eqref{eq:5.2.14} if and only if
+Therefore $y=ue^{-2x}$ is a solution of $\eqref{eq:5.2.14}$ if and only if
 $$
 u''+9u=0.
 $$
@@ -387,25 +387,25 @@ $$
 \begin{equation} \label{eq:5.2.16}
 y=e^{-2x}(c_1\cos 3x+c_2\sin 3x)
 \end{equation}
-is  a solution of \eqref{eq:5.2.14}.
+is  a solution of $\eqref{eq:5.2.14}$.
 Letting $c_1=1$ and $c_2=0$  yields the solution
  $y_1=e^{-2x}\cos3x$. Letting $c_1=0$ and $c_2=1$
 yields the second solution $y_2=e^{-2x}\sin3x$. Since
 $y_2/y_1=\tan3x$
 is nonconstant, \ref{thmtype:5.1.6} implies that   $\{y_1,y_2\}$ is
-a fundamental set of solutions of \eqref{eq:5.2.14}, and \eqref{eq:5.2.16}
+a fundamental set of solutions of $\eqref{eq:5.2.14}$, and $\eqref{eq:5.2.16}$
 is the general solution.
  
 \ref{item:5.2.3b}   Imposing the condition $y(0)=2$
-in   \eqref{eq:5.2.16} shows that $c_1=2$.  Differentiating
-\eqref{eq:5.2.16} yields
+in $\eqref{eq:5.2.16}$ shows that $c_1=2$.  Differentiating
+$\eqref{eq:5.2.16}$ yields
 $$
 y'=-2e^{-2x}(c_1\cos 3x+c_2\sin 3x) +3e^{-2x}(-c_1\sin 3x +c_2\cos 3x),
 $$
 and imposing the initial condition $y'(0)=-3$ here yields
 $-3=-2c_1+3c_2=-4+3c_2$,
  so $c_2=1/3$. Therefore the solution of
-\eqref{eq:5.2.15} is
+$\eqref{eq:5.2.15}$ is
 $$
 y=e^{-2x}(2\cos 3x+ \frac{1}{3}\sin 3x).
 $$
@@ -443,7 +443,7 @@ The figure below is a graph of this function.
  
  
 Now suppose   the characteristic equation of $ay''+by'+cy=0$ has
-arbitrary complex roots;   thus, $b^2-4ac<0$ and, from \eqref{eq:5.2.3},
+arbitrary complex roots;   thus, $b^2-4ac<0$ and, from $\eqref{eq:5.2.3}$,
 the
 roots are
 $$
@@ -459,7 +459,7 @@ $$
 \lambda = -\frac{b}{2a},\quad \omega = \frac{\sqrt{4ac-b^2}}{2a}.
 $$
 Don't memorize these formulas. Just remember that $r_1$
-and $r_2$ are of the form \eqref{eq:5.2.17},
+and $r_2$ are of the form $\eqref{eq:5.2.17}$,
 where  $\lambda$ is an arbitrary real number and $\omega$
 is   positive;
  $\lambda$ and $\omega$ are  the \textit{real}
@@ -509,7 +509,7 @@ y'=u'e^{\lambda x}+\lambda ue^{\lambda x}\quad\mbox{and}\quad
 y''=u''e^{\lambda x}+2\lambda u'e^{\lambda x}+\lambda^2ue^{\lambda x}.
 $$
 Substituting these expressions  into
-\eqref{eq:5.2.18} and dropping the common factor $e^{\lambda x}$ yields
+$\eqref{eq:5.2.18}$ and dropping the common factor $e^{\lambda x}$ yields
 $$
 (u''+2\lambda u'+\lambda^2 u)-2\lambda(u'+\lambda u)
 +(\lambda^2+\omega^2)u=0,
@@ -527,14 +527,14 @@ $$
 \begin{equation} \label{eq:5.2.19}
 y=e^{\lambda x}(c_1\cos\omega x+c_2\sin\omega x)
 \end{equation}
-is  a solution of \eqref{eq:5.2.18}.
+is  a solution of $\eqref{eq:5.2.18}$.
 Letting $c_1=1$ and $c_2=0$ here yields the solution
  $y_1=e^{\lambda x}\cos\omega x$. Letting $c_1=0$ and $c_2=1$
 yields a second solution $y_2=e^{\lambda x}\sin\omega x$. Since
 $y_2/y_1=\tan\omega x$
 is nonconstant, so  Theorem~\ref{thmtype:5.1.6} implies that
 $\{y_1,y_2\}$ is
-a fundamental set of solutions of \eqref{eq:5.2.18}, and \eqref{eq:5.2.19}
+a fundamental set of solutions of $\eqref{eq:5.2.18}$, and $\eqref{eq:5.2.19}$
 is the general solution.
  
 The next theorem summarizes the results of this section.
