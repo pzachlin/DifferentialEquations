@@ -26,26 +26,26 @@ $g$ over} $[a,\infty)$ is defined as
 \int^\infty_a g(t)\,dt=\lim_{T\rightarrow\infty}\int^T_a g(t)\,dt.
 \end{equation}
 We say that the improper integral \textit{converges} if the limit in
-\eqref{eq:8.1.1} exists;   otherwise, we say that the improper integral
-\textit{diverges} or \textit{does not exist}. Here's the definition of
+$\eqref{eq:8.1.1}$ exists;   otherwise, we say that the improper integral
+\textit{diverges} or \textit{does not exist}. Here is the definition of
 the Laplace transform of a function $f$.
 
 \begin{definition}\label{thmtype:8.1.1}
 Let $f$ be defined for $t\geq 0$ and let $s$ be a real number. Then the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Laplace.html}{Laplace transform} of $f$ is the function $F$ defined by
+\href{https://en.wikipedia.org/wiki/Laplace_transform}{Laplace transform} of $f$ is the function $F$ defined by
 \begin{equation}\label{eq:8.1.2} F(s)=\int_0^\infty e^{-st} f(t)\,dt,
 \end{equation} for those values of $s$ for which the improper integral
 converges.
 \end{definition}
 
 It is important to keep in mind that the variable of integration in
-\eqref{eq:8.1.2} is $t$, while $s$ is a parameter independent of $t$. We
+$\eqref{eq:8.1.2}$ is $t$, while $s$ is a parameter independent of $t$. We
 use $t$ as the independent variable for $f$ because in applications
 the Laplace transform is usually applied to functions of time.
 
 The Laplace transform can be viewed as an operator ${\cal L}$ that
 transforms the function $f=f(t)$  into the function $F=F(s)$. Thus,
-\eqref{eq:8.1.2} can be expressed as
+$\eqref{eq:8.1.2}$ can be expressed as
 $$
 F={\cal L}(f).
 $$
@@ -55,7 +55,7 @@ $$
 f(t)\leftrightarrow F(s).
 $$
 It can be shown that if $F(s)$ is defined for $s=s_0$ then it's defined
-for all $s>s_0$. %(Exercise~\ref{exer:8.1.14}\part{b}).
+for all $s>s_0$. (Exercise~\ref{exer:8.1.14b}
 
 \subsection*{Computation of Some Simple Laplace Transforms}
 
@@ -64,7 +64,7 @@ for all $s>s_0$. %(Exercise~\ref{exer:8.1.14}\part{b}).
 
 
 \begin{explanation}
- From  \eqref{eq:8.1.2} with $f(t)=1$,
+ From $\eqref{eq:8.1.2}$ with $f(t)=1$,
 $$
 F(s)=\int_0^\infty e^{-st}\,dt=\lim_{T\rightarrow\infty}\int_0^T e^{-st}\,
 dt.
@@ -101,8 +101,8 @@ $$
 \end{example}
 \begin{remark}
 It is convenient to combine the steps of integrating from $0$ to $T$
-and letting $T\rightarrow\infty$. Therefore, instead of writing \eqref{eq:8.1.3}
-and \eqref{eq:8.1.4} as separate steps we write
+and letting $T\rightarrow\infty$. Therefore, instead of writing $\eqref{eq:8.1.3}$
+and $\eqref{eq:8.1.4}$ as separate steps we write
 $$
 \int_0^\infty e^{-st}dt=-\frac{1}{s} e^{-st}\Big|_0^\infty=
 \left\{\begin{array}{rr}\frac{1}{s}, & s>0,\\\infty,&s<
@@ -114,7 +114,7 @@ We'll follow this practice throughout this chapter.
 \begin{example}\label{example:8.1.2}
  Find the Laplace transform of $f(t)=t$.
 \begin{explanation}
-  From  \eqref{eq:8.1.2} with $f(t)=t$,
+From $\eqref{eq:8.1.2}$ with $f(t)=t$,
 \begin{equation}\label{eq:8.1.5}
 F(s)=\int_0^\infty e^{-st}t\,dt.
 \end{equation}
@@ -126,7 +126,7 @@ If $s\neq 0$,  integrating by parts yields
 \\&=&\left\{\begin{array}{rr}\frac{1}{s^2},\quad s>0,\\
 \infty,\,s<0.\end{array}\right.
 \end{eqnarray*}
-If $s=0$, the integral in  \eqref{eq:8.1.5} becomes
+If $s=0$, the integral in  $\eqref{eq:8.1.5}$ becomes
 $$
 \int_0^\infty t\,dt=\frac{t^2}{2}\bigg|_0^\infty=\infty.
 $$
@@ -148,7 +148,7 @@ $$
 \begin{example}\label{example:8.1.3}
  Find the Laplace transform of $f(t)=e^{at}$, where $a$ is a constant.
 \begin{explanation}
-From  \eqref{eq:8.1.2} with $f(t)=e^{at}$,
+From $\eqref{eq:8.1.2}$ with $f(t)=e^{at}$,
 $$
 F(s)=\int_0^\infty e^{-st}e^{at}\,dt.
 $$
@@ -187,7 +187,7 @@ and
 \begin{equation}\label{eq:8.1.7}
 G(s)=\int_0^\infty e^{-st}\cos\omega t\,dt.
 \end{equation}
-If $s>0$, integrating  \eqref{eq:8.1.6} by parts yields
+If $s>0$, integrating  $\eqref{eq:8.1.6}$ by parts yields
 $$
 F(s)=-\frac{e^{-st}}{s}\sin\omega t\Big|_0^\infty+\frac{\omega}{s}
 \int_0^\infty e^{-st}\cos\omega t\,dt,
@@ -196,7 +196,7 @@ so
 \begin{equation}\label{eq:8.1.8}
 F(s)=\frac{\omega}{s}G(s).
 \end{equation}
-If $s>0$, integrating  \eqref{eq:8.1.7} by parts yields
+If $s>0$, integrating  $\eqref{eq:8.1.7}$ by parts yields
 $$
 G(s)=-\frac{e^{-st}\cos\omega t}{s}\Big|_0^\infty - \frac{\omega}{s}
 \int_0^\infty e^{-st}\sin\omega t\,dt,
@@ -205,7 +205,7 @@ so
 $$
 G(s)=\frac{1}{s} - \frac{\omega}{s} F(s).
 $$
-Now substitute from  \eqref{eq:8.1.8} into this to obtain
+Now substitute from  $\eqref{eq:8.1.8}$ into this to obtain
 $$
 G(s)=\frac{1}{s} - \frac{\omega^2}{s^2} G(s).
 $$
@@ -213,7 +213,7 @@ Solving this for $G(s)$ yields
 $$
 G(s)=\frac{s}{s^2+\omega^2},\quad s>0.
 $$
-This and  \eqref{eq:8.1.8} imply that
+This and $\eqref{eq:8.1.8}$ imply that
 $$
 F(s)=\frac{\omega}{s^2+\omega^2},\quad s>0.
 $$
@@ -274,7 +274,7 @@ e^{-st}\left(c_1f_1(t)+c_2f_2(t))\right)\,dt\\
 \end{proof}
 
 \begin{example}\label{example:8.1.6}
-Use  Theorem~\ref{thmtype:8.1.2} and the known Laplace transform
+Use Theorem~\ref{thmtype:8.1.2} and the known Laplace transform
 $$
 {\cal L}(e^{at})=\frac{1}{s-a}
 $$
@@ -298,7 +298,7 @@ Therefore
 where the first transform on the right is defined for $s>b$ and the
 second
 for $s>-b$; hence, both are defined for $s>|b|$.  Simplifying the
-last expression in \eqref{eq:8.1.9} yields
+last expression in $\eqref{eq:8.1.9}$ yields
 $$
 {\cal L}(\cosh bt)=\frac{s}{s^2-b^2},\quad s>|b|.
 $$
@@ -307,10 +307,8 @@ $$
 
 \subsection*{The First Shifting Theorem}
 
-The next theorem enables us to start with known transform pairs and derive
-others. 
-%(For other results of this kind, see Exercises~\ref{exer:8.1.6}  and
-%\ref{exer:8.1.13}.)
+The next theorem enables us to start with known transform pairs and derive others. (For other results of this kind, see Exercises~\ref{exer:8.1.6}  and
+\ref{exer:8.1.13}.)
 
 \begin{theorem}[First Shifting
 Theorem]\label{thmtype:8.1.3}
@@ -323,11 +321,11 @@ Laplace transform of $e^{at}f(t)$ for $s >s_0+a$.
 \end{theorem}
 
 \begin{proof}
-Replacing $s$ by $s-a$ in  \eqref{eq:8.1.10} yields
+Replacing $s$ by $s-a$ in  $\eqref{eq:8.1.10}$ yields
 \begin{equation}\label{eq:8.1.11}
 F(s-a)=\int_0^\infty e^{-(s-a)t}f(t)\,dt
 \end{equation}
-if $s-a>s_0$; that is, if $s>s_0+a$.  However,  \eqref{eq:8.1.11} can
+if $s-a>s_0$; that is, if $s>s_0+a$.  However,  $\eqref{eq:8.1.11}$ can
 be rewritten as
 $$
 F(s-a)=\int_0^\infty e^{-st}\left(e^{at}f(t)\right)\,dt,
@@ -369,7 +367,7 @@ $e^{\lambda t}\sin\omega t\leftrightarrow\frac{{s-\lambda}{(s-\lambda)^2+\omega^
 \subsection*{Existence of Laplace Transforms}
 
 Not every function has a Laplace transform.  For example, it can be shown
-%(Exercise~\ref{exer:8.1.3}) 
+(Exercise~\ref{exer:8.1.3}) 
 that
 $$
 \int_0^\infty e^{-st}e^{t^2} dt=\infty
@@ -407,7 +405,7 @@ $$
 f(t_0+)=\lim_{t\rightarrow t_0+}f(t)\quad\mbox{and}\quad f(t_0-)=\lim_{t\rightarrow
 t_0-}f(t),
 $$
-so  \eqref{eq:8.1.12} can be expressed as
+so $\eqref{eq:8.1.12}$ can be expressed as
 $$
 f(t_0+)=f(t_0-)=f(t_0).
 $$
@@ -598,7 +596,7 @@ guarantee that the improper integral
 dt
 \end{equation}
 converges for $s$ in some interval $(s_0,\infty)$. For example, we
-noted earlier that \eqref{eq:8.1.13} diverges for all $s$ if
+noted earlier that $\eqref{eq:8.1.13}$ diverges for all $s$ if
 $f(t)=e^{t^2}$. Stated informally, this occurs because $e^{t^2}$
 increases too rapidly as $t\rightarrow\infty$. The next definition
 provides a constraint on the growth of a function that guarantees
@@ -618,7 +616,7 @@ is irrelevant we say simply that $f$ is \textit{of exponential order}.
 
 The next theorem gives useful sufficient conditions for a function $f$
 to have a Laplace transform.  
-%The proof is sketched in Exercise~\ref{exer:8.1.10}.
+The proof is sketched in Exercise~\ref{exer:8.1.10}.
 
 \begin{theorem}\label{thmtype:8.1.6} If $f$
 is piecewise continuous on $[0,\infty)$ and of exponential order $s_0,$
@@ -628,10 +626,7 @@ is piecewise continuous on $[0,\infty)$ and of exponential order $s_0,$
 %\color{blue}
 \begin{remark}
 We emphasize that the conditions of Theorem~\ref{thmtype:8.1.6}
- are sufficient, but \textit{not necessary}, for $f$ to have a Laplace transform. 
-%  For example, Exercise~\ref{exer:8.1.14}\part{c} shows that  $f$
-% may have a Laplace transform even though $f$ isn't  of exponential
-% order.
+ are sufficient, but \textit{not necessary}, for $f$ to have a Laplace transform.  For example, Exercise~\ref{exer:8.1.14c} shows that $f$ may have a Laplace transform even though $f$ is not of exponential order.
 \end{remark}
 
 \begin{example}\label{example:8.1.8}
@@ -639,7 +634,7 @@ If $f$ is bounded on some interval $[t_0,\infty)$, say
 $$
 |f(t)| \leq M,\quad t \geq t_0,
 $$
-then \eqref{eq:8.1.14} holds with $s_0=0$, so $f$ is of exponential order
+then $\eqref{eq:8.1.14}$ holds with $s_0=0$, so $f$ is of exponential order
 zero. Thus, for example, $\sin\omega t$ and $\cos \omega t$ are of
 exponential order zero, and Theorem~\ref{thmtype:8.1.6} implies that
 ${\cal L}(\sin\omega t)$ and ${\cal L}(\cos \omega t)$ exist for
@@ -650,7 +645,7 @@ Example~\ref{example:8.1.4}.
 \begin{example}\label{example:8.1.9}
 It can be shown that if $\lim_{t\rightarrow\infty}e^{-s_0t}f(t)$ exists and is
 finite then $f$ is of exponential order $s_0$.
-%(Exercise~\ref{exer:8.1.9}). 
+(Exercise~\ref{exer:8.1.9}). 
 If $\alpha$ is any real number and $s_0>0$
 then $f(t)=t^\alpha$ is of exponential order $s_0$, since
 $$
@@ -661,9 +656,8 @@ continuous on $[0,\infty)$. Therefore Exercise~\ref{exer:8.1.9} and
 Theorem~\ref{thmtype:8.1.6} imply that ${\cal L}(t^\alpha)$ exists for
 $s\geq s_0$. However, since $s_0$ is an arbitrary positive number, this
 really implies that ${\cal L}(t^\alpha)$ exists for all $s>0$. This is
-consistent with the result of Example~\ref{example:8.1.2}.
-% and
-% Exercises~\ref{exer:8.1.6} and \ref{exer:8.1.8}.
+consistent with the result of Example~\ref{example:8.1.2} and
+Exercises~\ref{exer:8.1.6} and \ref{exer:8.1.8}.
 \end{example}
 
 \begin{example}\label{example:8.1.10}
@@ -703,8 +697,7 @@ and therefore $f$ is of exponential order $s_0=-1$.
 \end{example}
 
 \begin{remark}
-In \href{https://ximera.osu.edu/ode/main/unitStepFunction/unitStepFunction}{Trench 8.4} 
-we'll develop a more efficient
+In \href{https://ximera.osu.edu/ode/main/unitStepFunction/unitStepFunction}{Trench 8.4} we will develop a more efficient
 method for finding Laplace transforms of piecewise continuous functions.
 \end{remark}
 
@@ -723,7 +716,7 @@ $$
 e^{t^2}>Me^{s_0t}
 $$
 for sufficiently large values of $t$, for any choice of $M$ and $s_{0}$
-%(Exercise~\ref{exer:8.1.3}).
+(Exercise~\ref{exer:8.1.3}).
 \end{example}
 
 
