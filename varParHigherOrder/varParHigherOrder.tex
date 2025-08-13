@@ -60,10 +60,10 @@ y^{(r)}_p=u_1y^{(r)}_1+u_2y_2^{(r)}\cdots+u_ny^{(r)}_n,\ 0
 \leq r \leq n-1.
 \end{equation}
 These formulas are easy to remember, since they look as though we
-obtained them by differentiating \eqref{eq:9.4.2} $n-1$ times while
+obtained them by differentiating $\eqref{eq:9.4.2}$ $n-1$ times while
 treating $u_1, u_2, \dots, u_n$ as constants. To see that
-\eqref{eq:9.4.3}
-implies \eqref{eq:9.4.4}, we first differentiate \eqref{eq:9.4.2} to obtain
+$\eqref{eq:9.4.3}$
+implies $\eqref{eq:9.4.4}$, we first differentiate $\eqref{eq:9.4.2}$ to obtain
 $$
 y_p'=u_1y_1'+u_2y_2'+\cdots+u_ny_n'+u_1'y_1+u_2'y_2+\cdots+u_n'y_n,
 $$
@@ -71,7 +71,7 @@ which  reduces to
 $$
 y_p'=u_1y_1'+u_2y_2'+\cdots+u_ny_n'
 $$
-because of the first equation in \eqref{eq:9.4.3}. Differentiating this
+because of the first equation in $\eqref{eq:9.4.3}$. Differentiating this
 yields
 $$
 y_p''=u_1y_1''+u_2y_2''+\cdots+u_ny_n''+u_1'y_1'+u_2'y_2'+\cdots+u_n'y_n',
@@ -80,10 +80,10 @@ which reduces to
 $$
 y_p''=u_1y_1''+u_2y_2''+\cdots+u_ny_n''
 $$
-because of  the second equation in \eqref{eq:9.4.3}.
-Continuing in this way yields \eqref{eq:9.4.4}.
+because of  the second equation in $\eqref{eq:9.4.3}$.
+Continuing in this way yields $\eqref{eq:9.4.4}$.
 
-The last equation in \eqref{eq:9.4.4} is
+The last equation in $\eqref{eq:9.4.4}$ is
 $$
 y_p^{(n-1)}=u_1y_1^{(n-1)}+u_2y_2^{(n-1)}+\cdots+u_ny_n^{(n-1)}.
 $$
@@ -92,7 +92,7 @@ $$
 y_p^{(n)}=u_1y_1^{(n)}+u_2y_2^{(n)}+\cdots+u_ny_n^{(n)}+
 u_1'y_1^{(n-1)}+u_2'y_2^{(n-1)}+\cdots+u_n'y_n^{(n-1)}.
 $$
-Substituting this and  \eqref{eq:9.4.4} into \eqref{eq:9.4.1}
+Substituting this and  $\eqref{eq:9.4.4}$ into $\eqref{eq:9.4.1}$
 yields
 $$
 u_1Ly_1+u_2Ly_2+\cdots+u_nLy_n+P_0(x)\left(
@@ -102,11 +102,11 @@ Since  $Ly_i=0$ $(1 \leq i \leq n)$, this reduces to
 $$
 u_1'y_1^{(n-1)}+u_2'y_2^{(n-1)}+\cdots+u_n'y_n^{(n-1)}=\frac{F(x)}{P_0(x)}.
 $$
-Combining this equation with \eqref{eq:9.4.3} shows that
+Combining this equation with $\eqref{eq:9.4.3}$ shows that
 $$
 y_p=u_1y_1+u_2y_2+\cdots+u_ny_n
 $$
-is a solution of \eqref{eq:9.4.1} if
+is a solution of $\eqref{eq:9.4.1}$ if
 $$
 \begin{array}{rcl}
 u'_1y_1+u'_2y_2+&\cdots&+u'_ny_n=0 \\
@@ -134,7 +134,7 @@ The determinant of this system  is the Wronskian $W$ of
 the fundamental set of solutions  $\{y_1,y_2,\dots,y_n\}$,
 which has no zeros on $(a,b)$, by Theorem~\ref{thmtype:9.1.4}.
 Solving
-\eqref{eq:9.4.5} by Cramer's rule  yields
+$\eqref{eq:9.4.5}$ by Cramer's rule yields
 \begin{equation} \label{eq:9.4.6}
 u'_j=(-1)^{n-j}\frac{FW_j}{P_0W},\quad 1\leq j\leq n,
 \end{equation}
@@ -145,14 +145,14 @@ same order. Equivalently, $W_j$ is the determinant obtained by
 deleting the last row and $j$-th column of $W$.
 
 Having obtained $u_1', u_2', \dots, u_n'$, we can integrate  to
-obtain $u_1,\,u_2,\dots,u_n$. As in \href{https://ximera.osu.edu/ode/main/variationOfParameters/variationOfParameters}{Trench 5.7}, we
+obtain $u_1,\,u_2,\dots,u_n$. As in \href{https://xerxes.ximera.org/differentialequations/main/variationOfParameters/variationOfParameters}{Trench 5.6}, we
 take the constants
 of integration to be zero, and we drop any linear combination of
 $\{y_1,y_2,\dots,y_n\}$ that may appear in $y_p$.
 
 
 \begin{remark}
-For efficiency, it's best to compute $W_1, W_2, \dots, W_n$
+For efficiency, it is best to compute $W_1, W_2, \dots, W_n$
 first, and then compute $W$ by expanding in cofactors of the last row;
 thus,
 $$
@@ -183,7 +183,7 @@ y_1&y_3 \\
 y_1&y_2 \\
 y'_1&y'_2 \end{vmatrix},
 $$
-and  \eqref{eq:9.4.6}  becomes
+and $\eqref{eq:9.4.6}$  becomes
 \begin{equation} \label{eq:9.4.7}
 u'_1=\frac{FW_1}{P_0W},\quad u'_2=-\frac{FW_2}{P_0W},\quad
 u'_3=\frac{FW_3}{P_0W}.
@@ -196,10 +196,10 @@ xy'''-y''-xy'+y=8x^2e^x,
 \end{equation}
 given that  $y_1=x$, $y_2=e^x$, and $y_3=e^{-x}$ form a fundamental
 set of solutions of the complementary equation. Then find the general
-solution of \eqref{eq:9.4.8}.
+solution of $\eqref{eq:9.4.8}$.
  
 \begin{explanation}
-We seek a particular solution of \eqref{eq:9.4.8} of the form
+We seek a particular solution of $\eqref{eq:9.4.8}$ of the form
 $$
 y_p=u_1x+u_2e^x+u_3e^{-x}.
 $$
@@ -233,7 +233,7 @@ $$
 $$
 \frac{F}{P_0W}=\frac{8x^2e^x}{x\cdot 2x}=4e^x.
 $$
-Therefore, from \eqref{eq:9.4.7}
+Therefore, from $\eqref{eq:9.4.7}$
 \begin{eqnarray*}
 u'_1&=& 4e^xW_1=4e^x(-2)=-8e^x,\\
 u_2'&=&-4e^xW_2=-4e^x\left(-e^{-x}(x+1)\right)=4(x+1),\\
@@ -254,7 +254,7 @@ Since $-e^x$ is a solution of the complementary equation, we redefine
 $$
 y_p=2xe^x(x-1).
 $$
- Therefore the general solution of \eqref{eq:9.4.8} is
+Therefore, the general solution of $\eqref{eq:9.4.8}$ is
 $$
 y=2xe^x(x-1)+c_1x+c_2e^x+c_3e^{-x}.
 $$
@@ -299,7 +299,7 @@ y_1'&y'_2&y_3'\\
 y_1''&y''_2&y_3''
  \end{vmatrix},
 $$
-and  \eqref{eq:9.4.6}  becomes
+and $\eqref{eq:9.4.6}$ becomes
 \begin{equation} \label{eq:9.4.9}
 u'_1=-\frac{FW_1}{P_0W},\quad u'_2=\frac{FW_2}{P_0W},\quad
 u'_3=-\frac{FW_3}{P_0W},\quad u'_4=\frac{FW_4}{P_0W}.
@@ -312,12 +312,12 @@ x^4y^{(4)}+6x^3y'''+2x^2y''-4xy'+4y=12x^2,
 \end{equation}
 given that  $y_1=x$, $y_2=x^2$, $y_3=1/x$ and $y_4=1/x^2$ form a
 fundamental set of solutions of the complementary equation. Then find
-the general solution of \eqref{eq:9.4.10} on $(-\infty,0)$ and
+the general solution of $\eqref{eq:9.4.10$}$ on $(-\infty,0)$ and
 $(0,\infty)$.
  
 
 \begin{explanation}
-We seek a particular solution of \eqref{eq:9.4.10} of the form
+We seek a particular solution of $\eqref{eq:9.4.10}$ of the form
 $$
 y_p=u_1x+u_2x^2+\frac{u_3}{x}+\frac{u_4}{x^2}.
 $$
@@ -366,7 +366,7 @@ W&=&-0W_1+0 W_2-\left(-\frac{6}{x^4}\right)W_3+\left(-\frac{24}{x^5}\right)W_4\\
 $$
 \frac{F}{P_0W}=\frac{12x^2}{x^4}\left(-\frac{x^6}{72}\right)=-\frac{x^4}{6}.
 $$
-Therefore, from \eqref{eq:9.4.9},
+Therefore, from $\eqref{eq:9.4.9}$,
 \begin{eqnarray*}
 u'_1&=&-\left(-\frac{x^4}{6}\right)W_1=\frac{x^4}{6}\left(-\frac{12}{x^4}\right)=-2,\\
  u_2'&=&-\frac{x^4}{6}W_2=-\frac{x^4}{6}\left(-\frac{6}{x^5}\right)
@@ -394,7 +394,7 @@ $$
 $$
 y=x^2\ln|x|+c_1x+c_2x^2+\frac{c_3}{x}+\frac{c_4}{x^2}
 $$
-is the general solution of \eqref{eq:9.4.10} on $(-\infty,0)$ and $(0,\infty)$.
+is the general solution of $\eqref{eq:9.4.10}$ on $(-\infty,0)$ and $(0,\infty)$.
 \end{explanation}
 \end{example}
 
