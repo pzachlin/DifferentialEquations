@@ -38,7 +38,7 @@ this case that $f$ is an \textit{impulse function}. In particular, we
 denote by $\delta(t-t_0)$ the impulse function with total impulse
 equal to one, applied at $t=t_0$. (The impulse function $\delta(t)$
 obtained by setting $t_0=0$ is  the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Dirac.html}
+\href{https://en.wikipedia.org/wiki/Dirac_delta_function}
 {Dirac $\delta$ function\/}.) It must be understood, however, that
 $\delta(t-t_0)$ isn't  a function in the standard sense, since our
 ``definition'' implies that $\delta(t-t_0)=0$ if $t\neq t_0$, while
@@ -108,7 +108,7 @@ $$
 %   \label{figure:8.7.1}
 % \end{figure}
 \begin{proof}
-Taking Laplace transforms in \eqref{eq:8.7.1} yields
+Taking Laplace transforms in $\eqref{eq:8.7.1}$ yields
 $$
 (as^2+bs+c)Y_h(s)=F_h(s),
 $$
@@ -120,7 +120,7 @@ The convolution theorem implies that
 $$
 y_h(t)=\int_0^t w(t-\tau)f_h(\tau)\,d\tau.
 $$
-Therefore,  \eqref{eq:8.7.2} implies that
+Therefore, $\eqref{eq:8.7.2}$ implies that
 \begin{equation} \label{eq:8.7.4}
 y_h(t)=\left\{\begin{array}{cl} 0,&0\leq t<t_0,\\
 \frac{1}{h}\int_{t_0}^tw(t-\tau)\,d\tau,&t_0\leq t\leq
@@ -138,7 +138,7 @@ We'll now show that
 
 Suppose   $t$ is fixed and $t>t_0$.
 From
-\eqref{eq:8.7.4},
+$\eqref{eq:8.7.4}$,
 \begin{equation} \label{eq:8.7.7}
 y_h(t)=\frac{1}{h}\int_{t_0}^{t_0+h}w(t-\tau)d\tau\quad\mbox{if}\quad
 h<t-t_0.
@@ -152,7 +152,7 @@ $$
 w(t-t_0)=\frac{1}{h}w(t-t_0)\int_{t_0}^{t_0+h}\,d\tau=
 \frac{1}{h}\int_{t_0}^{t_0+h}w(t-t_0)\,d\tau.
 $$
-From this and \eqref{eq:8.7.7},
+From this and $\eqref{eq:8.7.7}$,
 $$
 y_h(t)-w(t-t_0)=
 \frac{1}{h}\int_{t_0}^{t_0+h}\left(w(t-\tau)-w(t-t_0)\right)\,d\tau.
@@ -164,14 +164,14 @@ Therefore
 \end{equation}
 Now let $M_h$ be the maximum value of $|w(t-\tau)-w(t-t_0)|$ as $\tau$
 varies over the interval $[t_0,t_0+h]$. (Remember that $t$ and $t_0$
-are fixed.) Then \eqref{eq:8.7.8} and \eqref{eq:8.7.9} imply that
+are fixed.) Then $\eqref{eq:8.7.8}$ and $\eqref{eq:8.7.9}$ imply that
 \begin{equation} \label{eq:8.7.10}
 |y_h(t)-w(t-t_0)|\leq
 \frac{1}{h}M_h\int_{t_0}^{t_0+h}\,d\tau=M_h.
 \end{equation}
 But $\lim_{h\rightarrow0+}M_h=0$, since $w$ is continuous.
-Therefore \eqref{eq:8.7.10} implies \eqref{eq:8.7.6}.
-This and \eqref{eq:8.7.5} imply \eqref{eq:8.7.3}. 
+Therefore $\eqref{eq:8.7.10}$ implies $\eqref{eq:8.7.6}$.
+This and $\eqref{eq:8.7.5}$ imply $\eqref{eq:8.7.3}$. 
 \end{proof}
 
 Theorem~\ref{thmtype:8.7.1} motivates the next definition.
@@ -203,7 +203,7 @@ aw''+bw'+cw=0, \quad  w(0)=0,\quad  w'(0)=1/a,
 \end{equation}
 as can be seen by using the Laplace transform to solve this problem.
 (Verify.)
-On the other hand, we can solve \eqref{eq:8.7.12} by the methods of
+On the other hand, we can solve $\eqref{eq:8.7.12}$ by the methods of
 \href{https://ximera.osu.edu/ode/main/constantCoefficientHomogeneousEquations/constantCoefficientHomogeneousEquations}{Trench 5.2} 
 and show that $w$ is defined on
 $(-\infty,\infty)$ by
@@ -231,12 +231,12 @@ y'_-(t_0)=0, \quad   y'_+(t_0)=1/a
 (remember that $y'_-(t_0)$ and $y'_+(t_0)$ are derivatives from the
 right and left, respectively) and $y'(t_0)$ does not exist. Thus, even
 though we defined $y=u(t-t_0)w(t-t_0)$ to be the solution of
-\eqref{eq:8.7.11},  this function \textit{doesn't satisfy}
-the differential equation in \eqref{eq:8.7.11} \textit{at} $t_0$, since it
-isn't differentiable there;   in fact \eqref{eq:8.7.14} indicates that an
+$\eqref{eq:8.7.11}$,  this function \textit{doesn't satisfy}
+the differential equation in $\eqref{eq:8.7.11}$ \textit{at} $t_0$, since it
+isn't differentiable there;   in fact $\eqref{eq:8.7.14}$ indicates that an
 impulse causes a jump discontinuity in velocity. (To see that this is
 reasonable, think of what happens when you hit a ball with a bat.)
-This means that the initial value problem \eqref{eq:8.7.11} doesn't make
+This means that the initial value problem $\eqref{eq:8.7.11}$ doesn't make
 sense if $t_0=0$, since $y'(0)$ doesn't exist in this case. However
 $y=u(t)w(t)$ can be defined to be the solution of the modified initial
 value problem
@@ -250,9 +250,8 @@ condition on the derivative from the left.
 The figure below %Figure~\ref{figure:8.7.2} 
 illustrates Theorem~\ref{thmtype:8.7.1} for the
 case where the impulse response $w$ is the first expression in
-\eqref{eq:8.7.13} and $r_1$ and $r_2$ are distinct and both negative. The
-solid curve in the figure is the graph of $w$. The dashed curves are
-solutions of \eqref{eq:8.7.1} for various values of $h$. As $h$ decreases
+$\eqref{eq:8.7.13}$ and $r_1$ and $r_2$ are distinct and both negative. The
+solid curve in the figure is the graph of $w$. The dashed curves are solutions of $\eqref{eq:8.7.1}$ for various values of $h$. As $h$ decreases
 the graph of $y_h$ moves to the left toward the graph of $w$.
 
 \begin{center}  
@@ -289,8 +288,8 @@ so  Definition~\ref{thmtype:8.7.2} yields
 $$
 y=u(t-t_0)(t-t_0)e^{-(t-t_0)}
 $$
-as the solution of  \eqref{eq:8.7.15} if $t_0>0$. If $t_0=0$,
-then \eqref{eq:8.7.15} doesn't have a solution; however,
+as the solution of  $\eqref{eq:8.7.15}$ if $t_0>0$. If $t_0=0$,
+then $\eqref{eq:8.7.15}$ does not have a solution; however,
 $y=u(t)te^{-t}$
 (which we would usually write simply as $y=te^{-t}$) is the solution
 of the modified initial value problem
@@ -387,7 +386,7 @@ w(t)&=&{\cal L}^{-1}\left(\frac{1}{s^2+6s+5}\right)&=&
 &=&\frac{e^{-t}-e^{-5t}}{4},
 \end{array}
 $$
-the solution of  \eqref{eq:8.7.16} is
+the solution of  $\eqref{eq:8.7.16}$ is
 \begin{equation} \label{eq:8.7.17}
 y=-e^{-2t}+\frac{1}{2}e^{-5t}-\frac{5}{2}e^{-t}
 +u(t-1)\frac{e^{-(t-1)}-e^{-5(t-1)}}{2}
@@ -466,7 +465,7 @@ Since
 $$
 w={\cal L}^{-1}\left(\frac{1}{s^2+1}\right)=\sin t,
 $$
-the solution of  \eqref{eq:8.7.18} is
+the solution of  $\eqref{eq:8.7.18}$ is
 \begin{eqnarray*}
 y&=&1-2\cos t+2\sin t+2u(t-\pi)\sin(t-\pi)-3u(t-2\pi)\sin(t-2\pi)\\
 &=&1-2\cos t+2\sin t-2u(t-\pi)\sin t-3u(t-2\pi)\sin t,
