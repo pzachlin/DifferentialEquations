@@ -25,8 +25,7 @@ We considered equations of this form with $n=1$ in
 Trench \href{https://ximera.osu.edu/ode/main/homogeneousLinearEquations/homogeneousLinearEquations}{5.1} and \href{https://ximera.osu.edu/ode/main/nonHomogeneousLinear/nonHomogeneousLinear}{5.3}. In this chapter $n$ is an arbitrary
 positive integer.
 
-In this section we sketch the general theory of linear $n$th order
-equations. Since this theory has already been discussed for $n=2$ in Trench \href{https://ximera.osu.edu/ode/main/homogeneousLinearEquations/homogeneousLinearEquations}{5.1} and \href{https://ximera.osu.edu/ode/main/nonHomogeneousLinear/nonHomogeneousLinear}{5.3}, we'll omit
+In this section we sketch the general theory of linear $n$th order equations. Since this theory has already been discussed for $n=2$ in Trench \href{https://ximera.osu.edu/ode/main/homogeneousLinearEquations/homogeneousLinearEquations}{5.1} and \href{https://ximera.osu.edu/ode/main/nonHomogeneousLinear/nonHomogeneousLinear}{5.3}, we will omit
 proofs.
 
 For convenience, we consider linear differential equations written
@@ -34,17 +33,16 @@ as
 \begin{equation}\label{eq:9.1.2}
 P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=F(x),
 \end{equation}
-which can be rewritten as \eqref{eq:9.1.1} on any interval on
-which $P_0$ has no zeros, with $p_1=P_1/P_0$, \dots, $p_n=P_n/P_0$ and
-$f=F/P_0$. For simplicity, throughout this chapter we'll
-abbreviate the left side of \eqref{eq:9.1.2} by $Ly$; that is,
+which can be rewritten as $\eqref{eq:9.1.1}$ on any interval on which $P_0$ has no zeros, with $p_1=P_1/P_0$, \dots, $p_n=P_n/P_0$ and
+$f=F/P_0$. For simplicity, throughout this chapter we will
+abbreviate the left side of $\eqref{eq:9.1.2}$ by $Ly$; that is,
 $$
 Ly=P_0y^{(n)}+P_1y^{(n-1)}+\cdots+P_ny.
 $$
 We say that the equation $Ly=F$ is \dfn{normal} on $(a,b)$ if
 $P_0$, $P_1$, \dots, $P_n$ and $F$ are continuous on $(a,b)$ and $P_0$ has
-no zeros on $(a,b)$. If this is so then $Ly=F$ can be
-written as \eqref{eq:9.1.1} with $p_1, \dots, p_n$ and $f$ continuous on
+no zeros on $(a,b)$. If this is so, then $Ly=F$ can be
+written as $\eqref{eq:9.1.1}$ with $p_1, \dots, p_n$ and $f$ continuous on
 $(a,b)$.
 
 The next theorem is analogous to
@@ -63,7 +61,7 @@ has a unique solution on $(a,b)$.
 
 \subsection*{Homogeneous Equations}
 
-Eqn.~\eqref{eq:9.1.2} is said to be \dfn{homogeneous} if $F\equiv0$ and \dfn{nonhomogeneous} otherwise. Since $y\equiv0$ is obviously a
+Eqn.~$\eqref{eq:9.1.2}$ is said to be \dfn{homogeneous} if $F\equiv0$ and \dfn{nonhomogeneous} otherwise. Since $y\equiv0$ is obviously a
 solution of $Ly=0$, we call it the \dfn{trivial} solution. Any other
 solution is \dfn{nontrivial}.
 
@@ -82,15 +80,13 @@ $\{y_1,y_2,\dots,y_n\}$. (See the proof of Theorem~\ref{thmtype:5.1.2}.) We
 say that $\{y_1,y_2,\dots,y_n\}$ is a \dfn{fundamental set of
 solutions of $Ly=0$ on} $(a,b)$ if every solution of $Ly=0$ on
 $(a,b)$ can be written as a linear combination of
-$\{y_1,y_2,\dots,y_n\}$, as in \eqref{eq:9.1.3}. In this case we say that
-\eqref{eq:9.1.3} is the \dfn{general solution of $Ly=0$ on
+$\{y_1,y_2,\dots,y_n\}$, as in $\eqref{eq:9.1.3}$. In this case we say that
+$\eqref{eq:9.1.3}$ is the \dfn{general solution of $Ly=0$ on
 $(a,b)$}.
 
 
-It can be shown 
-%(Exercises~\ref{exer:9.1.14} and \ref{exer:9.1.15}) 
-that if
-the equation $Ly=0$ is normal on $(a,b)$ then it has
+It is shown in Exercises~\ref{exer:9.1.14} and \ref{exer:9.1.15}) 
+that if the equation $Ly=0$ is normal on $(a,b)$ then it has
 infinitely many fundamental  sets of solutions  on $(a,b)$.
 The next definition will help to identify fundamental sets of
 solutions of $Ly=0$.
@@ -100,8 +96,7 @@ $(a,b)$ if the only constants $c_1, c_2, \dots, c_n$ such that
 \begin{equation}\label{eq:9.1.4}
 c_1y_1(x)+c_2y_2(x)+\cdots+c_ny_n(x)=0,\quad a<x<b,
 \end{equation}
-are $c_1=c_2=\cdots=c_n=0$. If \eqref{eq:9.1.4} holds for some set of
-constants $c_1, c_2, \dots, c_n$ that are not all zero, then
+are $c_1=c_2=\cdots=c_n=0$. If $\eqref{eq:9.1.4}$ holds for some set of constants $c_1, c_2, \dots, c_n$ that are not all zero, then
 $\{y_1,y_2,\dots,y_n\}$ is \dfn{linearly dependent} on $(a,b)$
 
 The next theorem is analogous to
@@ -121,7 +116,7 @@ x^3y'''-x^2y''-2xy'+6y=0
 is normal and has the solutions $y_1=x^2$, $y_2=x^3$, and $y_3=1/x$ on
 $(-\infty,0)$ and $(0,\infty)$.  Show that $\{y_1,y_2,y_3\}$
 is linearly independent on $(-\infty, 0)$ and $(0,\infty)$. Then find
-the general solution of \eqref{eq:9.1.5} on $(-\infty, 0)$ and
+the general solution of $\eqref{eq:9.1.5}$ on $(-\infty, 0)$ and
 $(0,\infty)$.
 
 
@@ -131,7 +126,7 @@ Suppose
 c_1x^2+c_2x^3+\frac{c_3}{x}=0
 \end{equation}
 on $(0,\infty)$. We must show that $c_1=c_2=c_3=0$. Differentiating
-\eqref{eq:9.1.6} twice yields  the system
+$\eqref{eq:9.1.6}$ twice yields  the system
 \begin{equation} \label{eq:9.1.7}
 \begin{array}{rcl}
 c_1x^2+c_2x^3+\frac{c_3}{x}&=&0\\
@@ -139,7 +134,7 @@ c_1x^2+c_2x^3+\frac{c_3}{x}&=&0\\
 2c_1+6c_2x+\frac{2c_3}{x^3}&=&0.
 \end{array}
 \end{equation}
-If \eqref{eq:9.1.7} holds for all $x$ in $(0,\infty)$, then it
+If $\eqref{eq:9.1.7}$ holds for all $x$ in $(0,\infty)$, then it
 certainly  holds at $x=1$;  therefore,
 \begin{equation} \label{eq:9.1.8}
 \begin{array}{rcl}
@@ -152,21 +147,21 @@ By solving this system directly, you can verify that it has only the
 trivial solution $c_1=c_2=c_3=0$;     however, for our purposes it's more
 useful to recall from linear algebra that a homogeneous linear system
 of $n$ equations in $n$ unknowns has only the trivial solution if its
-determinant is nonzero. Since the determinant of \eqref{eq:9.1.8} is
+determinant is nonzero. Since the determinant of $\eqref{eq:9.1.8}$ is
 $$
 \begin{vmatrix}1&1&1\\2&3&-1\\2&6&2\end{vmatrix}=
 \begin{vmatrix}1&0&0\\2&1&-3\\2&4&0\end{vmatrix}=12,
 $$
-it follows that \eqref{eq:9.1.8} has only the trivial solution, so
+it follows that $\eqref{eq:9.1.8}$ has only the trivial solution, so
 $\{y_1,y_2,y_3\}$ is linearly independent on $(0,\infty)$. Now
 Theorem~\ref{thmtype:9.1.2} implies that
 $$
 y=c_1x^2+c_2x^3+\frac{c_3}{x}
 $$
-is the general solution of \eqref{eq:9.1.5} on $(0,\infty)$.
+is the general solution of $\eqref{eq:9.1.5}$ on $(0,\infty)$.
 To see that this is also true
- on $(-\infty,0)$,  assume that \eqref{eq:9.1.6} holds on
-$(-\infty,0)$. Setting $x=-1$ in \eqref{eq:9.1.7} yields
+on $(-\infty,0)$,  assume that $\eqref{eq:9.1.6}$ holds on
+$(-\infty,0)$. Setting $x=-1$ in $\eqref{eq:9.1.7}$ yields
 \begin{eqnarray*}
 c_1-c_2-c_3&=&0\\
 -2c_1+3c_2-c_3&=&0\\
@@ -191,7 +186,7 @@ y^{(4)}+y'''-7y''-y'+6y=0
 is normal and has the solutions $y_1=e^x$, $y_2=e^{-x}$, $y_3=e^{2x}$,
 and $y_4=e^{-3x}$ on $(-\infty,\infty)$. (Verify.) Show that
 $\{y_1,y_2,y_3,y_4\}$ is linearly independent on $(-\infty,\infty)$.
-Then find the general solution of \eqref{eq:9.1.9}.
+Then find the general solution of $\eqref{eq:9.1.9}$.
 
 \begin{explanation}
 Suppose   $c_1$, $c_2$, $c_3$, and $c_4$
@@ -200,7 +195,7 @@ are constants such that
 c_1e^x+c_2e^{-x}+c_3e^{2x}+c_4e^{-3x}=0
 \end{equation}
 for all $x$. We must show that $c_1=c_2=c_3=c_4=0$. Differentiating
-\eqref{eq:9.1.10} three times yields the system
+$\eqref{eq:9.1.10}$ three times yields the system
 \begin{equation} \label{eq:9.1.11}
 \begin{array}{rcl}
 c_1e^x+c_2e^{-x}+c_3e^{2x}+c_4e^{-3x}&=&0\\
@@ -209,7 +204,7 @@ c_1e^x+c_2e^{-x}+4c_3e^{2x}+9c_4e^{-3x}&=&0\\
 c_1e^x-c_2e^{-x}+8c_3e^{2x}-27c_4e^{-3x}&=&0.
 \end{array}
 \end{equation}
-If \eqref{eq:9.1.11} holds for all $x$, then it certainly holds for $x=0$.
+If $\eqref{eq:9.1.11}$ holds for all $x$, then it certainly holds for $x=0$.
 Therefore
 $$
 \begin{array}{rcl}
@@ -241,7 +236,7 @@ Now Theorem~\ref{thmtype:9.1.2} implies that
 $$
 y=c_1e^x+c_2e^{-x}+c_3e^{2x}+c_4e^{-3x}
 $$
-is the general solution of \eqref{eq:9.1.9}.
+is the general solution of $\eqref{eq:9.1.9}$.
 
 \end{explanation}
 \end{example}
@@ -278,9 +273,9 @@ y_1^{(n-1)}(x)&y_2^{(n-1)}(x)&\cdots&y_n^{(n-1)}(x)
 \end{vmatrix}
 $$
 We call this determinant the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Wronski.html}{Wronskian} of
+\href{https://en.wikipedia.org/wiki/Wronskian}{Wronskian} of
 $\{y_1,y_2,\dots,y_n\}$. If $W(x)\neq 0$ for some $x$ in $(a,b)$ then
- the system \eqref{eq:9.1.13} has only the trivial solution
+ the system $\eqref{eq:9.1.13}$ has only the trivial solution
 $c_1=c_2=\cdots=c_n=0$, and Theorem~\ref{thmtype:9.1.2} implies that
 $$
 y=c_1y_1+c_2y_2+\cdots+c_ny_n
@@ -288,8 +283,7 @@ $$
 is the general solution of $Ly=0$ on $(a,b)$.
 
 
-The next theorem generalizes Theorem~\ref{thmtype:5.1.4}.
-%The proof is sketched in (Exercises~\ref{exer:9.1.17}--\ref{exer:9.1.20}).
+The next theorem generalizes Theorem~\ref{thmtype:5.1.4}.  The proof is sketched in (Exercises~\ref{exer:9.1.17}--\ref{exer:9.1.20}).
 
 \begin{theorem}\label{thmtype:9.1.3}
  Suppose the   homogeneous linear $n$th order equation
@@ -297,8 +291,7 @@ The next theorem generalizes Theorem~\ref{thmtype:5.1.4}.
 P_0(x)y^{(n)}+P_1(x)y^{n-1}+\cdots+P_n(x)y=0
 \end{equation}
 is normal on $(a,b),$ let $y_1, y_2, \dots, y_n$ be solutions of
-\eqref{eq:9.1.14} on $(a,b)$, and let $x_0$ be in $(a,b)$. Then the
-Wronskian of $\{y_1,y_2,\dots,y_n\}$ is given by
+$\eqref{eq:9.1.14}$ on $(a,b)$, and let $x_0$ be in $(a,b)$. Then the Wronskian of $\{y_1,y_2,\dots,y_n\}$ is given by
 \begin{equation}  \label{eq:9.1.15}
 W(x)=W(x_0)\exp\left\{-\int^x_{x_0}\frac{P_1(t)}{P_0(t)}\,
 dt\right\},\quad a<x<b.
@@ -308,8 +301,8 @@ on  $(a,b)$.
 \end{theorem}
 
 
-Formula \eqref{eq:9.1.15} is
- \href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Abel.html}{Abel's formula}.
+Formula $\eqref{eq:9.1.15}$ is
+\href{https://en.wikipedia.org/wiki/Abel%27s_identity}{Abel's formula}.
 
 The next theorem is analogous to
 Theorem~\ref{thmtype:5.1.6}.
@@ -397,13 +390,12 @@ $$
 W(x)=e^{-x}\begin{vmatrix}1&1&1&1\\1&-1&2&-3\\1&1&4&9\\
 1&-1&8&-27\end{vmatrix}=240e^{-x}
 $$
-from \eqref{eq:9.1.12}.
+from $\eqref{eq:9.1.12}$.
 \end{explanation}
 \end{example}
 
 \begin{remark}
-Under the assumptions of Theorem~\ref{thmtype:9.1.4}, it isn't
-necessary to obtain a formula for $W(x)$. Just evaluate $W(x)$
+Under the assumptions of Theorem~\ref{thmtype:9.1.4}, it is not necessary to obtain a formula for $W(x)$. Just evaluate $W(x)$
 at a convenient point in $(a,b)$, as we did in
 Examples~\ref{example:9.1.1} and \ref{example:9.1.2}.
 \end{remark}
@@ -414,17 +406,17 @@ Examples~\ref{example:9.1.1} and \ref{example:9.1.2}.
 Suppose $c$ is in $(a,b)$ and $\alpha_{1}, \alpha_{2}, \dots$,
 are real numbers, not all zero.
 Under the assumptions of Theorem~\ref{thmtype:10.3.3}, suppose
-$y_{1}$ and $y_{2}$ are  solutions  of \eqref{eq:5.1.35}   such that
+$y_{1}$ and $y_{2}$ are  solutions  of $\eqref{eq:5.1.35}$ such that
 \begin{equation} \label{eq:9.1.16}
 \alpha y_{i}(c)+ y_{i}'(c)+\cdots +y_{i}^{(n-1)}(c)=0,\quad 1\leq i\leq n.
 \end{equation}
-Then $\{y_{1},y_{2},\dots y_{n}\}$ isn't  linearly independent on $(a,b).$
+Then $\{y_{1},y_{2},\dots y_{n}\}$ is not linearly independent on $(a,b).$
 \end{theorem}
 
 
 \begin{proof} Since $\alpha_{1}, \alpha_{2}, \dots, \alpha_{n}$
 are not all zero,
-\eqref{eq:9.1.14} implies that
+$\eqref{eq:9.1.14}$ implies that
 $$
 \begin{vmatrix}
 y_{1}(c)&y_{1}'(c)&\cdots&y_{1}^{(n-1)}(c)\\
