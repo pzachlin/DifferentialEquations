@@ -36,9 +36,9 @@ G(s)=\frac{1}{as^2+bs+c}.
 $$
 
 Until now haven't been interested in the factorization indicated
-in \eqref{eq:8.6.1}, since we dealt only with differential equations
+in $\eqref{eq:8.6.1}$, since we dealt only with differential equations
 with specific forcing functions. Hence, we could simply do the
-indicated multiplication in \eqref{eq:8.6.1} and use the table of Laplace
+indicated multiplication in $\eqref{eq:8.6.1}$ and use the table of Laplace
 transforms to find $y={\cal L}^{-1}(Y)$. However, this isn't  possible
 if we want a \textit{formula} for $y$ in terms of $f$, which may be
 unspecified.
@@ -49,7 +49,7 @@ value problem
 y'-ay=f(t),\quad  y(0)=0,
 \end{equation}
 which we first solve without using the Laplace transform.
-The solution of  the differential equation in \eqref{eq:8.6.2}
+The solution of  the differential equation in $\eqref{eq:8.6.2}$
 is of the form $y=ue^{at}$ where
 $$
 u'=e^{-at}f(t).
@@ -65,9 +65,9 @@ y(t)=e^{at}\int_0^t e^{-a\tau}f(\tau)\,d\tau=\int_0^t
 e^{a(t-\tau)}f(\tau)\,d\tau.
 \end{equation}
 
-Now we'll use the Laplace transform to solve \eqref{eq:8.6.2}
-and compare the result to \eqref{eq:8.6.3}. Taking Laplace transforms in
-\eqref{eq:8.6.2} yields
+Now we'll use the Laplace transform to solve $\eqref{eq:8.6.2}$
+and compare the result to $\eqref{eq:8.6.3}$. Taking Laplace transforms in
+$\eqref{eq:8.6.2}$ yields
 $$
 (s-a)Y(s)=F(s),
 $$
@@ -83,7 +83,7 @@ If we now let $g(t)=e^{at}$, so that
 $$
 G(s)=\frac{1}{s-a},
 $$
-then \eqref{eq:8.6.3} and \eqref{eq:8.6.4} can be written as
+then $\eqref{eq:8.6.3}$ and $\eqref{eq:8.6.4}$ can be written as
 $$
 y(t)=\int_0^tf(\tau)g(t-\tau)\,d\tau
 $$
@@ -107,14 +107,14 @@ $$
 $$
 \end{definition}
 
-It can be shown %(Exercise~\ref{exer:8.6.6}) 
+It can be shown (Exercise~\ref{exer:8.6.6}) 
 that $f\ast g=g\ast f$;   that
 is,
 $$
 \int_0^tf(t-\tau)g(\tau)\,d\tau=\int_0^tf(\tau)g(t-\tau)\,d\tau.
 $$
 
-Eqn.~\eqref{eq:8.6.5} shows that ${\cal L}^{-1}(FG)=f\ast g$ in the special
+Equation~$\eqref{eq:8.6.5}$ shows that ${\cal L}^{-1}(FG)=f\ast g$ in the special
 case where $g(t)=e^{at}$. This next theorem states that this is
 true in general.
 
@@ -166,7 +166,7 @@ However, the substitution $x=t-\tau$ shows that
 e^{-s(x+\tau)}g(x)\,dx\\
 &=&e^{-s\tau}\int_0^\infty e^{-sx}g(x)\,dx=e^{-s\tau}G(s).
 \end{eqnarray*}
-Substituting this into  \eqref{eq:8.6.6} and noting that $G(s)$ is
+Substituting this into  $\eqref{eq:8.6.6}$ and noting that $G(s)$ is
 independent of $\tau$ yields
 \begin{eqnarray*}
 {\cal L}(f\ast g)&=&\int_0^\infty e^{-s\tau} f(\tau)G(s)\,d\tau\\
@@ -226,7 +226,7 @@ The next three examples illustrate this.
 y''-2y'+y=f(t),\quad  y(0)=k_0,\quad y'(0)=k_1.
 \end{equation}
 \begin{explanation}
-Taking Laplace transforms in \eqref{eq:8.6.7} yields
+Taking Laplace transforms in $\eqref{eq:8.6.7}$ yields
 $$
 (s^2-2s+1)Y(s)=F(s)+(k_1+k_0s)-2k_0.
 $$
@@ -251,7 +251,7 @@ $$
 \left(\frac{1}{(s-1)^2}F(s)\right)=
 \int_0^t\tau e^\tau f(t-\tau)\,d\tau.
 $$
-Therefore the solution of  \eqref{eq:8.6.7} is
+Therefore the solution of  $\eqref{eq:8.6.7}$ is
 $$
 y(t)=e^t\left(k_0+(k_1-k_0)t\right)+\int_0^t\tau e^\tau f(t-\tau)\,
 d\tau.
@@ -265,7 +265,7 @@ $$
 y''+4y=f(t),\quad y(0)=k_0,\quad y'(0)=k_1.
 \end{equation}
 \begin{explanation}
-Taking Laplace transforms in \eqref{eq:8.6.8} yields
+Taking Laplace transforms in $\eqref{eq:8.6.8}$ yields
 $$
 (s^2+4)Y(s) =F(s)+k_1+k_0s.
 $$
@@ -288,7 +288,7 @@ $$
  \frac{1}{2}\int_0^t  f(t-\tau)\sin 2\tau\,
 d\tau.
 $$
-Therefore the solution of  \eqref{eq:8.6.8} is
+Therefore the solution of  $\eqref{eq:8.6.8}$ is
 $$
 y(t)=k_0\cos 2t+\frac{k_1}{2}\sin 2t+\frac{1}{2}\int_0^tf(t-\tau)\sin
 2\tau\,d\tau.
@@ -302,7 +302,7 @@ $$
 y''+2y'+2y=f(t),\quad y(0)=k_0,\quad y'(0)=k_1.
 \end{equation}
 \begin{explanation}
-Taking Laplace transforms in \eqref{eq:8.6.9} yields
+Taking Laplace transforms in $\eqref{eq:8.6.9}$ yields
 $$
 (s^2+2s+2)Y(s)=F(s)+k_1+k_0s+2k_0.
 $$
@@ -327,7 +327,7 @@ $$
 \int_0^t  f(t-\tau)e^{-\tau}\sin\tau
 \,d\tau.
 $$
-Therefore the solution of  \eqref{eq:8.6.9} is
+Therefore the solution of  $\eqref{eq:8.6.9}$ is
 \begin{equation}\label{eq:8.6.10}
 y(t)=e^{-t}\left((k_1+k_0)\sin t+k_0\cos
 t\right)+\int_0^tf(t-\tau)e^{-\tau}\sin\tau\,d\tau.
@@ -405,11 +405,11 @@ An equation of the form
 y(t)=f(t)+\int_0^t k(t-\tau) y(\tau)\,d\tau
 \end{equation}
 is a
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Volterra.html}{Volterra integral equation}.
+\href{https://en.wikipedia.org/wiki/Volterra_integral_equation}{Volterra integral equation}.
 Here $f$ and $k$ are given functions and $y$ is unknown. Since the
 integral on the right is a convolution integral, the convolution
-theorem provides a convenient formula for solving \eqref{eq:8.6.11}.
-Taking Laplace transforms in \eqref{eq:8.6.11} yields
+theorem provides a convenient formula for solving $\eqref{eq:8.6.11}$.
+Taking Laplace transforms in $\eqref{eq:8.6.11}$ yields
 $$
 Y(s)=F(s)+K(s) Y(s),
 $$
@@ -417,7 +417,7 @@ and solving this for $Y(s)$ yields
 $$
 Y(s)=\frac{F(s)}{1-K(s)}.
 $$
-We  then obtain the solution of  \eqref{eq:8.6.11} as
+We then obtain the solution of  $\eqref{eq:8.6.11}$ as
  $y={\cal L}^{-1}(Y)$.
 
 \begin{example}\label{example:8.6.7}
@@ -426,7 +426,7 @@ We  then obtain the solution of  \eqref{eq:8.6.11} as
 y(t)=1+2\int_0^t e^{-2(t-\tau)} y(\tau)\,d\tau.
 \end{equation}
 
-\begin{explanation} Taking Laplace transforms in \eqref{eq:8.6.12} yields
+\begin{explanation} Taking Laplace transforms in $\eqref{eq:8.6.12}$ yields
 $$
 Y(s)=\frac{1}{s}+\frac{2}{s+2} Y(s),
 $$
@@ -450,8 +450,7 @@ ay''+by'+cy=f(t),\quad y(0)=k_0,\quad y'(0)=k_1,
 $$
 where we assume for simplicity that $f$ is continuous on $[0,\infty)$
 and that ${\cal L}(f)$ exists. 
-%In Exercises~\ref{exer:8.6.11}--\ref{exer:8.6.14} it's 
-It can also be shown that the formula is valid under much weaker conditions on $f$.
+In Exercises~\ref{exer:8.6.11}--\ref{exer:8.6.14} it is shown that the formula is valid under much weaker conditions on $f$.
 
 \begin{theorem}\label{thmtype:8.6.3}
 Suppose $f$ is continuous on $[0,\infty)$ and has a Laplace
@@ -478,7 +477,7 @@ w(t)=\frac{1}{a}y_2(t).
 \end{theorem}
 
 \begin{proof}
-  Taking Laplace transforms in   \eqref{eq:8.6.13} yields
+Taking Laplace transforms in   $\eqref{eq:8.6.13}$ yields
  $$
 p(s)Y(s)=F(s)+a(k_1+k_0s)+bk_0,
 $$
@@ -499,7 +498,7 @@ and
 V(s)=\frac{a(k_1+k_0s)+bk_0}{p(s)}.
 \end{equation}
 
-Taking Laplace transforms in  \eqref{eq:8.6.15} and  \eqref{eq:8.6.16} shows that
+Taking Laplace transforms in  $\eqref{eq:8.6.15}$ and  $\eqref{eq:8.6.16}$ shows that
 $$
 p(s)Y_1(s)=as+b\quad\mbox{and}\quad p(s)Y_2(s)=a.
 $$
@@ -511,20 +510,18 @@ and
 \begin{equation}\label{eq:8.6.21}
  Y_2(s)=\frac{a}{p(s)}.
 \end{equation}
-Hence,  \eqref{eq:8.6.20} can be rewritten as
+Hence, $\eqref{eq:8.6.20}$ can be rewritten as
 $$
 V(s)=k_0Y_1(s)+k_1Y_2(s).
 $$
-Substituting this into \eqref{eq:8.6.18} yields
+Substituting this into $\eqref{eq:8.6.18}$ yields
 $$
 Y(s)=k_0Y_1(s)+k_1Y_2(s)+\frac{1}{a}Y_2(s)F(s).
 $$
-Taking inverse transforms and invoking the convolution theorem yields
- \eqref{eq:8.6.14}. Finally,   \eqref{eq:8.6.19} and  \eqref{eq:8.6.21}
-imply  \eqref{eq:8.6.17}.
+Taking inverse transforms and invoking the convolution theorem yields $\eqref{eq:8.6.14}$. Finally, $\eqref{eq:8.6.19}$ and $\eqref{eq:8.6.21}$ imply  $\eqref{eq:8.6.17}$.
 \end{proof}
 
-It is useful to note from \eqref{eq:8.6.14} that $y$ is of the form
+It is useful to note from $\eqref{eq:8.6.14}$ that $y$ is of the form
 $$
 y=v+h,
 $$
@@ -549,13 +546,13 @@ for any choice of initial conditions. Moreover, the value of $h(t)$ is
 essentially independent of the values of $f(t-\tau)$ for large $\tau$,
 since $\lim_{\tau\rightarrow\infty}w(\tau)=0$. In this case we say that $v$
 and $h$ are \textit{transient} and \textit{steady state components},
-respectively, of the solution $y$ of \eqref{eq:8.6.13}. These definitions
+respectively, of the solution $y$ of $\eqref{eq:8.6.13}$. These definitions
 apply to the initial value problem of Example~\ref{example:8.6.4}, where
 the zeros of
 $$
 p(s)=s^2+2s+2=(s+1)^2+1
 $$
-are $-1\pm i$. From  \eqref{eq:8.6.10}, we see that the solution of the
+are $-1\pm i$. From  $\eqref{eq:8.6.10}$, we see that the solution of the
 general initial value problem  of Example~\ref{example:8.6.4} is $y=v+h$,
 where
 $$
@@ -571,7 +568,7 @@ value problems  considered in Examples~\ref{example:8.6.2} and
 in these two examples don't have negative real parts.
 
 In physical applications where the input $f$ and the output $y$ of a
-device are related by \eqref{eq:8.6.13}, the zeros of the characteristic
+device are related by $\eqref{eq:8.6.13}$, the zeros of the characteristic
 polynomial usually do have negative real parts. Then $W={\cal L}(w)$
 is called the \textit{transfer function} of the device. Since
 $$
@@ -593,10 +590,9 @@ since it assigns weights to past values of the input $f$. It is also
 called the \textit{impulse response} of the device, for reasons
 discussed in the next section.
 
-% Formula \eqref{eq:8.6.14} is given in more detail in
-% Exercises~\ref{exer:8.6.8}--\ref{exer:8.6.10} for the three possible cases
-% where the zeros of $p(s)$ are real and distinct, real and repeated, or
-% complex conjugates, respectively.
+Formula $\eqref{eq:8.6.14}$ is given in more detail in
+Exercises~\ref{exer:8.6.8}--\ref{exer:8.6.10} for the three possible cases where the zeros of $p(s)$ are real and distinct, real and repeated, or
+complex conjugates, respectively.
 
 \section*{Text Source}
 Trench, William F., "Elementary Differential Equations" (2013). Faculty Authored and Edited Books \& CDs. 8. (CC-BY-NC-SA)
