@@ -36,7 +36,7 @@ v\frac{dv}{dy}=F(y,v).
 \end{equation}
 The integral curves of $\eqref{eq:4.4.4}$ can be plotted in the $(y,v)$
 plane, which is called the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Poincare.html}{Poincar\'e phase plane} of $\eqref{eq:4.4.1}$. If $y$ is a solution of
+\href{https://en.wikipedia.org/wiki/Phase_plane}{Poincar\'e phase plane} of $\eqref{eq:4.4.1}$. If $y$ is a solution of
 $\eqref{eq:4.4.1}$
 then $y=y(t), v=y'(t)$ is a parametric equation for an integral curve
 of $\eqref{eq:4.4.4}$. We'll call these integral curves \dfn{trajectories} of $\eqref{eq:4.4.1}$, and we'll call
@@ -229,16 +229,16 @@ spring, as shown below.
  
 Assume that if the length of the spring is changed by an amount
 $\Delta L$ (positive or negative), then the spring exerts an opposing
-force with magnitude $k|\Delta L|$, where k is a positive constant. In \href{https://ximera.osu.edu/ode/main/springProblemsI/springProblemsI}{Trench 6.1} it will be shown that if the mass of the spring
+force with magnitude $k|\Delta L|$, where k is a positive constant. In \href{https://xerxes.ximera.org/differentialequations/main/springProblemsI/springProblemsI}{Trench 6.1} it will be shown that if the mass of the spring
 is negligible compared to $m$ and no other forces act on the object then
 Newton's second law of motion implies that
 \begin{equation}\label{eq:4.4.9}
 my''=-ky,
 \end{equation}
 which can be written in the form $\eqref{eq:4.4.7}$ with $p(y)=ky/m$. This
-equation can be solved easily by a method that we'll study in
- \href{https://ximera.osu.edu/ode/main/constantCoefficientHomogeneousEquations/constantCoefficientHomogeneousEquations}{Trench 5.1}, but that method isn't available here. Instead,
-we'll consider the phase plane equivalent of $\eqref{eq:4.4.9}$.
+equation can be solved easily by a method that we will study in
+\href{https://xerxes.ximera.org/differentialequations/main/homogeneousLinearEquations/homogeneousLinearEquations}{Trench 5.1}, but that method is not available here. Instead,
+we will consider the phase plane equivalent of $\eqref{eq:4.4.9}$.
  
 From $\eqref{eq:4.4.3}$, we can rewrite $\eqref{eq:4.4.9}$ as the separable
 equation
@@ -738,14 +738,14 @@ Trench 3.1--3.3 are not suitable for this
 task, since  $p(y)/v$ in $\eqref{eq:4.4.25}$ is undefined on the $y$ axis
 of the Poincar\'e phase plane. Therefore we're forced to apply
 numerical methods briefly discussed in
-\href{https://ximera.osu.edu/ode/main/introToSystems/introToSystems}{Trench 10.1} to the
+\href{https://xerxes.ximera.org/differentialequations/main/introToSystems/introToSystems}{Trench 10.1} to the
 system
 \begin{eqnarray*}
 y'&=&v\\
 v'&=&-q(y,v)v-p(y),
 \end{eqnarray*}
 which is equivalent to $\eqref{eq:4.4.24}$ 
-in the sense defined in \href{https://ximera.osu.edu/ode/main/introToSystems/introToSystems}{Trench 10.1}. 
+in the sense defined in \href{https://xerxes.ximera.org/differentialequations/main/introToSystems/introToSystems}{Trench 10.1}. 
 Fortunately, most differential equation software
 packages  enable you to do this painlessly.
  
@@ -770,16 +770,15 @@ the spring - mass system under the assumption that the only forces
 acting on the object were gravity and the spring's resistance to
 changes in its length. Now we'll assume that some mechanism (for
 example, friction in the spring or atmospheric resistance) opposes the
-motion of the object with a force proportional to its velocity. In \href{https://ximera.osu.edu/ode/main/springProblemsI/springProblemsI}{Trench 6.1} it will be shown that in this case Newton's
+motion of the object with a force proportional to its velocity. In \href{https://xerxes.ximera.org/differentialequations/main/springProblemsI/springProblemsI}{Trench 6.1} it will be shown that in this case Newton's
 second law of motion implies that
 \begin{equation}\label{eq:4.4.27}
 my''+cy'+ky=0,
 \end{equation}
 where $c>0$ is the \dfn{damping constant}. Again, this
 equation can
-be solved easily by a method that we'll study in \href{https://ximera.osu.edu/ode/main/constantCoefficientHomogeneousEquations/constantCoefficientHomogeneousEquations}{Trench 5.2},
-but that method isn't available here. Instead, we'll consider its
-phase plane equivalent, which can be written in the form $\eqref{eq:4.4.25}$
+be solved easily by a method that we will study in \href{https://xerxes.ximera.org/differentialequations/main/constantCoefficientHomogeneousEquations/constantCoefficientHomogeneousEquations}{Trench 5.2},
+but that method is not available here. Instead, we will consider its phase plane equivalent, which can be written in the form $\eqref{eq:4.4.25}$
 as
 \begin{equation}\label{eq:4.4.28}
 \frac{dv}{dy}=-\frac{c}{m}-\frac{ky}{mv}.
