@@ -22,9 +22,8 @@
 We consider the motion of an object of mass $m$, suspended from a
 spring of negligible mass. We say that the spring--mass system is
 in \textit{equilibrium} when the object is at rest and the forces
-acting on it sum to zero. The position of the object in this case is
-the \textit{equilibrium position}. We define $y$ to be the displacement
-of the object from its equilibrium position %(Figure~\ref{figure:6.1.1}),
+acting on it sum to zero. The position of the object in this case is the \textit{equilibrium position}. We define $y$ to be the displacement
+of the object from its equilibrium position (Figure~\ref{figure:6.1.1}),
 measured positive upward.
 
 \begin{center}
@@ -60,10 +59,8 @@ object:
 \item The force $-mg$, due to gravity.
  
 \item A force $F_s$ exerted by the spring resisting change in its
-length. The \textit{natural length} of the spring is its length with
-no mass attached. We assume that the spring obeys
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Hooke.html}
-{Hooke's law}:
+length. The \textit{natural length} of the spring is its length with no mass attached. We assume that the spring obeys
+\href{https://en.wikipedia.org/wiki/Hooke%27s_law}{Hooke's law}:
 If the length of the spring is changed by an amount $\Delta L$
 from its natural length,  then the spring exerts a force $F_s=k\Delta
 L$, where $k$ is a positive number called the \textit{spring constant}.
@@ -163,7 +160,7 @@ change in the length of the spring is $\Delta L=\Delta l-y$,
  $$
 F_s=k\Delta L=k\Delta l-ky.
 $$
-Substituting this into \eqref{eq:6.1.1} yields
+Substituting this into $\eqref{eq:6.1.1}$ yields
 $$
 my''=-mg-cy'+k\Delta L-ky+F.
 $$
@@ -198,7 +195,7 @@ displaced 18 inches above equilibrium and given a downward velocity of
  
 \begin{explanation}
 \ref{item:6.1.1a}
-Setting $c=0$ and $F=0$ in \eqref{eq:6.1.2} yields the equation of motion
+Setting $c=0$ and $F=0$ in $\eqref{eq:6.1.2}$ yields the equation of motion
 $$
 my''+ky=0,
 $$
@@ -215,16 +212,16 @@ of $g$; that is, $\Delta l =1/2$ ft. Therefore
 $$
 \frac{k}{m}=\frac{32}{1/2}=64
 $$
-and \eqref{eq:6.1.3} becomes
+and $\eqref{eq:6.1.3}$ becomes
 \begin{equation}\label{eq:6.1.4}
 y''+64y=0.
 \end{equation}
- The characteristic equation of \eqref{eq:6.1.4} is
+The characteristic equation of $\eqref{eq:6.1.4}$ is
 $$
 r^2+64=0,
 $$
-which has the zeros $r=\pm 8i$. Therefore the general solution of
-\eqref{eq:6.1.4} is
+which has zeros $r=\pm 8i$. Therefore the general solution of
+$\eqref{eq:6.1.4}$ is
 \begin{equation}\label{eq:6.1.5}
 y=c_1\cos8t+c_2\sin8t.
 \end{equation}
@@ -235,12 +232,11 @@ expressed in feet. The initial downward velocity is negative;   thus,
 $$
 y(0)=\frac{3}{2}\quad\mbox{and}\quad y'(0)=-3.
 $$
- Differentiating \eqref{eq:6.1.5} yields
+Differentiating $\eqref{eq:6.1.5}$ yields
 \begin{equation}\label{eq:6.1.6}
 y'=-8c_1\sin8t+8c_2\cos8t.
 \end{equation}
-Setting $t=0$ in \eqref{eq:6.1.5} and \eqref{eq:6.1.6} and imposing the
-initial conditions shows that $c_1=3/2$ and $c_2=-3/8$. Therefore
+Setting $t=0$ in $\eqref{eq:6.1.5}$ and $\eqref{eq:6.1.6}$ and imposing the initial conditions shows that $c_1=3/2$ and $c_2=-3/8$. Therefore,
 $$
 y=\frac{3}{2}\cos8t-\frac{3}{8}\sin8t,
 $$
@@ -295,8 +291,7 @@ and
 \begin{equation}\label{eq:6.1.9}
 c_1=R\cos\phi\quad\mbox{and}\quad c_2=R\sin\phi.
 \end{equation}
-Substituting from \eqref{eq:6.1.9} into \eqref{eq:6.1.7} and applying the
-identity
+Substituting from $\eqref{eq:6.1.9}$ into $\eqref{eq:6.1.7}$ and applying the identity
 $$
 \cos\omega_0t\cos\phi+\sin\omega_0t\sin\phi=\cos(\omega_0t-\phi)
 $$
@@ -305,9 +300,8 @@ yields
 y=R\cos(\omega_0t-\phi).
 \end{equation}
  
-From \eqref{eq:6.1.8} and \eqref{eq:6.1.9} we see that the $R$ and $\phi$
-can be interpreted as polar coordinates of the point with rectangular
-coordinates $(c_1,c_2)$.
+From $\eqref{eq:6.1.8}$ and $\eqref{eq:6.1.9}$, we see that $R$ and $\phi$
+can be interpreted as polar coordinates of the point with rectangular coordinates $(c_1,c_2)$.
 
 \begin{center}
 \begin{tikzpicture}[scale=2]
@@ -328,8 +322,8 @@ coordinates $(c_1,c_2)$.
 %\end{image}
  
 Given $c_1$ and
-$c_2$, we can compute $R$ from \eqref{eq:6.1.8}. From \eqref{eq:6.1.8} and
-\eqref{eq:6.1.9}, we see that $\phi$ is related to $c_1$ and $c_2$ by
+$c_2$, we can compute $R$ from $\eqref{eq:6.1.8}$. From $\eqref{eq:6.1.8}$ and
+$\eqref{eq:6.1.9}$, we see that $\phi$ is related to $c_1$ and $c_2$ by
 $$
 \cos\phi=\frac{c_1}{\sqrt{c_1^2+c_2^2}}\quad\mbox{and}\quad\sin\phi=
 \frac{c_2}{\sqrt{c_1^2+c_2^2}}.
@@ -339,9 +333,8 @@ There are infinitely many angles $\phi$, differing
 will always choose $\phi$ so that $-\pi\leq\phi<\pi$.
  
  
-The motion described by \eqref{eq:6.1.7} or \eqref{eq:6.1.10}
-is  \textit{simple harmonic motion}. We see from either of these
-equations that the motion is periodic, with period
+The motion described by $\eqref{eq:6.1.7}$ or $\eqref{eq:6.1.10}$
+is \textit{simple harmonic motion}. We see from either of these equations that the motion is periodic, with period
 $$
 T=2\pi/\omega_0.
 $$
@@ -350,9 +343,7 @@ oscillation (for example, to move from its highest position to its
 lowest position and back to its highest position). Since the highest
 and lowest positions of the object are $y=R$ and $y=-R$, we say that
 $R$ is the \textit{amplitude} of the oscillation. The angle $\phi$ in
-\eqref{eq:6.1.10} is the \textit{phase angle}. It's measured
-in
-radians. Equation~\eqref{eq:6.1.10} is the \textit{amplitude--phase
+$\eqref{eq:6.1.10}$ is the \textit{phase angle}. It is measured in radians. Equation~$\eqref{eq:6.1.10}$ is the \textit{amplitude--phase
 form} of the displacement. If $t$ is in seconds then $\omega_0$ is
 in radians per second (rad/s);   it's  the \textit{frequency} of
 the motion. It is also called the \textit{natural frequency} of
@@ -382,11 +373,11 @@ and
 \begin{equation}\label{eq:6.1.12}
 \sin\phi=\frac{-3/8}{(3/8)\sqrt{17}}=-\frac{1}{\sqrt{17}}.
 \end{equation}
- Using a calculator, we see from \eqref{eq:6.1.11} that
+Using a calculator, we see from $\eqref{eq:6.1.11}$ that
 $$
 \phi\approx\pm.245\mbox{ rad}.
 $$
-Since $\sin\phi<0$ (see \eqref{eq:6.1.12}), the minus sign applies here;
+Since $\sin\phi<0$ (see $\eqref{eq:6.1.12}$), the minus sign applies here;
 that is,
 $$
 \phi\approx-.245\mbox{ rad}.
@@ -458,23 +449,20 @@ $$
 F(t)=F_0\cos\omega t
 $$
 where $F_0$ is a constant. In this case the equation of motion
-\eqref{eq:6.1.2} is
+$\eqref{eq:6.1.2}$ is
 $$
 my''+ky=F_0\cos\omega t,
 $$
-which we rewrite  as
+which we rewrite as
 \begin{equation}\label{eq:6.1.13}
 y''+\omega_0^2y=\frac{F_0}{m}\cos\omega t
 \end{equation}
 with $\omega_0=\sqrt{k/m}$.
 We'll see from the next two examples that the solutions of
-\eqref{eq:6.1.13}
+$\eqref{eq:6.1.13}$
 with $\omega\ne\omega_0$ behave very differently from the solutions with
 $\omega=\omega_0$.
- 
- 
- 
- 
+
 \begin{example}\label{example:6.1.4}
  Solve the initial value problem
 \begin{equation}\label{eq:6.1.14}
@@ -482,16 +470,14 @@ y''+\omega_0^2y=\frac{F_0}{m}\cos\omega t, \quad  y(0)=0,\quad y'(0)=0,
 \end{equation}
  given that $\omega\neq\omega_0$.
  
- 
- 
 \begin{explanation}
-We first obtain a particular solution of \eqref{eq:6.1.13} by the method
+We first obtain a particular solution of $\eqref{eq:6.1.13}$ by the method
 of undetermined coefficients. Since $\omega\ne\omega _0$,
  $\cos\omega t$ isn't  a solution of the complementary equation
 $$
 y''+\omega_0^2y=0.
 $$
-Therefore \eqref{eq:6.1.13} has a particular solution of the form
+Therefore $\eqref{eq:6.1.13}$ has a particular solution of the form
 $$
 y_p=A\cos\omega t+B\sin\omega t.
 $$
@@ -515,7 +501,7 @@ so
 $$
 y_p=\frac{F_0}{m(\omega_0^2-\omega^2)}\cos\omega t.
 $$
-The general solution of \eqref{eq:6.1.13}  is
+The general solution of $\eqref{eq:6.1.13}$  is
 \begin{equation}\label{eq:6.1.15}
 y=\frac{F_0}{m(\omega_0^2-\omega^2)}\cos\omega t
 +c_1\cos\omega_0 t+c_2\sin\omega_0t,
@@ -525,13 +511,13 @@ $$
 y'=\frac{-\omega F_0}{m(\omega_0^2-\omega^2)}\sin\omega t
 +\omega_0(-c_1\sin\omega_0 t+c_2\cos\omega_0t).
 $$
-The initial conditions $y(0)=0$ and $y'(0)=0$ in \eqref{eq:6.1.14} imply
+The initial conditions $y(0)=0$ and $y'(0)=0$ in $\eqref{eq:6.1.14}$ imply
 that
 $$
 c_1=-\frac{F_0}{m(\omega_0^2-\omega^2)}\quad\mbox{and}\quad
 c_2=0.
 $$
-Substituting these into \eqref{eq:6.1.15} yields
+Substituting these into $\eqref{eq:6.1.15}$ yields
 \begin{equation}\label{eq:6.1.16}
 y=\frac{F_0}{m(\omega_0^2-\omega^2)}(\cos\omega t-\cos\omega
 _0t).
@@ -556,13 +542,13 @@ Subtracting the second identity from the first yields
 \alpha=\frac{(\omega_0+\omega)t}{2}\quad\mbox{and}\quad\beta=\frac{(\omega_0-\omega
 )t}{2}.
 \end{equation}
- Substituting \eqref{eq:6.1.18} and \eqref{eq:6.1.19} into \eqref{eq:6.1.17}
+ Substituting $\eqref{eq:6.1.18}$ and $\eqref{eq:6.1.19}$ into $\eqref{eq:6.1.17}$
 yields
  $$
 \cos\omega t-\cos\omega_0t=
 2\sin\frac{(\omega_0-\omega)t}{2}\sin\frac{(\omega_0+\omega)t}{2},
 $$
-and substituting this into \eqref{eq:6.1.16} yields
+and substituting this into $\eqref{eq:6.1.16}$ yields
 \begin{equation}\label{eq:6.1.20}
 y=R(t)\sin\frac{(\omega_0+\omega)t}{2},
 \end{equation}
@@ -572,7 +558,7 @@ R(t)=\frac{2F_0}{m(\omega_0^2-\omega^2)}
 \sin\frac{(\omega_0-\omega)t}{2}.
 \end{equation}
  
-From \eqref{eq:6.1.20} we can regard $y$ as a sinusoidal variation with
+From $\eqref{eq:6.1.20}$ we can regard $y$ as a sinusoidal variation with
 frequency $(\omega_0+\omega)/2$ and variable amplitude
 $|R(t)|$. In the figure below, the dashed curve above the $t$ axis
 is $y=|R(t)|$, the dashed curve below the $t$ axis is $y=-|R(t)|$, and
@@ -592,7 +578,7 @@ $R(t)$ is called a \textit{beat}.
  
  
 You can see from
-\eqref{eq:6.1.20} and \eqref{eq:6.1.21} that
+$\eqref{eq:6.1.20}$ and $\eqref{eq:6.1.21}$ that
 $$
 |y(t)|\leq\frac{2|F_0|}{m|\omega_0^2-\omega^2|};
 $$
@@ -615,7 +601,7 @@ y''+\omega_0^2y=\frac{F_0}{m}\cos\omega_0t.
 \end{equation}
  
 \begin{explanation}
-We first obtain a particular solution $y_p$ of \eqref{eq:6.1.22}. Since
+We first obtain a particular solution $y_p$ of $\eqref{eq:6.1.22}$. Since
 $\cos\omega_0t$ is a solution of the complementary equation, the form
 for $y_p$ is
 \begin{equation}\label{eq:6.1.23}
@@ -631,8 +617,8 @@ and
 y''_p=2\omega_0(-A\sin\omega_0t
 +B\cos\omega_0t)-\omega_0^2t(A\cos\omega_0t+B\sin\omega_0t).
 \end{equation}
-From \eqref{eq:6.1.23} and \eqref{eq:6.1.24}, we see that $y_p$ satisfies
-\eqref{eq:6.1.22} if
+From $\eqref{eq:6.1.23}$ and $\eqref{eq:6.1.24}$, we see that $y_p$ satisfies
+$\eqref{eq:6.1.22}$ if
 $$
 -2A\omega_0\sin\omega_0t+2B\omega_0\cos\omega_0t=\frac{F_0}{m}
 \cos\omega_0t;
@@ -645,8 +631,8 @@ Therefore
 $$
 y_p=\frac{F_0t}{2m\omega_0}\sin\omega_0t
 $$
-is a particular solution of \eqref{eq:6.1.22}. The general solution of
- \eqref{eq:6.1.22} is
+is a particular solution of $\eqref{eq:6.1.22}$. The general solution of
+$\eqref{eq:6.1.22}$ is
 $$
 y=\frac{F_0t}{2m\omega_0}\sin\omega_0t+c_1\cos\omega_0t+c_2\sin\omega_0t.
 $$
