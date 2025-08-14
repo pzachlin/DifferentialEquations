@@ -394,14 +394,13 @@ Assuming that $m$, $c$, $k$, and $F_0$ are
 held constant, what value of $\omega$ produces the largest amplitude
 $R$ in \eqref{eq:6.2.12}, and what is this largest amplitude?
  
-To answer this question, we must solve \eqref{eq:6.2.11} and determine $R$ in
-terms of $F_0,\omega_0,\omega$, and $c$. We can obtain a particular
-solution of \eqref{eq:6.2.11} by the method of undetermined coefficients.
+To answer this question, we must solve $\eqref{eq:6.2.11}$ and determine $R$ in
+terms of $F_0,\omega_0,\omega$, and $c$. We can obtain a particular solution of $\eqref{eq:6.2.11}$ by the method of undetermined coefficients.
 Since $\cos\omega t$ does not satisfy the complementary equation
 $$
 my''+cy'+ky=0,
 $$
-we can obtain a particular solution of \eqref{eq:6.2.11} in the form
+we can obtain a particular solution of $\eqref{eq:6.2.11}$ in the form
 \begin{equation}\label{eq:6.2.13}
 y_p=A\cos\omega t+B\sin\omega t.
 \end{equation}
@@ -418,7 +417,7 @@ $$
 my''_p+cy'_p+ky_p=(-m\omega^2A+c\omega B+kA)\cos\omega t+
 (-m\omega^2 B-c\omega A+kB)\sin\omega t,
 $$
-so $y_p$ satisfies  \eqref{eq:6.2.11}  if
+so $y_p$ satisfies  $\eqref{eq:6.2.11}$ if
 $$
 \begin{array}{lll}
 (k-m\omega^2) A+\quad c\omega B &=&F_0\\
@@ -426,9 +425,8 @@ $$
 \end{array}
 $$
  
- 
- Solving  for $A$ and $B$
-and substituting the results into  \eqref{eq:6.2.13} yields
+Solving  for $A$ and $B$
+and substituting the results into  $\eqref{eq:6.2.13}$ yields
 $$
 y_p=\frac{F_0}{(k-m\omega^2)^2+c^2\omega^2}
 \left[(k-m\omega^2)\cos\omega t+c\omega\sin\omega t\right],
@@ -454,7 +452,7 @@ m(\omega_0^2-\omega^2),
  where $\omega_0=\sqrt{k/m}$ is the natural
 angular frequency of the undamped simple harmonic motion of an
 object with mass $m$ on a spring with constant $k$.
-Substituting  \eqref{eq:6.2.16} into  \eqref{eq:6.2.14} yields
+Substituting $\eqref{eq:6.2.16}$ into $\eqref{eq:6.2.14}$ yields
 \begin{equation}\label{eq:6.2.17}
 y_p=\frac{F_0}{\sqrt{m^2(\omega^2_0-\omega^2)^2+
 c^2\omega^2}}\cos(\omega t-\phi).
@@ -477,7 +475,7 @@ large $t$ is determined by $y_p$, which we call the \textit{steady state
 component} of $y$. Thus, for large $t$ the motion is like simple
 harmonic motion at the frequency of the external force.
  
-The amplitude of $y_p$ in \eqref{eq:6.2.17} is
+The amplitude of $y_p$ in $\eqref{eq:6.2.17}$ is
 \begin{equation}\label{eq:6.2.18}
 R=\frac{F_0}{\sqrt{m^2(\omega^2_0-\omega^2)^2+c^2\omega^2}},
 \end{equation}
@@ -489,7 +487,7 @@ This is the value of $\omega$ for which the function
 $$
 \rho (\omega)=m^2(\omega^2_0-\omega^2)^2+c^2\omega^2
 $$
-in the denominator of  \eqref{eq:6.2.18} attains its minimum value.  By
+in the denominator of  $\eqref{eq:6.2.18}$ attains its minimum value.  By
 rewriting this as
 \begin{equation}\label{eq:6.2.19}
 \rho (\omega)=m^2(\omega^4_0+\omega^4)+
@@ -501,15 +499,15 @@ $$
 c\geq\sqrt{2m^2\omega^2_0}=\sqrt{2mk}.
 $$
 (Recall that $\omega^2_0=k/m$). Therefore $\omega_{\max}=0$ if this
-inequality holds. From \eqref{eq:6.2.15}, you can see that $\phi=0$ if
-$\omega=0$. In this case, \eqref{eq:6.2.14} reduces to
+inequality holds. From $\eqref{eq:6.2.15}$, you can see that $\phi=0$ if
+$\omega=0$. In this case, $\eqref{eq:6.2.14}$ reduces to
 $$
 y_p=\frac{F_0}{\sqrt{m^2\omega^4_0}}=\frac{F_0}{k},
 $$
 which is consistent with Hooke's law: if the mass is subjected to a
 constant force $F_0$,  its displacement should approach a constant
 $y_p$ such that $ky_p=F_0$. Now suppose   $c<\sqrt{2mk}$. Then,
-from \eqref{eq:6.2.19},
+from $\eqref{eq:6.2.19}$,
 $$
 \rho'(\omega)=2\omega(2m^2\omega^2+c^2-2m^2\omega^2_0),
 $$
@@ -522,7 +520,7 @@ $$
 (To see that $\rho(\omega_{\max})$ is the minimum value of
 $\rho(\omega)$, note that $\rho'(\omega)<0$ if $\omega
 <\omega_{\max}$ and $\rho'(\omega)>0$ if $\omega>\omega_{\max}$.)
-Substituting $\omega=\omega_{\max}$ in \eqref{eq:6.2.18} and simplifying
+Substituting $\omega=\omega_{\max}$ in $\eqref{eq:6.2.18}$ and simplifying
 shows that the maximum amplitude $R_{\max}$ is
 $$
 R_{\max}=\frac{2mF_0}{c\sqrt{4mk-c^2}}\quad \mbox{if}\quad c<
@@ -555,7 +553,7 @@ and it's attained when
 \end{enumerate}
 \end{theorem}
 Note that $R_{\max}$ and $\omega_{\max}$ are continuous functions
-of $c$, for $c\geq0$, since  \eqref{eq:6.2.20} and  \eqref{eq:6.2.21} reduce
+of $c$, for $c\geq0$, since  $\eqref{eq:6.2.20}$ and  $\eqref{eq:6.2.21}$ reduce
 to $R_{\max}=F_0/k$ and $\omega_{\max}=0$ if $c=\sqrt{2km}$.
  
  
