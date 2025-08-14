@@ -23,29 +23,27 @@ x^2A(x)y''+xB(x)y'+C(x)y=0,
 \end{equation}
 where $A$, $B$, $C$ are polynomials and $A(0)\neq 0$.
 
-We'll see that \eqref{eq:7.5.1} always has at least one solution of
+We will see that $\eqref{eq:7.5.1}$ always has at least one solution of
 the form
 $$
 y=x^r\sum_{n=0}^\infty a_nx^n
 $$
 where $a_0\ne0$ and $r$ is a suitably chosen number.
-The method  we
-will use to find solutions of this form and other forms that we'll
-encounter in the next two sections is called
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Frobenius.html}{the method of Frobenius},
-and we'll call them
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Frobenius.html}{Frobenius solutions}.
+The method we will use to find solutions of this form and other forms that we will encounter in the next two sections is called
+\href{https://en.wikipedia.org/wiki/Frobenius_method}{the method of Frobenius},
+and we will call them
+\dfn{Frobenius solutions}.
 
 It can be shown that the power series $\sum_{n=0}^\infty a_nx^n$ in a
-Frobenius solution of \eqref{eq:7.5.1} converges on some open interval
+Frobenius solution of $\eqref{eq:7.5.1}$ converges on some open interval
 $(-\rho,\rho)$, where $0<\rho\leq\infty$. However, since $x^r$ may be
 complex for negative $x$ or undefined if $x=0$, we'll consider
 solutions defined for positive values of $x$. Easy modifications of
 our results yield solutions defined for negative values of $x$.
-%(Exercise~\ref{exer:7.5.54}).
+(Exercise~\ref{exer:7.5.54}).
 
-We'll restrict our attention to the case where $A$, $B$, and $C$ are
-polynomials of degree not greater than two, so \eqref{eq:7.5.1} becomes
+We shall restrict our attention to the case where $A$, $B$, and $C$ are
+polynomials of degree not greater than two, so $\eqref{eq:7.5.1}$ becomes
 \begin{equation} \label{eq:7.5.2}
 x^2(\alpha_0+\alpha_1x+\alpha_2x^2)y''+x(\beta_0+\beta_1x+\beta_2x^2)y'
 +(\gamma_0+\gamma_1x+\gamma_2x^2)y=0,
@@ -61,15 +59,13 @@ x^2y''+xy'+(x^2-\nu^2)y&=&0 \quad\mbox{(Bessel's equation)},\\
 xy''+(1-x)y'+\lambda y&=&0,
 \quad\mbox{(Laguerre's equation)},
 \end{eqnarray*}
-where we would multiply the last equation through by $x$ to put it in
-the form \eqref{eq:7.5.2}. However, the method of Frobenius can be
+where we would multiply the last equation through by $x$ to put it in the form $\eqref{eq:7.5.2}$. However, the method of Frobenius can be
 extended to the case where $A$, $B$, and $C$ are functions that can be
 represented by power series in $x$ on some interval that contains zero,
 and $A_0(0)\neq 0$.
-%(Exercises~\ref{exer:7.5.57} and \ref{exer:7.5.58}).
+(Exercises~\ref{exer:7.5.57} and \ref{exer:7.5.58}).
 
-The next two theorems will enable us to develop systematic methods for
-finding Frobenius solutions of \eqref{eq:7.5.2}.
+The next two theorems will enable us to develop systematic methods for finding Frobenius solutions of $\eqref{eq:7.5.2}$.
 
 \begin{theorem}\label{thmtype:7.5.1}
 Let
@@ -105,7 +101,7 @@ b_n&=&p_0(n+r)a_n+p_1(n+r-1)a_{n-1}+p_2(n+r-2)a_{n-2},\quad n\geq2.
 \end{theorem}
 
 \begin{proof}
-We begin by showing that if $y$ is given by \eqref{eq:7.5.3} and
+We begin by showing that if $y$ is given by $\eqref{eq:7.5.3}$ and
 $\alpha$, $\beta$, and $\gamma$ are constants, then
 \begin{equation} \label{eq:7.5.6}
 \alpha x^2y''+\beta xy'+\gamma y=
@@ -123,7 +119,7 @@ and
 \begin{equation} \label{eq:7.5.8}
 y''=\sum_{n=0}^\infty (n+r)(n+r-1)a_nx^{n+r-2}.
 \end{equation}
-Multiplying \eqref{eq:7.5.7} by $x$ and \eqref{eq:7.5.8} by $x^2$ yields
+Multiplying $\eqref{eq:7.5.7}$ by $x$ and $\eqref{eq:7.5.8}$ by $x^2$ yields
 $$
 xy'=\sum_{n=0}^\infty (n+r)a_nx^{n+r}
 $$
@@ -138,15 +134,15 @@ Therefore
 x^{n+r}\\
 &=&\sum_{n=0}^\infty p(n+r)a_nx^{n+r},
 \end{eqnarray*}
-which proves  \eqref{eq:7.5.6}.
+which proves $\eqref{eq:7.5.6}$.
 
- Multiplying \eqref{eq:7.5.6} by $x$ yields
+Multiplying $\eqref{eq:7.5.6}$ by $x$ yields
 \begin{equation} \label{eq:7.5.9}
 x(\alpha x^2y''+\beta xy'+\gamma
 y)=\sum_{n=0}^\infty p(n+r) a_nx^{n+r+1}=
 \sum_{n=1}^\infty p(n+r-1)a_{n-1}x^{n+r}.
 \end{equation}
-Multiplying \eqref{eq:7.5.6} by $x^2$ yields
+Multiplying $\eqref{eq:7.5.6}$ by $x^2$ yields
 \begin{equation} \label{eq:7.5.10}
 x^2(\alpha x^2y''+\beta xy'+\gamma
 y)=\sum_{n=0}^\infty p(n+r)a_nx^{n+r+2}=
@@ -169,22 +165,22 @@ x\left(\alpha_1x^2y''+\beta_1xy'+\gamma_1y\right)
 x^2\left(\alpha_2x^2y''+\beta_2xy'+\gamma_2y\right).
 \end{array}
 \end{equation}
-From \eqref{eq:7.5.6} with $p=p_0$,
+From $\eqref{eq:7.5.6}$ with $p=p_0$,
 $$
 \alpha_0x^2y''+\beta_0xy'+\gamma_0y=\sum_{n=0}^\infty
 p_0(n+r)a_nx^{n+r}.
 $$
-From \eqref{eq:7.5.9} with $p=p_1$,
+From $\eqref{eq:7.5.9}$ with $p=p_1$,
 $$
 x\left(\alpha_1x^2y''+\beta_1xy'+\gamma_1y\right)=\sum_{n=1}^\infty
 p_1(n+r-1)a_{n-1}x^{n+r}.
 $$
-From \eqref{eq:7.5.10} with $p=p_2$,
+From $\eqref{eq:7.5.10}$ with $p=p_2$,
 $$
 x^2\left(\alpha_2x^2y''+\beta_2xy'+\gamma_2y\right)=\sum_{n=2}^\infty
 p_2(n+r-2)a_{n-2}x^{n+r}.
 $$
-Therefore we can rewrite \eqref{eq:7.5.11} as
+Therefore we can rewrite $\eqref{eq:7.5.11}$ as
 \begin{eqnarray*}
 Ly=\sum_{n=0}^\infty p_0(n+r)a_nx^{n+r}+
 \sum_{n=1}^\infty p_1(n+r-1)a_{n-1}x^{n+r}\\+
@@ -196,8 +192,8 @@ Ly&=& p_0(r)a_0x^r+\left[p_0(r+1)a_1+p_1(r)a_2\right]x^{r+1}\\
 && +\sum_{n=2}^\infty\left[p_0(n+r)a_n+p_1(n+r-1)a_{n-1}
 +p_2(n+r-2)a_{n-2}\right]x^{n+r},
 \end{eqnarray*}
-which implies \eqref{eq:7.5.4} with $\{b_n\}$ defined as in
-\eqref{eq:7.5.5}.
+which implies $\eqref{eq:7.5.4}$ with $\{b_n\}$ defined as in
+$\eqref{eq:7.5.5}$.
 \end{proof}
 
 \begin{theorem}\label{thmtype:7.5.2}
@@ -238,11 +234,11 @@ $($If
 $A$ is constant, then $\rho=\infty$.$)$
 \end{theorem}
 
- If $\{a_n(r)\}$ is determined by the recurrence relation
-\eqref{eq:7.5.12} then substituting $a_n=a_n(r)$ into \eqref{eq:7.5.5}
+If $\{a_n(r)\}$ is determined by the recurrence relation
+$\eqref{eq:7.5.12}$ then substituting $a_n=a_n(r)$ into $\eqref{eq:7.5.5}$
 yields
-$b_0=p_0(r)$ and $b_n=0$ for $n\geq1$, so \eqref{eq:7.5.4} reduces to
-\eqref{eq:7.5.14}. We omit the proof that the series \eqref{eq:7.5.13}
+$b_0=p_0(r)$ and $b_n=0$ for $n\geq1$, so $\eqref{eq:7.5.4}$ reduces to
+$\eqref{eq:7.5.14}$. We omit the proof that the series $\eqref{eq:7.5.13}$
 converges on  $(0,\rho)$.
 
 If $\alpha_i=\beta_i=\gamma_i=0$ for $i=1$, $2,$ then $Ly=0$ reduces to
@@ -255,14 +251,13 @@ determined by the zeros of the indicial polynomial
 $$
 p_0(r)=\alpha_0r(r-1)+\beta_0r+\gamma_0.
 $$
-Since \eqref{eq:7.5.14} implies that this is also true for the solutions
-of $Ly=0$, we'll also say that $p_0$ is the \dfn{indicial
-polynomial} of \eqref{eq:7.5.2}, and that $p_0(r)=0$ is the \dfn{indicial equation} of $Ly=0$. We'll consider only cases where the
+Since $\eqref{eq:7.5.14}$ implies that this is also true for the solutions
+of $Ly=0$, we will also say that $p_0$ is the \dfn{indicial
+polynomial} of $\eqref{eq:7.5.2}$, and that $p_0(r)=0$ is the \dfn{indicial equation} of $Ly=0$. We shall only consider cases where the
 indicial equation has real roots $r_1$ and $r_2$, with $r_1\geq r_2$.
 
 \begin{theorem}\label{thmtype:7.5.3}
-Let $L$ and $\{a_n(r)\}$ be as in Theorem~\ref{thmtype:7.5.2}, and
-suppose the
+Let $L$ and $\{a_n(r)\}$ be as in Theorem~\ref{thmtype:7.5.2}, and suppose the
 indicial equation $p_0(r)=0$ of $Ly=0$ has real roots $r_1$ and $r_2,$
 where $r_1\geq r_2.$ Then
 $$
@@ -289,16 +284,16 @@ p_0(n+r_1)=n\alpha_0(n+r_1-r_2),
 $$
 which is nonzero if $n>0$, since $r_1-r_2\geq0$. Therefore the
 assumptions of Theorem~\ref{thmtype:7.5.2} hold with $r=r_1$, and
-\eqref{eq:7.5.14} implies that $Ly_1=p_0(r_1)x^{r_1}=0$.
+$\eqref{eq:7.5.14}$ implies that $Ly_1=p_0(r_1)x^{r_1}=0$.
 
-Now suppose $r_1-r_2$ isn't  an integer. From \eqref{eq:7.5.15},
+Now suppose $r_1-r_2$ isn't  an integer. From $\eqref{eq:7.5.15}$,
 $$
 p_0(n+r_2)=n\alpha_0(n-r_1+r_2)\neq 0\quad\mbox{if}\quad n=1,2,\cdots.
 $$
 Hence, the assumptions of Theorem~\ref{thmtype:7.5.2} hold with $r=r_2$,
-and \eqref{eq:7.5.14} implies that $Ly_2=p_0(r_2)x^{r_2}=0$. We leave the
+and $\eqref{eq:7.5.14}$ implies that $Ly_2=p_0(r_2)x^{r_2}=0$. We leave the
 proof that $\{y_1,y_2\}$ is a fundamental set of solutions as an
-exercise. % (Exercise~\ref{exer:7.5.52}). \bbox
+exercise.(Exercise~\ref{exer:7.5.52}). \bbox
 \end{proof}
 
 It isn't  always possible to obtain explicit formulas for the
@@ -332,7 +327,7 @@ Theorem~\ref{thmtype:7.5.3} implies that
 y_1=x^{-3/2}\sum_{n=0}^\infty a_n(-3/2)x^n\quad\mbox{and}\quad
 y_2=x^{-2}\sum_{n=0}^\infty a_n(-2)x^n
 \end{equation}
-form a fundamental set of Frobenius solutions of \eqref{eq:7.5.16}.
+form a fundamental set of Frobenius solutions of $\eqref{eq:7.5.16}$.
 To find the coefficients in these series, we use the recurrence
 relation of Theorem~\ref{thmtype:7.5.2};   thus,
 \begin{eqnarray*}
@@ -363,9 +358,9 @@ a_1(-2)&=&0,\\
 a_n(-2)&=&-\frac{(n-1)a_{n-1}(-2)+(n-3)a_{n-2}(-2)}{n},\quad n\geq2.
 \end{array}
 \end{equation}
-Calculating  with  \eqref{eq:7.5.18} and
-\eqref{eq:7.5.19}  and substituting the results into
-\eqref{eq:7.5.17}   yields the fundamental set of  Frobenius
+Calculating  with  $\eqref{eq:7.5.18}$ and
+$\eqref{eq:7.5.19}$  and substituting the results into
+$\eqref{eq:7.5.17}$ yields the fundamental set of  Frobenius
 solutions
 \begin{eqnarray*}
 y_1&=&x^{-3/2}\left(1-\frac{1}{3}x+\frac{2}{5}x^2-\frac{5}{21}x^3
@@ -378,11 +373,10 @@ y_2&=&x^{-2}\left(1+\frac{1}{2}x^2-\frac{1}{3}x^3+\frac{1}{8}x^4+\frac{1}{30}x^5
 
 \subsection*{Special Cases With Two Term Recurrence Relations}
 
-For $n\geq2$, the recurrence relation \eqref{eq:7.5.12} of
+For $n\geq2$, the recurrence relation $\eqref{eq:7.5.12}$ of
 Theorem~\ref{thmtype:7.5.2} involves the three coefficients
 $a_n(r)$, $a_{n-1}(r)$, and $a_{n-2}(r)$. We'll now consider some
-special cases where \eqref{eq:7.5.12} reduces to a two term recurrence
-relation; that is, a relation involving only $a_n(r)$ and $a_{n-1}(r)$
+special cases where $\eqref{eq:7.5.12}$ reduces to a two term recurrence relation; that is, a relation involving only $a_n(r)$ and $a_{n-1}(r)$
 or only $a_n(r)$ and $a_{n-2}(r)$. This simplification often makes it
 possible to obtain explicit formulas for the coefficents of Frobenius
 solutions.
@@ -424,9 +418,8 @@ $$
 y_1=x^{1/3}\sum_{n=0}^\infty a_n(1/3)x^n\quad\mbox{and}\quad
 y_2=x^{-1}\sum_{n=0}^\infty a_n(-1)x^n
 $$
-form a fundamental set of Frobenius solutions of \eqref{eq:7.5.21}. To
-find the coefficients in these series, we use the recurrence relationss
-\eqref{eq:7.5.20};   thus,
+form a fundamental set of Frobenius solutions of $\eqref{eq:7.5.21}$. To
+find the coefficients in these series, we use the recurrence relations $\eqref{eq:7.5.20}$;   thus,
 \begin{equation} \label{eq:7.5.22}
 \begin{array}{ccl}
 a_0(r)&=&1,\\
@@ -436,12 +429,12 @@ a_n(r)&=&-\frac{p_1(n+r-1)}{p_0(n+r)}a_{n-1}(r)\\
 \end{array}
 \end{equation}
 
-Setting $r=1/3$ in \eqref{eq:7.5.22} yields
+Setting $r=1/3$ in $\eqref{eq:7.5.22}$ yields
 \begin{eqnarray*}
 a_0(1/3)&=&1,\\
 a_n(1/3)&=&-\frac{3n+4}{9n} a_{n-1}(1/3),\quad n\geq1.
 \end{eqnarray*}
-By using the product notation introduced in \href{https://ximera.osu.edu/ode/main/seriesSolNearOrdinaryPtI/seriesSolNearOrdinaryPtI}{Trench 7.2} and
+By using the product notation introduced in \href{https://xerxes.ximera.org/differentialequations/main/seriesSolNearOrdinaryPtI/seriesSolNearOrdinaryPtI}{Section 7.2} and
 proceeding as we did in the examples in that section yields
 $$
 a_n(1/3)=\frac{(-1)^n\prod_{j=1}^n(3j+4)}{9^nn!},\quad n\geq0.
@@ -450,9 +443,9 @@ Therefore
 $$
 y_1=x^{1/3}\sum_{n=0}^\infty\frac{(-1)^n\prod_{j=1}^n(3j+4)}{9^nn!}x^n
 $$
-is a Frobenius solution of \eqref{eq:7.5.21}.
+is a Frobenius solution of $\eqref{eq:7.5.21}$.
 
-Setting $r=-1$ in \eqref{eq:7.5.22} yields
+Setting $r=-1$ in $\eqref{eq:7.5.22}$ yields
 \begin{eqnarray*}
 a_0(-1)&=&1,\\
 a_n(-1)&=&-\frac{n}{3n-4}a_{n-1}(-1),\quad n\geq1,
@@ -465,7 +458,7 @@ Therefore
 $$
 y_2=x^{-1}\sum_{n=0}^\infty\frac{(-1)^nn!}{\prod_{j=1}^n(3j-4)}x^n
 $$
-is a Frobenius solution of \eqref{eq:7.5.21}, and $\{y_1,y_2\}$ is a
+is a Frobenius solution of $\eqref{eq:7.5.21}$, and $\{y_1,y_2\}$ is a
 fundamental set of solutions.
 \end{explanation}
 \end{example}
@@ -520,9 +513,8 @@ $$
 y_1=x^2\sum_{m=0}^\infty a_{2m}(1/3)x^{2m}\quad\mbox{and}\quad
 y_2=x^{1/2}\sum_{m=0}^\infty a_{2m}(1/2)x^{2m}
 $$
-form a fundamental set of  Frobenius solutions of \eqref{eq:7.5.25}.
-To find the coefficients in these series, we use the recurrence
-relation \eqref{eq:7.5.24};   thus,
+form a fundamental set of  Frobenius solutions of $\eqref{eq:7.5.25}$.
+To find the coefficients in these series, we use the recurrence relation $\eqref{eq:7.5.24}$;   thus,
 \begin{equation} \label{eq:7.5.26}
 \begin{array}{ccl}
 a_0(r)&=&1,\\
@@ -531,7 +523,7 @@ a_{2m}(r)&=&-\frac{p_2(2m+r-2)}{p_0(2m+r)}a_{2m-2}(r)\\
 \end{array}
 \end{equation}
 
-Setting $r=2$ in \eqref{eq:7.5.26} yields
+Setting $r=2$ in $\eqref{eq:7.5.26}$ yields
 \begin{eqnarray*}
 a_0(2)&=&1,\\
 a_{2m}(2)&=&\frac{(m+1)(2m+1)}{m(4m+3)}a_{2m-2}(2),\quad m\geq1,
@@ -546,10 +538,10 @@ $$
  y_1=x^2\sum_{m=0}^\infty
 (m+1)\left(\prod_{j=1}^m\frac{2j+1}{4j+3}\right)x^{2m}
 $$
-is a Frobenius solution of \eqref{eq:7.5.25}.
+is a Frobenius solution of $\eqref{eq:7.5.25}$.
 
 
-Setting $r=1/2$ in \eqref{eq:7.5.26} yields
+Setting $r=1/2$ in $\eqref{eq:7.5.26}$ yields
 \begin{eqnarray*}
 a_0(1/2)&=&1,\\
 a_{2m}(1/2)&=&\frac{(4m-1)(4m+1)}{8m(4m-3)}a_{2m-2}(1/2),\quad
@@ -564,7 +556,7 @@ $$
 y_2=x^{1/2}\sum_{m=0}^\infty
 \frac{1}{8^mm!}\left(\prod_{j=1}^m\frac{(4j-1)(4j+1)}{4j-3}\right)x^{2m}
 $$
-is a Frobenius solution of \eqref{eq:7.5.25} and $\{y_1,y_2\}$ is a
+is a Frobenius solution of $\eqref{eq:7.5.25}$ and $\{y_1,y_2\}$ is a
 fundamental set of solutions.
 \end{explanation}
 \end{example}
@@ -573,18 +565,18 @@ fundamental set of solutions.
 Thus far, we considered only the case where the indicial equation
 has real roots that don't differ by an integer, which allows us to
 apply Theorem~\ref{thmtype:7.5.3}. However, for equations of the form
-\eqref{eq:7.5.23}, the sequence $\{a_{2m}(r)\}$ in \eqref{eq:7.5.24} is
-defined for $r=r_2$ if $r_1-r_2$ isn't  an \dfn{even} integer. It can be
-shown %(Exercise~\ref{exer:7.5.56}) 
+$\eqref{eq:7.5.23}$, the sequence $\{a_{2m}(r)\}$ in $\eqref{eq:7.5.24}$ is
+defined for $r=r_2$ if $r_1-r_2$ is not an \dfn{even} integer. It can be
+shown (Exercise~\ref{exer:7.5.56}) 
 that in this case
 $$
 y_1=x^{r_1}\sum_{m=0}^\infty a_{2m}(r_1)x^{2m}\quad \mbox{and}\quad y_2=x^{r_2}\sum_{m=0}^\infty a_{2m}(r_2)x^{2m}
 $$
-form a fundamental set  Frobenius solutions of \eqref{eq:7.5.23}.
+form a fundamental set  Frobenius solutions of $\eqref{eq:7.5.23}$.
 \end{remark}
 
 \subsection*{A Note on Technology}
-As we said at the end of \href{https://ximera.osu.edu/ode/main/seriesSolNearOrdinaryPtI/seriesSolNearOrdinaryPtI}{Trench 7.2}, if you're interested in
+As we said at the end of \href{https://xerxes.ximera.org/differentialequations/main/seriesSolNearOrdinaryPtI/seriesSolNearOrdinaryPtI}{Section 7.2}, if you are interested in
 actually using series to compute numerical approximations to solutions
 of a differential equation, then whether or not there's a simple
 closed form for the coefficents is essentially irrelevant;   recursive
@@ -610,7 +602,7 @@ $$
 We can't do that here, since in general we can't prescribe
 arbitrary initial values for solutions of a differential equation at a
 singular point. Therefore, motivated by Theorem~\ref{thmtype:7.5.2}
-(specifically, \eqref{eq:7.5.14}), we suggest the following  procedure.
+(specifically, $\eqref{eq:7.5.14}$), we suggest the following  procedure.
 
 \begin{procedure}
 Let $L$ and
@@ -633,7 +625,7 @@ for various values of $N$ and various values of $x$ in the interval
 $(0,\rho)$, with $\rho$ as defined in Theorem~\ref{thmtype:7.5.2}.
 \end{procedure}
 
-The multiplier $x^{-r_i}/\alpha_0$ on the right of \eqref{eq:7.5.27}
+The multiplier $x^{-r_i}/\alpha_0$ on the right of $\eqref{eq:7.5.27}$
 eliminates the effects of small or large values of $x^{r_i}$ near
 $x=0$, and of multiplication by an arbitrary constant. 
 %In some
