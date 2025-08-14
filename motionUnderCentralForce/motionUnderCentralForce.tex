@@ -33,9 +33,8 @@ at every point is toward the origin.
 % \end{image}
 
  Gravitational forces are central
-forces;   for example, as mentioned in \href{https://ximera.osu.edu/ode/main/secondLawOfMotion/secondLawOfMotion}{Trench 4.3}, if we
-assume that Earth is a perfect sphere with constant mass density then
-Newton's law of gravitation asserts that the force exerted on an
+forces; for example, as mentioned in \href{https://xerxes.ximera.org/differentialequations/main/secondLawOfMotion/secondLawOfMotion}{Section 4.4}, if we
+assume that Earth is a perfect sphere with constant mass density then Newton's law of gravitation asserts that the force exerted on an
 object by Earth's gravitational field is proportional to the mass of
 the object and inversely proportional to the square of its distance
 from the center of Earth, which we take to be the origin.
@@ -118,13 +117,13 @@ $$
 so $\vec{e}_1$ and $\vec{e}_2$ are  perpendicular.
 Recalling that the single prime $(')$ stands for differentiation with
 respect to
-$t$, we see from \eqref{eq:6.4.3}  and the chain rule that
+$t$, we see from $\eqref{eq:6.4.3}$ and the chain rule that
 \begin{equation} \label{eq:6.4.4}
 \vec{e}_1'=\theta'\vec{e}_2\quad\mbox{and}\quad
 \vec{e}_2'=-\theta'\vec{e}_1.
 \end{equation}
 
-Now we can write \eqref{eq:6.4.2} as
+Now we can write $\eqref{eq:6.4.2}$ as
 \begin{equation} \label{eq:6.4.5}
 m(r\vec{e}_1)''=f(r)\vec{e}_1.
 \end{equation}
@@ -132,7 +131,7 @@ But
 $$
 (r\vec{e}_1)'=r'\vec{e}_1+r\vec{e}_1'=r'\vec{e}_1+r\theta'\vec{e}_2
 $$
-(from \eqref{eq:6.4.4}), and
+(from $\eqref{eq:6.4.4}$), and
 \begin{eqnarray*}
 (r\vec{e}_1)''&=&(r'\vec{e}_1+r\theta'\vec{e}_2)'\\
 &=&r''\vec{e}_1+r'\vec{e}_1'+(r\theta''+r'\theta')\vec{e}_2
@@ -140,7 +139,7 @@ $$
 &=&r''\vec{e}_1+r'\theta'\vec{e}_2+(r\theta''+r'\theta')\vec{e}_2 -r(\theta')^2\vec{e}_1\quad\mbox{(from \eqref{eq:6.4.4})}\\
 &=&\left(r''-r(\theta')^2\right)\vec{e}_1+(r\theta''+2r'\theta')\vec{e}_2.
 \end{eqnarray*}
-Substituting this into \eqref{eq:6.4.5} yields
+Substituting this into $\eqref{eq:6.4.5}$ yields
 $$
 m\left(r''-r(\theta')^2\right)\vec{e}_1+m(r\theta''+2r'\theta')\vec{e}_2=f(r)\vec{e}_1.
 $$
@@ -174,12 +173,8 @@ $$
 our assumption that these two vectors are not parallel implies that
 $\theta'(0)\neq 0$, so $h\neq 0$.
 
-
-
-
-
 Now let $u=1/r$.
-Then  $u^2=\theta'/h$ (from \eqref{eq:6.4.7}) and
+Then  $u^2=\theta'/h$ (from $\eqref{eq:6.4.7}$) and
 $$
 r'=-\frac{u'}{u^2}=-h\left(\frac{u'}{\theta'}\right),
 $$
@@ -191,7 +186,7 @@ since
 $$
 \frac{u'}{\theta'}=\frac{du/dt}{d\theta/dt}=\frac{du}{d\theta}.
 $$
-Differentiating \eqref{eq:6.4.8} with respect to $t$ yields
+Differentiating $\eqref{eq:6.4.8}$ with respect to $t$ yields
 $$
 r''=-h\frac{d}{dt}\left(\frac{du}{d\theta}\right)
 =-h\frac{d^2u}{d\theta^2}\theta',
@@ -202,17 +197,16 @@ r''=-h^2u^2\frac{d^2u}{d\theta^2}
 \quad\mbox{since}\quad \theta'=hu^2.
 $$
 Substituting from these equalities into
-\eqref{eq:6.4.6} and recalling that $r=1/u$ yields
+$\eqref{eq:6.4.6}$ and recalling that $r=1/u$ yields
 $$
 -m\left(h^2u^2\frac{d^2u}{d\theta^2}+\frac{1}{u}h^2u^4\right)
 =f(1/u),
 $$
-and dividing through by $-mh^2u^2$ yields \eqref{eq:6.4.1}.
+and dividing through by $-mh^2u^2$ yields $\eqref{eq:6.4.1}$.
 
-
-Eqn.~\eqref{eq:6.4.7} has the following geometrical interpretation, which
+Equation~$\eqref{eq:6.4.7}$ has the following geometrical interpretation, which
 is known as
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Kepler.html}{Kepler's Second Law}.
+\href{https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion#Second_law}{Kepler's Second Law}.
 
 \begin{theorem}\label{thmtype:6.4.1}
  The position vector
@@ -258,8 +252,7 @@ Making the change of variable $\theta=\theta(t)$ yields
 \begin{equation} \label{eq:6.4.9}
 A=\frac{1}{2}\int_{t_1}^{t_2} r^2(\theta(t))\theta'(t)\,dt.
 \end{equation}
- But
-\eqref{eq:6.4.7}  and \eqref{eq:6.4.9} imply that
+But $\eqref{eq:6.4.7}$ and $\eqref{eq:6.4.9}$ imply that
 $$
 A=\frac{1}{2}\int_{t_1}^{t_2} h\,dt=\frac{h(t_2-t_1)}{2},
 $$
@@ -270,7 +263,7 @@ which completes the proof.
 
 In the special case where
  $f(r)=-mk/r^2=-mku^2$, so $\vec{F}$  can be interpreted
-as a gravitational force, \eqref{eq:6.4.1}  becomes
+as a gravitational force, $\eqref{eq:6.4.1}$ becomes
 \begin{equation} \label{eq:6.4.10}
  \frac{d^2u}{d\theta^2}+u=\frac{k}{h^2}.
 \end{equation}
@@ -283,8 +276,8 @@ $$
 u=A\cos(\theta-\phi),
 $$
 where $A\ge0$ and $\phi$ is a phase angle.
-Since $u_p=k/h^2$ is a particular solution of \eqref{eq:6.4.10},
-the general solution of \eqref{eq:6.4.10} is
+Since $u_p=k/h^2$ is a particular solution of $\eqref{eq:6.4.10}$,
+the general solution of $\eqref{eq:6.4.10}$ is
 $$
 u=A\cos(\theta-\phi)+\frac{k}{h^2};
 $$
@@ -300,8 +293,8 @@ where
 $$
 \rho=\frac{h^2}{k}\quad\mbox{and}\quad e=A\rho.
 $$
-A curve satisfying \eqref{eq:6.4.11} is a conic section with a focus at
-the origin. %(Exercise~\ref{exer:6.4.1}). 
+A curve satisfying $\eqref{eq:6.4.11}$ is a conic section with a focus at
+the origin.(Exercise~\ref{exer:6.4.1}). 
 The nonnegative constant $e$ is
  the \textit{eccentricity} of the orbit, which is
 an ellipse if
@@ -350,7 +343,6 @@ elongated approximately elliptical orbit around the sun, with
 $e\approx.967$, $r_{\min}\approx55\times10^6$ miles, and
 $r_{\max}\approx33\times10^8$ miles. Some comets (the nonrecurring
 type) have parabolic or hyperbolic orbits.
-
 
 \section*{Text Source}
 Trench, William F., "Elementary Differential Equations" (2013). Faculty Authored and Edited Books \& CDs. 8. (CC-BY-NC-SA)
