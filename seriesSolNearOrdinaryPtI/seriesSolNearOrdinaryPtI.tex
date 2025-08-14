@@ -20,15 +20,13 @@ linear  differential equations of the form
 \begin{equation}\label{eq:7.2.1}
 P_0(x)y''+P_1(x)y'+P_2(x)y=0,
 \end{equation}
-where $P_0$, $P_1$, and $P_2$ are polynomials. Usually the solutions
-of these equations can't be expressed in terms of familiar elementary
-functions. Therefore we'll consider the problem of representing
-solutions of \eqref{eq:7.2.1} with series.
+where $P_0$, $P_1$, and $P_2$ are polynomials. Usually, the solutions of these equations cannot be expressed in terms of familiar elementary functions. Therefore, we will consider the problem of representing
+solutions of $\eqref{eq:7.2.1}$ with series.
 
 We assume throughout that $P_0$, $P_1$ and $P_2$ have no common
 factors. Then we say that $x_0$ is an \textit{ordinary point} of
-\eqref{eq:7.2.1} if $P_0(x_0)\neq0$, or a \textit{singular point} if
-$P_0(x_0)=0$. For  Legendre's equation,
+$\eqref{eq:7.2.1}$ if $P_0(x_0)\neq0$, or a \textit{singular point} if
+$P_0(x_0)=0$. For Legendre's equation,
 \begin{equation}\label{eq:7.2.2}
 (1-x^2)y''-2xy'+\alpha(\alpha+1)y=0,
 \end{equation}
@@ -47,21 +45,20 @@ then every point is an ordinary point.
 
 Since polynomials are continuous everywhere, $P_1/P_0$ and $P_2/P_0$
 are continuous at any point $x_0$ that isn't  a zero of $P_0$.
-Therefore, if $x_0$ is an ordinary point of \eqref{eq:7.2.1} and $a_0$ and
+Therefore, if $x_0$ is an ordinary point of $\eqref{eq:7.2.1}$ and $a_0$ and
 $a_1$ are arbitrary real numbers, then the initial value problem
 \begin{equation}\label{eq:7.2.4}
 P_0(x)y''+P_1(x)y'+P_2(x)y=0, \quad  y(x_0)=a_0,\quad y'(x_0)=a_1
 \end{equation}
 has a unique solution on the largest open interval that contains $x_0$
 and does not contain any zeros of $P_0$. To see this, we rewrite the
-differential equation in \eqref{eq:7.2.4} as
+differential equation in $\eqref{eq:7.2.4}$ as
 $$
 y''+\frac{P_1(x)}{P_0(x)}y'+\frac{P_2(x)}{P_0(x)}y=0
 $$
 and apply Theorem~\ref{thmtype:5.1.1} with $p=P_1/P_0$ and $q=P_2/P_0$.
 In this section and the next we  consider the problem of
-representing  solutions of \eqref{eq:7.2.1}  by power series that
-converge  for values of $x$  near an ordinary point $x_0$.
+representing  solutions of $\eqref{eq:7.2.1}$ by power series that converge  for values of $x$  near an ordinary point $x_0$.
 
 We state the next theorem without proof.
 
@@ -85,9 +82,8 @@ than $(x_0-\rho,x_0+\rho)$. If $P_0$ is constant then $\rho=\infty$
 and $(x_0-\rho,x_0+\rho)=(-\infty,\infty)$.)
 \end{theorem}
 
-We call \eqref{eq:7.2.6} a \textit{power series solution in $x-x_0$}  of
-\eqref{eq:7.2.5}. We'll now develop a method for finding power series
-solutions of \eqref{eq:7.2.5}. For this purpose we write \eqref{eq:7.2.5} as
+We call $\eqref{eq:7.2.6}$ a \textit{power series solution in $x-x_0$}  of
+$\eqref{eq:7.2.5}$. We will now develop a method for finding power series solutions of $\eqref{eq:7.2.5}$. For this purpose, we write $\eqref{eq:7.2.5}$ as
 $Ly=0$, where
 \begin{equation}\label{eq:7.2.7}
 Ly=P_0y''+P_1y'+P_2y.
@@ -103,8 +99,8 @@ $$
 y'=\sum_{n=1}^\infty na_n(x-x_0)^{n-1}
 $$
 shows that $y(x_0)=a_0$ and $y'(x_0)=a_1$. Since every initial value
-problem \eqref{eq:7.2.4} has a unique solution, this means that $a_0$ and
-$a_1$ can be chosen arbitrarily, and  $a_2, a_3, \dots$ are
+problem $\eqref{eq:7.2.4}$ has a unique solution, this means that $a_0$ and
+$a_1$ can be chosen arbitrarily, and $a_2, a_3, \dots$ are
 uniquely determined by them.
 
 To find $a_2, a_3, \dots$, we write $P_0$, $P_1$, and $P_2$ in powers of
@@ -118,14 +114,14 @@ $$
 $$
 y''=\sum^\infty_{n=2}n(n-1)a_n(x-x_0)^{n-2}
 $$
-into \eqref{eq:7.2.7}, and collect the coefficients of like powers of
+into $\eqref{eq:7.2.7}$, and collect the coefficients of like powers of
 $x-x_0$. This yields
 \begin{equation}\label{eq:7.2.8}
 Ly=\sum^\infty_{n=0}b_n(x-x_0)^n,
 \end{equation}
 where $\{b_0, b_1, \dots, b_n, \dots\}$ are expressed in terms of
 $\{a_0, a_1, \dots,a_n, \dots\}$ and the coefficients of $P_0$, $P_1$,
-and $P_2$, written in powers of $x-x_0$. Since \eqref{eq:7.2.8} and
+and $P_2$, written in powers of $x-x_0$. Since $\eqref{eq:7.2.8}$ and
 the first part %\part{a} 
 of Theorem~\ref{thmtype:7.1.6} imply that $Ly=0$ if and only if
 $b_n=0$ for $n\geq0$,  all power series solutions in
@@ -176,7 +172,7 @@ Therefore $Ly=0$ if and only if
 a_{n+2}=\frac{-a_n}{(n+2)(n+1)},\quad n\geq0,
 \end{equation}
 where $a_0$ and $a_1$ are arbitrary. Since the indices on the left and
-right sides of \eqref{eq:7.2.10} differ by two, we write \eqref{eq:7.2.10}
+right sides of $\eqref{eq:7.2.10}$ differ by two, we write $\eqref{eq:7.2.10}$
 separately for $n$ even $(n=2m)$ and $n$ odd $(n=2m+1)$. This yields
 \begin{eqnarray}
 a_{2m+2}&=&\frac{-a_{2m}}{(2m+2)(2m+1)},\quad m\geq0,
@@ -188,7 +184,7 @@ a_{2m+3}&=&\frac{-a_{2m+1}}{(2m+3)(2m+2)},\quad  m\geq0.
 \label{eq:7.2.12}
 \end{eqnarray}
 Computing the coefficients of the even powers of $x-x_0$ from
-\eqref{eq:7.2.11} yields
+$\eqref{eq:7.2.11}$ yields
 \begin{eqnarray*}
 a_2&=&-\frac{a_0}{2\cdot1}\\
 a_4&=&-\frac{a_2}{4\cdot3}=-\frac{1}{4\cdot3}
@@ -203,7 +199,7 @@ and, in general,
 \begin{equation}\label{eq:7.2.13}
 a_{2m}=(-1)^m \frac{a_0}{(2m)!}   ,\quad  m\geq0.
 \end{equation}
-Computing the coefficients of the odd powers of $x-x_0$ from \eqref{eq:7.2.12}
+Computing the coefficients of the odd powers of $x-x_0$ from $\eqref{eq:7.2.12}$
 yields
 \begin{eqnarray*}
 a_3&=&-\frac{a_1}{3\cdot2}\\
@@ -219,11 +215,11 @@ and, in general,
 \begin{equation}\label{eq:7.2.14}
 a_{2m+1}=\frac{(-1)^ma_1}{(2m+1)!}\quad m\geq0.
 \end{equation}
-Thus, the general solution of \eqref{eq:7.2.9} can be written as
+Thus, the general solution of $\eqref{eq:7.2.9}$ can be written as
 $$
 y=\sum_{m=0}^\infty a_{2m}(x-x_0)^{2m}+\sum_{m=0}^\infty a_{2m+1}(x-x_0)^{2m+1},
 $$
-or, from \eqref{eq:7.2.13} and \eqref{eq:7.2.14}, as
+or, from $\eqref{eq:7.2.13}$ and $\eqref{eq:7.2.14}$, as
 \begin{equation}\label{eq:7.2.15}
 y=a_0\sum_{m=0}^\infty(-1)^m\frac{(x-x_0)^{2m}}{(2m)!}
 +a_1\sum_{m=0}^\infty(-1)^m\frac{(x-x_0)^{2m+1}}{(2m+1)!}.
@@ -234,7 +230,7 @@ $$
 \quad\mbox{and}\quad
 \sum_{m=0}^\infty(-1)^m\frac{(x-x_0)^{2m+1}}{(2m+1)!}=\sin(x-x_0),
 $$
-then \eqref{eq:7.2.15} becomes
+then $\eqref{eq:7.2.15}$ becomes
 $$
 y=a_0\cos(x-x_0)+a_1\sin(x-x_0),
 $$
@@ -242,7 +238,7 @@ which should look familiar.
 \end{explanation}
 \end{example}
 
-Equations like \eqref{eq:7.2.10}, \eqref{eq:7.2.11}, and \eqref{eq:7.2.12}, which
+Equations like $\eqref{eq:7.2.10}$, $\eqref{eq:7.2.11}$, and $\eqref{eq:7.2.12}$, which
 define a given coefficient in the sequence $\{a_n\}$ in terms of one
 or more coefficients with lesser indices are called \textit{recurrence relations}. When we use a recurrence relation to compute terms of a sequence we're computing \textit{recursively}.
 
@@ -252,14 +248,14 @@ finding power series solutions in $x-x_0$  for equations of the form
 \left(1+\alpha(x-x_0)^2\right)y''+\beta(x-x_0) y'+\gamma y=0.
 \end{equation}
 Many important equations that arise in applications are of this
-form with $x_0=0$, including  Legendre's equation \eqref{eq:7.2.2},
-Airy's equation \eqref{eq:7.2.3},
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Chebyshev.html}{Chebyshev's  equation},
+form with $x_0=0$, including  Legendre's equation $\eqref{eq:7.2.2}$,
+Airy's equation $\eqref{eq:7.2.3}$,
+\href{https://en.wikipedia.org/wiki/Chebyshev_equation}{Chebyshev's equation},
 $$
 (1-x^2)y''-xy'+\alpha^2 y=0,
 $$
 and
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Hermite.html}{Hermite's equation},
+\href{https://en.wikipedia.org/wiki/Hermite_polynomials#Hermite's_differential_equation}{Hermite's equation},
 $$
 y''-2xy'+2\alpha y=0.
 $$
@@ -267,9 +263,9 @@ Since
 $$
 P_0(x)=1+\alpha(x-x_0)^2
 $$
-in \eqref{eq:7.2.16}, the point $x_0$ is an ordinary point of
-\eqref{eq:7.2.16}, and Theorem~\ref{thmtype:7.2.1} implies that the solutions
-of \eqref{eq:7.2.16} can be written as power series in $x-x_0$ that
+in $\eqref{eq:7.2.16}$, the point $x_0$ is an ordinary point of
+$\eqref{eq:7.2.16}$, and Theorem~\ref{thmtype:7.2.1} implies that the solutions
+of $\eqref{eq:7.2.16}$ can be written as power series in $x-x_0$ that
 converge on the interval $(x_0-1/\sqrt|\alpha|,x_0+1/\sqrt|\alpha|)$
 if $\alpha\neq0$, or on $(-\infty,\infty)$ if $\alpha=0$. We'll see
 that the coefficients in these power series can be obtained by methods
@@ -337,13 +333,13 @@ with
 $$
 b_n=(n+2)(n+1)a_{n+2}+2(n+1)^2a_n,\quad n\geq0.
 $$
-To obtain solutions of \eqref{eq:7.2.17}, we set $b_n=0$ for $n\geq0$. This
+To obtain solutions of $\eqref{eq:7.2.17}$, we set $b_n=0$ for $n\geq0$. This
 is equivalent to the recurrence relation
  \begin{equation}\label{eq:7.2.18}
 a_{n+2}=-2\frac{n+1}{n+2}a_n,\quad n\geq0.
 \end{equation}
 Since the
-indices on the left and right differ by two, we write \eqref{eq:7.2.18}
+indices on the left and right differ by two, we write $\eqref{eq:7.2.18}$
 separately for $n=2m$ and $n=2m+1$, as in Example~\ref{example:7.2.1}.
 This yields
 \begin{eqnarray}
@@ -355,7 +351,7 @@ and
 a_{2m+3}&=&-2\frac{2m+2}{2m+3}a_{2m+1}=-4\frac{m+1}{2m+3}a_{2m+1},\quad
 m\geq0. \label{eq:7.2.20}
 \end{eqnarray}
-Computing the coefficients of even powers of $x$ from \eqref{eq:7.2.19}
+Computing the coefficients of even powers of $x$ from $\eqref{eq:7.2.19}$
 yields
 \begin{eqnarray*}
 a_2&=&-\frac{1}{1}a_0,\\
@@ -372,10 +368,10 @@ In general,
 \begin{equation}\label{eq:7.2.21}
 a_{2m}=(-1)^m\frac{\prod_{j=1}^m(2j-1)}{m!}a_0,\quad m\geq0.
 \end{equation}
-(Note that \eqref{eq:7.2.21} is correct for $m=0$  because we
+(Note that $\eqref{eq:7.2.21}$ is correct for $m=0$  because we
 defined $\prod_{j=1}^0b_j=1$  for any~$b_j$.)
 
-Computing the coefficients of odd powers of $x$ from \eqref{eq:7.2.20}
+Computing the coefficients of odd powers of $x$ from $\eqref{eq:7.2.20}$
 yields
 \begin{eqnarray*}
 a_3&=&-4\,\frac{1}{3}a_1, \\
@@ -392,18 +388,16 @@ In general,
 \begin{equation}\label{eq:7.2.22}
 a_{2m+1}=\frac{(-1)^m4^m m!}{\prod_{j=1}^m(2j+1)}a_1,\quad m\geq0.
 \end{equation}
-From \eqref{eq:7.2.21} and \eqref{eq:7.2.22},
+From $\eqref{eq:7.2.21}$ and $\eqref{eq:7.2.22}$,
 $$
 y=a_0
  \sum^\infty_{m=0}(-1)^m \frac{\prod_{j=1}^m(2j-1)}{m!}x^{2m}
 +a_1 \sum^\infty_{m=0}(-1)^m \frac{4^mm!}{\prod_{j=1}^m(2j+1)}
  x^{2m+1}.
 $$
-is the power series in $x$ for the general solution of \eqref{eq:7.2.17}.
-Since $P_0(x)=1+2x^2$ has no real zeros, Theorem~\ref{thmtype:5.1.1} implies
-that every solution of \eqref{eq:7.2.17} is defined on $(-\infty,\infty)$.
-However, since $P_0(\pm i/\sqrt2)=0$, Theorem~\ref{thmtype:7.2.1} implies
-only that the power series converges in $(-1/\sqrt2,1/\sqrt2)$ for any
+is the power series in $x$ for the general solution of $\eqref{eq:7.2.17}$.
+Since $P_0(x)=1+2x^2$ has no real zeros, Theorem~\ref{thmtype:5.1.1} implies that every solution of $\eqref{eq:7.2.17}$ is defined on $(-\infty,\infty)$.
+However, since $P_0(\pm i/\sqrt2)=0$, Theorem~\ref{thmtype:7.2.1} implies only that the power series converges in $(-1/\sqrt2,1/\sqrt2)$ for any
 choice of $a_0$ and $a_1$.
 \end{explanation}
 \end{example}
@@ -462,7 +456,7 @@ n(n-1)
 p(n)a_n(x-x_0)^n,
 \end{array}
 $$
-from \eqref{eq:7.2.25}.  To collect coefficients of powers of $x-x_0$,
+from $\eqref{eq:7.2.25}$.  To collect coefficients of powers of $x-x_0$,
 we shift the summation index in the first sum. This yields
 $$
 Ly=\sum_{n=0}^\infty \left[(n+2)(n+1)a_{n+2}+p(n)a_n\right](x-x_0)^n.
@@ -471,9 +465,9 @@ Thus, $Ly=0$ if and only if
 $$
 (n+2)(n+1)a_{n+2}+p(n)a_n=0,\quad n\geq0,
 $$
-which is equivalent to \eqref{eq:7.2.24}. Writing \eqref{eq:7.2.24} separately
-for the cases where $n=2m$ and $n=2m+1$ yields \eqref{eq:7.2.26} and
-\eqref{eq:7.2.27}.
+which is equivalent to $\eqref{eq:7.2.24}$. Writing $\eqref{eq:7.2.24}$ separately
+for the cases where $n=2m$ and $n=2m+1$ yields $\eqref{eq:7.2.26}$ and
+$\eqref{eq:7.2.27}$.
 \end{proof}
 
 \begin{example}\label{example:7.2.3}
@@ -491,7 +485,7 @@ the terms, collecting powers of $x-1$;   thus,
 2+4x-2x^2&=&2+4[(x-1)+1]-2[(x-1)+1]^2\\
 &=&4-2(x-1)^2.
 \end{eqnarray*}
-  Therefore we can rewrite \eqref{eq:7.2.28} as
+Therefore, we can rewrite $\eqref{eq:7.2.28}$ as
 $$
 \left(4-2(x-1)^2\right)y''-12(x-1)y'-12y=0,
 $$
@@ -499,8 +493,8 @@ or, equivalently,
 $$
 \left(1-\frac{1}{2}(x-1)^2\right)y''-3(x-1)y'-3y=0.
 $$
-This is of the form \eqref{eq:7.2.23} with  $\alpha=-1/2$, $\beta=-3$, and
-$\gamma=-3$. Therefore, from \eqref{eq:7.2.25}
+This is of the form $\eqref{eq:7.2.23}$ with  $\alpha=-1/2$, $\beta=-3$, and
+$\gamma=-3$. Therefore, from $\eqref{eq:7.2.25}$
 $$
 p(n)=-\frac{n(n-1)}{2}-3n-3=-\frac{(n+2)(n+3)}{2}.
 $$
@@ -521,9 +515,7 @@ $$
 a_{2m}=\frac{2m+1}{2^m}a_0\quad\mbox{and}\quad
 a_{2m+1}=\frac{m+1}{2^m}a_1,\quad m\geq0,
 $$
-which implies that the power series in $x-1$ for the general solution
-of
-\eqref{eq:7.2.28} is
+which implies that the power series in $x-1$ for the general solution of $\eqref{eq:7.2.28}$ is
 $$
 y=a_0\sum_{m=0}^\infty\frac{2m+1}{2^m}(x-1)^{2m}+a_1\sum_{m=0}^\infty
 \frac{m+1}{2^m}(x-1)^{2m+1}.
@@ -544,7 +536,7 @@ $y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem
 (1+2x^2)y''+10xy'+8y=0,\quad y(0)=2,\quad y'(0)=-3.
 \end{equation}
 \begin{explanation}
-Since $\alpha=2$, $\beta=10$, and $\gamma=8$ in \eqref{eq:7.2.29},
+Since $\alpha=2$, $\beta=10$, and $\gamma=8$ in $\eqref{eq:7.2.29}$,
 $$
 p(n)=2n(n-1)+10n+8=2(n+2)^2.
 $$
@@ -563,20 +555,20 @@ a_{2m+3}&=&-2\frac{2m+3}{2m+2}a_{2m+1}=-\frac{2m+3}{m+1}a_{2m+1},\quad m\geq0.
 \label{eq:7.2.31}
 \end{eqnarray}
 Starting with  $a_0=y(0)=2$, we compute $a_2, a_4$, and $a_6$ from
-\eqref{eq:7.2.30}:
+$\eqref{eq:7.2.30}$:
 \begin{eqnarray*}
 a_2&=&-4\,\frac{1}{1}2=-8,\\
 a_4&=&-4\,\frac{2}{3}(-8)=\frac{64}{3},\\
 a_6&=&-4\,\frac{3}{5}\left(\frac{64}{3}\right)=-\frac{256}{5}.
 \end{eqnarray*}
 Starting with $a_1=y'(0)=-3$, we compute $a_3,a_5$ and $a_7$ from
-\eqref{eq:7.2.31}:
+$\eqref{eq:7.2.31}$:
 \begin{eqnarray*}
 a_3&=&-\frac{3}{1}(-3)=9,\\
 a_5&=&-\frac{5}{2}9=-\frac{45}{2},\\
 a_7&=&-\frac{7}{3}\left(-\frac{45}{2}\right)=\frac{105}{2}.
 \end{eqnarray*}
-Therefore the solution of \eqref{eq:7.2.29} is
+Therefore the solution of $\eqref{eq:7.2.29}$ is
 $$
 y=2-3x-8x^2+9x^3+\frac{64}{3}x^4-\frac{45}{2}x^5-\frac{256}{5}
 x^6+\frac{105}{2}x^7+\cdots .
@@ -616,7 +608,7 @@ the interval of convergence that you're interested in. In the
 computational exercises in this  and the next two sections,
 you will often be asked to obtain the solution of a given problem by
 numerical integration with  software  of your choice (see
-the end of \href{https://ximera.osu.edu/ode/main/introToSystems/introToSystems}{Trench 10.1} 
+the end of \href{https://xerxes.ximera.org/differentialequations/main/introToSystems/introToSystems}{Section 10.1} 
 for a brief discussion of one such method),
 and to compare the solution obtained in this way with the
 approximations obtained with $T_N$ for various values of $N$. This is
