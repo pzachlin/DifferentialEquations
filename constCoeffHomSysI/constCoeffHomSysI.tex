@@ -22,7 +22,7 @@ We'll now begin our study of the homogeneous system
 where $A$ is an $n\times n$ constant matrix. Since $A$ is continuous
 on $(-\infty,\infty)$, Theorem~\ref{thmtype:10.2.1}
 implies
-that all solutions of \eqref{eq:10.4.1} are defined on $(-\infty,\infty)$.
+that all solutions of $\eqref{eq:10.4.1}$ are defined on $(-\infty,\infty)$.
 Therefore, when we speak of solutions of ${\bf y}'=A{\bf y}$, we'll
 mean solutions on $(-\infty,\infty)$.
 
@@ -44,7 +44,7 @@ form a fundamental set of solutions of the system
 \end{equation}
 but we did not show how we obtained ${\bf y}_1$ and ${\bf y}_2$ in the
 first place. To see how these solutions can be obtained we write
-\eqref{eq:10.4.2} as
+$\eqref{eq:10.4.2}$ as
 \begin{equation}\label{eq:10.4.3}
 \begin{array}{ccc}
 y_1'&=&-4y_1-3y_2\\y_2'&=&6y_1+5y_2\end{array}
@@ -54,12 +54,12 @@ and look for solutions of the form
 y_1=x_1e^{\lambda t}\quad\mbox{and}\quad y_2=x_2e^{\lambda t},
 \end{equation}
 where $x_1$, $x_2$, and $\lambda$ are constants to be determined.
- Differentiating  \eqref{eq:10.4.4} yields
+ Differentiating  $\eqref{eq:10.4.4}$ yields
 $$
 y_1'=\lambda x_1e^{\lambda
 t}\quad\mbox{ and }\quad y_2'=\lambda x_2e^{\lambda t}.
 $$
-Substituting this and  \eqref{eq:10.4.4} into  \eqref{eq:10.4.3} and canceling
+Substituting this and  $\eqref{eq:10.4.4}$ into  $\eqref{eq:10.4.3}$ and canceling
 the common factor $e^{\lambda t}$ yields
 $$
 \begin{array}{ccc}-4x_1-3x_2&=&\lambda x_1 \\
@@ -73,10 +73,10 @@ be rewritten as
 \end{equation}
 The trivial solution $x_1=x_2=0$ of this system isn't  useful, since
 it corresponds to the trivial solution $y_1\equiv y_2\equiv0$ of
-\eqref{eq:10.4.3}, which can't be part of a fundamental set of solutions
-of \eqref{eq:10.4.2}. Therefore we consider only those values of $\lambda$
-for which \eqref{eq:10.4.5} has nontrivial solutions. These are the values
-of $\lambda$ for which the determinant of \eqref{eq:10.4.5} is zero;   that
+$\eqref{eq:10.4.3}$, which can't be part of a fundamental set of solutions
+of $\eqref{eq:10.4.2}$. Therefore we consider only those values of $\lambda$
+for which $\eqref{eq:10.4.5}$ has nontrivial solutions. These are the values
+of $\lambda$ for which the determinant of $\eqref{eq:10.4.5}$ is zero;   that
 is,
 \begin{eqnarray*}
 \begin{vmatrix}-4-\lambda&-3\\6&5-\lambda\end{vmatrix}&=&
@@ -85,7 +85,7 @@ is,
 \end{eqnarray*}
 which has the solutions $\lambda_1=2$ and $\lambda_2=-1$.
 
-Taking $\lambda=2$ in  \eqref{eq:10.4.5} yields
+Taking $\lambda=2$ in  $\eqref{eq:10.4.5}$ yields
 \begin{eqnarray*}
 -6 x_1-3 x_2&=&0\\
 6 x_1+3 x_2&=&0,
@@ -93,27 +93,27 @@ Taking $\lambda=2$ in  \eqref{eq:10.4.5} yields
 which implies that $x_1=-x_2/2$, where  $x_2$ can be
 chosen arbitrarily. Choosing
 $x_2=2$ yields the solution $y_1=-e^{2t}$,
-$y_2=2e^{2t}$ of  \eqref{eq:10.4.3}. We can write this solution in vector
+$y_2=2e^{2t}$ of  $\eqref{eq:10.4.3}$. We can write this solution in vector
 form as
 \begin{equation}\label{eq:10.4.6}
 {\bf y}_1=\begin{bmatrix} -1\\2\end{bmatrix} e^{2t}.
 \end{equation}
 
-Taking $\lambda=-1$ in  \eqref{eq:10.4.5} yields the system
+Taking $\lambda=-1$ in  $\eqref{eq:10.4.5}$ yields the system
 \begin{eqnarray*}
 -3 x_1-3 x_2&=&0\\
 6 x_1+6 x_2&=&0,
 \end{eqnarray*}
 so $x_1=-x_2$. Taking $x_2=1$ here
-yields the solution $y_1=-e^{-t}$, $y_2=e^{-t}$ of  \eqref{eq:10.4.3}. We
+yields the solution $y_1=-e^{-t}$, $y_2=e^{-t}$ of  $\eqref{eq:10.4.3}$. We
 can write this solution in vector form as
 \begin{equation}\label{eq:10.4.7}
 {\bf y}_2=\begin{bmatrix}-1\\1\end{bmatrix}e^{-t}.
 \end{equation}
 
-In \eqref{eq:10.4.6} and \eqref{eq:10.4.7} the constant coefficients in the
+In $\eqref{eq:10.4.6}$ and $\eqref{eq:10.4.7}$ the constant coefficients in the
 arguments of the exponential functions are the eigenvalues of the
-coefficient matrix in \eqref{eq:10.4.2}, and the vector coefficients of the
+coefficient matrix in $\eqref{eq:10.4.2}$, and the vector coefficients of the
 exponential functions are associated eigenvectors. This illustrates
 the next theorem.
 
@@ -193,7 +193,7 @@ solutions of ${\bf y}'=A{\bf y}$.
 
 \begin{explanation}
 \ref{item:10.4.1a}  The characteristic
-polynomial of the  coefficient matrix $A$ in  \eqref{eq:10.4.8} is
+polynomial of the  coefficient matrix $A$ in  $\eqref{eq:10.4.8}$ is
 \begin{eqnarray*}
 \begin{vmatrix} 2-\lambda&4\\4&2-\lambda\end{vmatrix}
 &=& (\lambda-2)^2-16\\
@@ -209,7 +209,7 @@ we must solve the system
 \begin{bmatrix} 0\\0\end{bmatrix}
 \end{equation}
 with $\lambda=6$ and $\lambda=-2$.  Setting $\lambda=6$ in
-\eqref{eq:10.4.10} yields
+$\eqref{eq:10.4.10}$ yields
  $$
 \begin{bmatrix}-4&4\\4&-4
 \end{bmatrix}\begin{bmatrix}
@@ -223,8 +223,8 @@ so
 $$
 {\bf y}_1=\begin{bmatrix} 1\\1\end{bmatrix}e^{6t}
 $$
-is a solution of  \eqref{eq:10.4.8}.  Setting $\lambda=-2$ in
-\eqref{eq:10.4.10} yields
+is a solution of  $\eqref{eq:10.4.8}$.  Setting $\lambda=-2$ in
+$\eqref{eq:10.4.10}$ yields
  $$
 \begin{bmatrix} 4&4\\4&4\end{bmatrix}
 \begin{bmatrix} x_1\\x_2
@@ -238,9 +238,9 @@ so
 $$
 {\bf y}_2=\begin{bmatrix}-1\\1\end{bmatrix}e^{-2t}
 $$
-is a solution of  \eqref{eq:10.4.8}.
+is a solution of  $\eqref{eq:10.4.8}$.
 From Theorem~\ref{thmtype:10.4.1}, the general solution of
-\eqref{eq:10.4.8} is
+$\eqref{eq:10.4.8}$ is
 \begin{equation}\label{eq:10.4.11}
 {\bf y}=c_1{\bf y}_1+c_2{\bf y}_2=c_1\begin{bmatrix}1\\1
 \end{bmatrix}e^{6t}+c_2\begin{bmatrix}-1\\1
@@ -249,8 +249,8 @@ From Theorem~\ref{thmtype:10.4.1}, the general solution of
 
 
 \ref{item:10.4.1b}
- To satisfy the initial condition in  \eqref{eq:10.4.9}, we must choose
-$c_1$ and $c_2$ in  \eqref{eq:10.4.11} so that
+ To satisfy the initial condition in  $\eqref{eq:10.4.9}$, we must choose
+$c_1$ and $c_2$ in  $\eqref{eq:10.4.11}$ so that
 $$
 c_1\begin{bmatrix}1\\1\end{bmatrix}+c_2\begin{bmatrix}-1\\
 1\end{bmatrix}=\begin{bmatrix}5\\-1
@@ -262,7 +262,7 @@ c_1-c_2&=&5\\
 c_1+c_2&=&-1,
 \end{eqnarray*}
 so $c_1=2, c_2=-3$.  Therefore the solution of
-\eqref{eq:10.4.9} is
+$\eqref{eq:10.4.9}$ is
 $$
 {\bf y}=2\begin{bmatrix}1\\1\end{bmatrix}e^{6t}-3
 \begin{bmatrix}-1\\1\end{bmatrix}e^{-2t},
@@ -297,7 +297,7 @@ $$
 
 \begin{explanation}   
 \ref{item:10.4.2a} The characteristic
-polynomial of the  coefficient matrix $A$ in  \eqref{eq:10.4.12} is
+polynomial of the  coefficient matrix $A$ in  $\eqref{eq:10.4.12}$ is
 $$
 \begin{vmatrix}3-\lambda&-1&-1\\-2&3-\lambda&
 2\\4
@@ -313,7 +313,7 @@ To find the  eigenvectors, we must solve the system
 \end{bmatrix}=\begin{bmatrix}0\\0\\0\end{bmatrix}
 \end{equation}
 with $\lambda=2$, $3$, $-1$.  With $\lambda=2$, the augmented matrix of
-\eqref{eq:10.4.14} is
+$\eqref{eq:10.4.14}$ is
 $$
 \begin{bmatrix} 1&-1&-1&\vdots&0\\-2&
 1&2&\vdots&0\\4&-1&-4&\vdots&0
@@ -328,8 +328,8 @@ Hence,  $x_1=x_3$ and $x_2=0$.  Taking $x_3=1$ yields
 $$
 {\bf y}_1=\begin{bmatrix}1\\0\\1\end{bmatrix}e^{2t}
 $$
-as a solution of  \eqref{eq:10.4.12}.  With $\lambda=3$, the augmented
-matrix of  \eqref{eq:10.4.14} is
+as a solution of  $\eqref{eq:10.4.12}$.  With $\lambda=3$, the augmented
+matrix of  $\eqref{eq:10.4.14}$ is
 $$
 \begin{bmatrix}0&-1&-1&\vdots&0\\-2&
 0& 2&\vdots&0\\4&-1&-5&\vdots&0
@@ -344,8 +344,8 @@ Hence,  $x_1=x_3$ and $x_2=-x_3$. Taking $x_3=1$ yields
 $$
 {\bf y}_2=\begin{bmatrix}1\\-1\\1\end{bmatrix}e^{3t}
 $$
-as a solution of  \eqref{eq:10.4.12}.  With $\lambda=-1$, the augmented
-matrix of  \eqref{eq:10.4.14} is
+as a solution of  $\eqref{eq:10.4.12}$.  With $\lambda=-1$, the augmented
+matrix of  $\eqref{eq:10.4.14}$ is
 $$
 \begin{bmatrix} 4&-1&-1&\vdots&0\\-2&4&
 2&\vdots&0\\4&-1&-1&\vdots&0
@@ -360,8 +360,8 @@ Hence, $x_1=x_3/7$ and $x_2=-3x_3/7$.  Taking $x_3=7$ yields
 $$
 {\bf y}_3=\begin{bmatrix}1\\-3\\7\end{bmatrix}e^{-t}
 $$
-as a solution of  \eqref{eq:10.4.12}. By Theorem~\ref{thmtype:10.4.1},
- the general solution of  \eqref{eq:10.4.12} is
+as a solution of  $\eqref{eq:10.4.12}$. By Theorem~\ref{thmtype:10.4.1},
+ the general solution of  $\eqref{eq:10.4.12}$ is
 $$
 {\bf y}=c_1\begin{bmatrix}1\\0\\1\end{bmatrix}e^{2t}
 +c_2\begin{bmatrix}1\\-1\\1\end{bmatrix}
@@ -376,8 +376,8 @@ which can also be written as
 \end{equation}
 
 \ref{item:10.4.2b}
- To satisfy the initial condition in  \eqref{eq:10.4.13} we must choose
-$c_1$, $c_2$, $c_3$ in  \eqref{eq:10.4.15} so that
+ To satisfy the initial condition in  $\eqref{eq:10.4.13}$ we must choose
+$c_1$, $c_2$, $c_3$ in  $\eqref{eq:10.4.15}$ so that
 $$
 \begin{bmatrix}1&1&1\\0&-1&-3\\
 1&1&7\end{bmatrix}
@@ -385,7 +385,7 @@ $$
 \begin{bmatrix}2\\-1\\8\end{bmatrix}.
 $$
 Solving this system yields $c_1=3$, $c_2=-2$, $c_3=1$.  Hence, the solution
-of  \eqref{eq:10.4.13} is
+of  $\eqref{eq:10.4.13}$ is
 \begin{eqnarray*}
 {\bf y}&=&\begin{bmatrix}e^{2t}&e^{3t}&
 e^{-t}\\0&-e^{3t}
@@ -408,7 +408,7 @@ e^{3t}+\begin{bmatrix}1\\-3\\7\end{bmatrix}e^{-t}.
 
 
 \begin{explanation} The characteristic polynomial of
-the  coefficient matrix $A$ in  \eqref{eq:10.4.16} is
+the  coefficient matrix $A$ in  $\eqref{eq:10.4.16}$ is
 $$
 \begin{vmatrix}-3-\lambda&2&2\\2&-3-\lambda&2\\2&2
 &-3-\lambda\end{vmatrix}=-(\lambda-1)(\lambda+5)^2.
@@ -431,7 +431,7 @@ Hence, $x_1=x_2=x_3$, and we choose $x_3=1$ to obtain the solution
 \begin{equation}\label{eq:10.4.17}
 {\bf y}_1=\begin{bmatrix}1\\1\\1\end{bmatrix}e^t
 \end{equation}
-of  \eqref{eq:10.4.16}.  Eigenvectors associated with $\lambda_2=-5$
+of  $\eqref{eq:10.4.16}$.  Eigenvectors associated with $\lambda_2=-5$
 are solutions of the system
 with  augmented matrix
 $$
@@ -453,14 +453,14 @@ $$
 \end{bmatrix}
 $$
 are linearly independent eigenvectors associated with  $\lambda_2=
--5$, and the corresponding solutions of  \eqref{eq:10.4.16} are
+-5$, and the corresponding solutions of  $\eqref{eq:10.4.16}$ are
 $$
 {\bf y}_2=\begin{bmatrix}-1\\0\\1\end{bmatrix}e^{-5t}\quad
 \mbox{and}\quad{\bf y}_3=\begin{bmatrix}-1\\1\\
 0\end{bmatrix}e^{-5t}.
 $$
-Because of this and  \eqref{eq:10.4.17}, Theorem~\ref{thmtype:10.4.1} implies
-that  the general solution of \eqref{eq:10.4.16} is
+Because of this and  $\eqref{eq:10.4.17}$, Theorem~\ref{thmtype:10.4.1} implies
+that  the general solution of $\eqref{eq:10.4.16}$ is
 $$
 {\bf y}=c_1\begin{bmatrix}1\\1\\
 1\end{bmatrix}e^t+c_2
@@ -481,31 +481,31 @@ $2\times2$ constant coefficient system
 \end{equation}
 It is convenient to think of a ``$y_1$-$y_2$ plane," where a point
 is identified by rectangular coordinates $(y_1,y_2)$. If ${\bf
-y}=\begin{bmatrix}y_1\\y_2\end{bmatrix}$ is a non-constant solution of \eqref{eq:10.4.18},
+y}=\begin{bmatrix}y_1\\y_2\end{bmatrix}$ is a non-constant solution of $\eqref{eq:10.4.18}$,
 then the point $(y_1(t),y_2(t))$ moves along a curve $C$ in the
 $y_1$-$y_2$ plane as $t$ varies from $-\infty$ to $\infty$. We call
 $C$ the \dfn{trajectory} of ${\bf y}$. (We also say that $C$ is a
-trajectory of the system \eqref{eq:10.4.18}.) It's important to note that
-$C$ is the trajectory of infinitely many solutions of \eqref{eq:10.4.18},
+trajectory of the system $\eqref{eq:10.4.18}$.) It's important to note that
+$C$ is the trajectory of infinitely many solutions of $\eqref{eq:10.4.18}$,
 since if $\tau$ is any real number, then ${\bf y}(t-\tau)$ is a
-solution of \eqref{eq:10.4.18} %(Exercise~\ref{exer:10.4.28}(b)), 
+solution of $\eqref{eq:10.4.18}$ %(Exercise~\ref{exer:10.4.28}(b)), 
 and
 $(y_1(t-\tau),y_2(t-\tau))$ also moves along $C$ as $t$ varies from
 $-\infty$ to $\infty$. Moreover, Exercise~\ref{exer:10.4.28}%\part{c}
 implies
-that distinct trajectories of \eqref{eq:10.4.18} can't intersect, and that
-two solutions ${\bf y}_1$ and ${\bf y}_2$ of \eqref{eq:10.4.18} have the
+that distinct trajectories of $\eqref{eq:10.4.18}$ can't intersect, and that
+two solutions ${\bf y}_1$ and ${\bf y}_2$ of $\eqref{eq:10.4.18}$ have the
 same trajectory if and only if ${\bf y}_2(t)={\bf y}_1(t-\tau)$ for
 some $\tau$.
 
 From Exercise~\ref{exer:10.4.28}%\part{a}, 
 a trajectory of a nontrivial
 solution
-of \eqref{eq:10.4.18} can't contain $(0,0)$, which we define to be the
+of $\eqref{eq:10.4.18}$ can't contain $(0,0)$, which we define to be the
 trajectory of the trivial solution ${\bf y}\equiv0$. More generally,
 if ${\bf y}=\begin{bmatrix}k_1\\k_2\end{bmatrix}\neq{\bf 0}$ is a constant solution
-of \eqref{eq:10.4.18} (which could occur if zero is an eigenvalue of the
-matrix of \eqref{eq:10.4.18}), we define the trajectory of ${\bf y}$ to be
+of $\eqref{eq:10.4.18}$ (which could occur if zero is an eigenvalue of the
+matrix of $\eqref{eq:10.4.18}$), we define the trajectory of ${\bf y}$ to be
 the single point $(k_1,k_2)$.
 
 To be specific, this is the question: What do the trajectories look
@@ -515,9 +515,9 @@ $$
 A=\begin{bmatrix}a_{11}&a_{12}\\a_{21}&a_{22}
 \end{bmatrix}
 $$
-of \eqref{eq:10.4.18} has real eigenvalues $\lambda_1$ and $\lambda_2$ with
+of $\eqref{eq:10.4.18}$ has real eigenvalues $\lambda_1$ and $\lambda_2$ with
 associated linearly independent eigenvectors ${\bf x}_1$ and ${\bf
-x}_2$. Then  the general solution of \eqref{eq:10.4.18} is
+x}_2$. Then  the general solution of $\eqref{eq:10.4.18}$ is
 \begin{equation} \label{eq:10.4.19}
 {\bf y}= c_1{\bf x}_1
  e^{\lambda_1 t}+c_2{\bf x}_2e^{\lambda_2 t}.
@@ -526,19 +526,19 @@ We'll consider other situations in the next two sections.
 
 We leave it to you %(Exercise~\ref{exer:10.4.35}) 
 to classify the
-trajectories of \eqref{eq:10.4.18} if zero is an eigenvalue of $A$. We'll
+trajectories of $\eqref{eq:10.4.18}$ if zero is an eigenvalue of $A$. We'll
 confine our attention here to the case where both eigenvalues are
 nonzero. In this case the simplest situation is where
-$\lambda_1=\lambda_2\neq 0$, so  \eqref{eq:10.4.19} becomes
+$\lambda_1=\lambda_2\neq 0$, so  $\eqref{eq:10.4.19}$ becomes
 $$
 {\bf y}=(c_1{\bf x}_1+c_2{\bf x}_2)e^{\lambda_1 t}.
 $$
 Since ${\bf x}_1$ and
 ${\bf x}_2$ are linearly independent, an arbitrary vector ${\bf x}$
 can be written as ${\bf x}=c_1{\bf x}_1+c_2{\bf x}_2$. Therefore the
-general solution of \eqref{eq:10.4.18} can be written as ${\bf y}={\bf
+general solution of $\eqref{eq:10.4.18}$ can be written as ${\bf y}={\bf
 x}e^{\lambda_1 t}$ where ${\bf x}$ is an arbitrary $2$-vector, and the
-trajectories of nontrivial solutions of \eqref{eq:10.4.18} are half-lines
+trajectories of nontrivial solutions of $\eqref{eq:10.4.18}$ are half-lines
 through (but not including) the origin. The direction of motion is
 away from the origin if $\lambda_1>0$, as shown in the figure.
 
@@ -568,20 +568,20 @@ lines through the origin parallel to ${\bf x}_1$ and ${\bf x}_2$,
 respectively. By a half-line of $L_1$ (or $L_2$), we mean either of the
 rays obtained by removing the origin from $L_1$ (or $L_2$).
 
-Letting $c_2=0$ in \eqref{eq:10.4.19} yields ${\bf y}=c_1{\bf
+Letting $c_2=0$ in $\eqref{eq:10.4.19}$ yields ${\bf y}=c_1{\bf
 x}_1e^{\lambda_1 t}$. If $c_1\neq 0$, the trajectory defined by this
 solution is a half-line of $L_1$. The direction of motion is away from
 the origin if $\lambda_1>0$, toward the origin if $\lambda_1<0$.
 Similarly, the trajectory of  ${\bf y}=c_2{\bf x}_2e^{\lambda_2 t}$
 with $c_2\neq 0$ is a half-line of $L_2$.
 
-Henceforth, we assume that $c_1$ and $c_2$ in \eqref{eq:10.4.19} are both
-nonzero. In this case, the trajectory of \eqref{eq:10.4.19} can't
+Henceforth, we assume that $c_1$ and $c_2$ in $\eqref{eq:10.4.19}$ are both
+nonzero. In this case, the trajectory of $\eqref{eq:10.4.19}$ can't
 intersect
 $L_1$ or $L_2$, since every point on these lines is on the trajectory
 of a solution for which either $c_1=0$ or $c_2=0$. (Remember: distinct
 trajectories can't intersect!). Therefore the trajectory of
-\eqref{eq:10.4.19} must lie entirely in one of the four open sectors
+$\eqref{eq:10.4.19}$ must lie entirely in one of the four open sectors
 bounded by $L_1$ and $L_2$, but do not any point  on $L_1$ or
 $L_2$. Since the initial point $(y_1(0),y_2(0))$ defined by
 $$
@@ -608,7 +608,7 @@ as shown in the figure.
  %\includegraphics[height=1.5in]{fig100403.jpg} 
 %\end{image}
 
-The direction of ${\bf y}(t)$ in \eqref{eq:10.4.19} is the
+The direction of ${\bf y}(t)$ in $\eqref{eq:10.4.19}$ is the
 same as that of
 \begin{equation} \label{eq:10.4.20}
 e^{-\lambda_2 t}{\bf y}(t)=
@@ -619,14 +619,14 @@ and of
 e^{-\lambda_1 t}{\bf y}(t)=c_1{\bf
 x}_1+c_2{\bf x}_2e^{(\lambda_2-\lambda_1)t}.
 \end{equation}
-Since the right side of \eqref{eq:10.4.20} approaches $c_2{\bf x}_2$ as
+Since the right side of $\eqref{eq:10.4.20}$ approaches $c_2{\bf x}_2$ as
 $t\rightarrow\infty$, the trajectory is asymptotically parallel to $L_2$ as
-$t\rightarrow\infty$. Since the right side of \eqref{eq:10.4.21} approaches
+$t\rightarrow\infty$. Since the right side of $\eqref{eq:10.4.21}$ approaches
 $c_1{\bf x}_1$ as $t\rightarrow-\infty$, the trajectory is asymptotically
 parallel to $L_1$ as $t\rightarrow -\infty$.
 
 The shape and direction of
-traversal of the trajectory of \eqref{eq:10.4.19} depend upon whether
+traversal of the trajectory of $\eqref{eq:10.4.19}$ depend upon whether
 $\lambda_1$ and $\lambda_2$ are both positive, both negative, or of
 opposite signs. We'll now analyze these three cases.
 

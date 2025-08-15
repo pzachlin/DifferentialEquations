@@ -27,7 +27,7 @@ y'_n&
 \end{equation}
 is called a \dfn{linear system}.
 
-The linear system \eqref{eq:10.2.1}  can be written in matrix form as
+The linear system $\eqref{eq:10.2.1}$  can be written in matrix form as
 $$
 \begin{bmatrix}y_1'\\y_2'\\\vdots\\y_n'\end{bmatrix}=\begin{bmatrix}a_{11}(t)&a_{12}(t)&\dots &a_{1n}(t)\\
 a_{21}(t)&a_{22}(t)&\dots &a_{2n}(t)\\
@@ -47,14 +47,14 @@ a_{21}(t)&a_{22}(t)&\dots &a_{2n}(t)\\
 \vdots &\vdots &\ddots &\vdots\\
 a_{n1}(t)&a_{n2}(t)&\dots &a_{nn}(t)\end{bmatrix},\quad\mbox{and}\quad\vec{f}(t)=\begin{bmatrix}f_1(t)\\f_2(t)\\\vdots\\f_n(t)\end{bmatrix}
 $$
-We call $A$  the \dfn{coefficient matrix} of \eqref{eq:10.2.2} and
+We call $A$  the \dfn{coefficient matrix} of $\eqref{eq:10.2.2}$ and
 ${\bf f}$  the \dfn{forcing function}.   We'll say that $A$
 and $\vec{f}$ are \dfn{continuous} if their entries are continuous.
-If ${\bf f}={\bf 0}$, then \eqref{eq:10.2.2} is \dfn{homogeneous};
-otherwise, \eqref{eq:10.2.2} is \dfn{nonhomogeneous}.
+If ${\bf f}={\bf 0}$, then $\eqref{eq:10.2.2}$ is \dfn{homogeneous};
+otherwise, $\eqref{eq:10.2.2}$ is \dfn{nonhomogeneous}.
 
-An  initial value problem  for \eqref{eq:10.2.2} consists of
-finding a solution of \eqref{eq:10.2.2} that equals a given constant
+An  initial value problem  for $\eqref{eq:10.2.2}$ consists of
+finding a solution of $\eqref{eq:10.2.2}$ that equals a given constant
 vector
 $$
 {\bf k} =\begin{bmatrix}k_1\\k_2\\\vdots\\k_n\end{bmatrix}.
@@ -65,7 +65,7 @@ $$
 $$
 
 The next theorem gives sufficient conditions for the existence
-of solutions of initial value problems for \eqref{eq:10.2.2}. We omit the
+of solutions of initial value problems for $\eqref{eq:10.2.2}$. We omit the
 proof.
 
 \begin{theorem}\label{thmtype:10.2.1}
@@ -91,7 +91,7 @@ y_2'&=&2y_1+y_2+e^{4t}
 \end{array}
 \end{equation}
 in matrix form and conclude from Theorem~\ref{thmtype:10.2.1} that every
-initial value problem for \eqref{eq:10.2.3} has a unique solution on
+initial value problem for $\eqref{eq:10.2.3}$ has a unique solution on
 $(-\infty,\infty)$.
 \item\label{item:10.2.1b} % (b)
 Verify that
@@ -99,7 +99,7 @@ Verify that
 {\bf y}=
 \frac{1}{5}\begin{bmatrix}8\\7\end{bmatrix}e^{4t}+c_1\begin{bmatrix}1\\1\end{bmatrix}e^{3t}+c_2\begin{bmatrix}1\\-1\end{bmatrix}e^{-t}
 \end{equation}
-is a solution of \eqref{eq:10.2.3} for all values of the constants $c_1$
+is a solution of $\eqref{eq:10.2.3}$ for all values of the constants $c_1$
 and $c_2$.
 \item\label{item:10.2.1c} % (c)
 Find the  solution of the initial value problem
@@ -111,11 +111,11 @@ y}(0)=\frac{1}{5}\begin{bmatrix}3\\22\end{bmatrix}.
 
 \begin{explanation}
 \ref{item:10.2.1a}
-The system  \eqref{eq:10.2.3} can be written in matrix form as
+The system  $\eqref{eq:10.2.3}$ can be written in matrix form as
 $$
 {\bf y}'=\begin{bmatrix}1&2\\2&1\end{bmatrix}{\bf y}+\begin{bmatrix}2\\1\end{bmatrix}e^{4t}.
 $$
-An initial value problem for \eqref{eq:10.2.3} can be written as
+An initial value problem for $\eqref{eq:10.2.3}$ can be written as
 $$
 {\bf y}'=\begin{bmatrix}1&2\\2&1\end{bmatrix}{\bf y}+\begin{bmatrix}2\\1\end{bmatrix}e^{4t}, \quad
 y(t_0)=\begin{bmatrix}k_1\\k_2\end{bmatrix}.
@@ -125,7 +125,7 @@ continuous on $(-\infty,\infty)$, Theorem~\ref{thmtype:10.2.1} implies that
 this problem has a unique solution on $(-\infty,\infty)$.
 
 \ref{item:10.2.1b}
-If ${\bf y}$ is given by \eqref{eq:10.2.4}, then
+If ${\bf y}$ is given by $\eqref{eq:10.2.4}$, then
 \begin{eqnarray*}
 A{\bf y}+{\bf f}&=&
 \frac{1}{5}\begin{bmatrix}1&2\\2&1\end{bmatrix}\begin{bmatrix}8\\7\end{bmatrix}e^{4t}+
@@ -139,7 +139,7 @@ c_1\begin{bmatrix}1&2\\2&1\end{bmatrix}\begin{bmatrix}1\\1\end{bmatrix}e^{3t}\\
 \end{eqnarray*}
 
 \ref{item:10.2.1c}
-We must choose $c_1$ and $c_2$ in \eqref{eq:10.2.4} so that
+We must choose $c_1$ and $c_2$ in $\eqref{eq:10.2.4}$ so that
 $$
 \frac{1}{5}\begin{bmatrix}8\\7\end{bmatrix}+c_1\begin{bmatrix}1\\1\end{bmatrix}+c_2\begin{bmatrix}1\\-1\end{bmatrix}=\frac{1}{5}\begin{bmatrix}3\\22\end{bmatrix},
 $$
@@ -151,7 +151,7 @@ Solving this system yields $c_1=1$, $c_2=-2$, so
 $$
 {\bf y}=\frac{1}{5}\begin{bmatrix}8\\7\end{bmatrix}e^{4t}+\begin{bmatrix}1\\1\end{bmatrix}e^{3t}-2\begin{bmatrix}1\\-1\end{bmatrix}e^{-t}
 $$
-is the solution of  \eqref{eq:10.2.5}.
+is the solution of  $\eqref{eq:10.2.5}$.
 \end{explanation}
 \end{example}
 
@@ -163,8 +163,8 @@ equation
 P_0(t)y^{(n)}+P_1(t)y^{(n-1)}+\cdots+P_n(t)y=F(t),
 \end{equation}
 as
-developed in \href{https://ximera.osu.edu/ode/main/linearHigherOrder/linearHigherOrder}{Trench 9.1}. For example, by rewriting
-\eqref{eq:10.2.6} as an equivalent linear system it can be shown that
+developed in \href{https://xerxes.ximera.org/differentialequations/main/linearHigherOrder/linearHigherOrder}{Section 9.1}. For example, by rewriting
+$\eqref{eq:10.2.6}$ as an equivalent linear system it can be shown that
 Theorem~\ref{thmtype:10.2.1} implies Theorem~\ref{thmtype:9.1.1}.
 %(Exercise~\ref{exer:10.2.12}).
 \end{remark}

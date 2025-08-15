@@ -16,7 +16,7 @@ eigenvalues, but does not have $n$ linearly independent eigenvectors.
 
 \section*{Constant Coefficient Homogeneous Systems II}
 
-We saw in \href{https://ximera.osu.edu/ode/main/constCoeffHomSysI/constCoeffHomSysI}{Trench 10.4} that if an $n\times n$
+We saw in \href{https://xerxes.ximera.org/differentialequations/main/constCoeffHomSysI/constCoeffHomSysI}{Section 10.4} that if an $n\times n$
 constant matrix
 $A$ has $n$ real eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$
 (which need not be distinct) with associated linearly independent
@@ -43,7 +43,7 @@ Show that the system
 does not have a fundamental set of solutions of the form $\{{\bf
 x}_1e^{\lambda_1t},{\bf x}_2e^{\lambda_2t}\}$, where $\lambda_1$ and
 $\lambda_2$ are eigenvalues of the coefficient matrix $A$ of
-\eqref{eq:10.5.1} and ${\bf x}_1$, and ${\bf x}_2$ are associated
+$\eqref{eq:10.5.1}$ and ${\bf x}_1$, and ${\bf x}_2$ are associated
 linearly independent eigenvectors.
 
 \begin{explanation}   
@@ -72,7 +72,7 @@ so $A$ does not have a set of two linearly independent eigenvectors.
 \end{example}
 
 From Example~\ref{example:10.5.1}, we know that all scalar multiples of
-${\bf y}_1=\begin{bmatrix}5\\2\end{bmatrix}e^t$ are solutions of \eqref{eq:10.5.1};
+${\bf y}_1=\begin{bmatrix}5\\2\end{bmatrix}e^t$ are solutions of $\eqref{eq:10.5.1}$;
 however,
 to find the general solution we must find a second solution ${\bf
 y}_2$ such that $\{{\bf y}_1,{\bf y}_2\}$ is linearly independent.
@@ -82,7 +82,7 @@ $$
 ay''+by'+cy=0
 $$
 in the case where the characteristic polynomial has a repeated root,
-you might expect to obtain a second solution of \eqref{eq:10.5.1} by
+you might expect to obtain a second solution of $\eqref{eq:10.5.1}$ by
 multiplying the first solution by $t$. However, this yields ${\bf
 y}_2=\begin{bmatrix}5\\2\end{bmatrix}te^t$, which doesn't work, since
 $$
@@ -112,10 +112,10 @@ are linearly independent  solutions of ${\bf y}'=A{\bf y}.$
 
 A complete proof of this theorem is beyond the scope of this book. The
 difficulty is in proving that there's a vector ${\bf u}$ satisfying
-\eqref{eq:10.5.2}, since $\det(A-\lambda_1I)=0$. We'll take this without
+$\eqref{eq:10.5.2}$, since $\det(A-\lambda_1I)=0$. We'll take this without
 proof and verify the other assertions of the theorem.
 
-We already know that ${\bf y}_1$ in \eqref{eq:10.5.3} is a solution of
+We already know that ${\bf y}_1$ in $\eqref{eq:10.5.3}$ is a solution of
 ${\bf y}'=A{\bf y}$. To see that ${\bf y}_2$ is also a solution, we
 compute
 \begin{eqnarray*}
@@ -131,7 +131,7 @@ $$
 {\bf y}_2'-A{\bf y}_2=-
 \left((A-\lambda_1I){\bf u}-{\bf x}\right)e^{\lambda_1t},
 $$
-and now \eqref{eq:10.5.2} implies that
+and now $\eqref{eq:10.5.2}$ implies that
 ${\bf y}_2'=A{\bf y}_2$.
 
 To see that ${\bf y}_1$ and ${\bf y}_2$  are linearly independent,
@@ -140,14 +140,14 @@ suppose   $c_1$ and $c_2$ are constants such that
 c_1{\bf y}_1+c_2{\bf y}_2=c_1{\bf x}e^{\lambda_1t}+c_2({\bf
 u}e^{\lambda_1t} +{\bf x}te^{\lambda_1t})={\bf 0}.
 \end{equation}
-We must show that $c_1=c_2=0$.  Multiplying \eqref{eq:10.5.4}
+We must show that $c_1=c_2=0$.  Multiplying $\eqref{eq:10.5.4}$
 by $e^{-\lambda_1t}$ shows that
 \begin{equation}\label{eq:10.5.5}
 c_1{\bf x}+c_2({\bf u} +{\bf x}t)={\bf 0}.
 \end{equation}
 By differentiating this with respect to $t$, we see that $c_2{\bf
 x}={\bf 0}$, which implies $c_2=0$, because ${\bf x}\neq{\bf 0}$.
-Substituting  $c_2=0$ into \eqref{eq:10.5.5}  yields $c_1{\bf x}={\bf 0}$,
+Substituting  $c_2=0$ into $\eqref{eq:10.5.5}$  yields $c_1{\bf x}={\bf 0}$,
 which implies that $c_1=0$, again because ${\bf x}\neq{\bf 0}$
 
 \begin{example}\label{example:10.5.2}
@@ -160,7 +160,7 @@ considered in Example~\ref{example:10.5.1}.
 \begin{explanation} 
 In Example~\ref{example:10.5.1} we saw that $\lambda_1=1$ is an
 eigenvalue of multiplicity $2$ of the coefficient matrix $A$ in
-\eqref{eq:10.5.6}, and that all of the eigenvectors of $A$ are multiples of
+$\eqref{eq:10.5.6}$, and that all of the eigenvectors of $A$ are multiples of
 $$
 {\bf x}=\begin{bmatrix}5\\2\end{bmatrix}.
 $$
@@ -168,7 +168,7 @@ Therefore
 $$
 {\bf y}_1=\begin{bmatrix}5\\2\end{bmatrix}e^t
 $$
-is a solution of \eqref{eq:10.5.6}. From Theorem~\ref{thmtype:10.5.1}, a second
+is a solution of $\eqref{eq:10.5.6}$. From Theorem~\ref{thmtype:10.5.1}, a second
 solution is given by ${\bf y}_2={\bf u}e^t+{\bf x}te^t$, where
 $(A-I){\bf u}={\bf x}$. The augmented matrix of this system is
 $$
@@ -193,7 +193,7 @@ $$
 $$
 Since ${\bf y}_1$ and ${\bf y}_2$ are linearly independent by
 Theorem~\ref{thmtype:10.5.1}, they form a fundamental set of solutions of
-\eqref{eq:10.5.6}. Therefore the general solution of \eqref{eq:10.5.6} is
+$\eqref{eq:10.5.6}$. Therefore the general solution of $\eqref{eq:10.5.6}$ is
 $$
 {\bf
 y}=c_1\begin{bmatrix}5\\2\end{bmatrix}e^t+c_2\left(\begin{bmatrix}1\\0\end{bmatrix}\frac{e^t}{2}+\begin{bmatrix}5\\2\end{bmatrix}te^t\right).
@@ -212,7 +212,7 @@ solution ${\bf y}_2$. %(Exercise~\ref{exer:10.5.33}).
 \end{equation}
 
 \begin{explanation}  The characteristic polynomial of
-the coefficient matrix $A$ in  \eqref{eq:10.5.7} is
+the coefficient matrix $A$ in  $\eqref{eq:10.5.7}$ is
 $$
 \begin{vmatrix} 3-\lambda & 4 & -10\\ 2 & 1-\lambda &
 -2\\ 2 & 2 &-5-\lambda\end{vmatrix}=-
@@ -240,7 +240,7 @@ Therefore
 $$
 {\bf y}_1 =\begin{bmatrix}1\\2\\1\end{bmatrix}e^t
 $$
-is a solution of  \eqref{eq:10.5.7}.
+is a solution of  $\eqref{eq:10.5.7}$.
 
 Eigenvectors associated with $\lambda_2 =-1$ satisfy $(A+I){\bf
 x}={\bf 0}$. The  augmented matrix of this system is
@@ -263,11 +263,11 @@ so
 $$
 {\bf y}_2 =\begin{bmatrix}-1\\1\\0\end{bmatrix}e^{-t}
 $$
-is a solution of  \eqref{eq:10.5.7}.
+is a solution of  $\eqref{eq:10.5.7}$.
 
 Since all the eigenvectors of $A$ associated with $\lambda_2=-1$ are
 multiples of ${\bf x}_2$, we must now use Theorem~\ref{thmtype:10.5.1} to
-find a third solution of \eqref{eq:10.5.7} in the form
+find a third solution of $\eqref{eq:10.5.7}$ in the form
 \begin{equation}\label{eq:10.5.8}
 {\bf y}_3={\bf u}e^{-t}+\begin{bmatrix}-1\\1\\0\end{bmatrix}te^{-t},
 \end{equation}
@@ -288,12 +288,12 @@ arbitrary. Choosing $u_2=0$ yields
 $$
 {\bf u} =\begin{bmatrix}1\\0\\1/2\end{bmatrix},
 $$
-and substituting this into  \eqref{eq:10.5.8}
+and substituting this into  $\eqref{eq:10.5.8}$
 yields the solution
 $$
 {\bf y}_3=\begin{bmatrix}2\\0\\1\end{bmatrix}\frac{e^{-t}}{2}+\begin{bmatrix}-1\\1\\0\end{bmatrix}te^{-t}
 $$
-of  \eqref{eq:10.5.7}.
+of  $\eqref{eq:10.5.7}$.
 
 Since the Wronskian of $\{{\bf y}_1,{\bf y}_2,{\bf y}_3\}$
 at $t=0$ is
@@ -302,7 +302,7 @@ $$
 1&-1&1\\2&1&0\\1&0&1/2\end{vmatrix}=\frac{1}{2},
 $$
 $\{{\bf y}_1,{\bf y}_2,{\bf y}_3\}$ is a fundamental set of solutions
-of \eqref{eq:10.5.7}. Therefore the general solution of \eqref{eq:10.5.7}
+of $\eqref{eq:10.5.7}$. Therefore the general solution of $\eqref{eq:10.5.7}$
 is
 $$
 {\bf y}=c_1\begin{bmatrix}1\\2\\1\end{bmatrix}e^t+c_2\begin{bmatrix}-1\\1\\0\end{bmatrix}e^{-t}+c_3\left
@@ -327,8 +327,8 @@ vectors ${\bf v}$ such that
 \begin{equation}\label{eq:10.5.10}
 (A-\lambda_1I){\bf v}={\bf u}.
 \end{equation}
- If ${\bf u}$ satisfies \eqref{eq:10.5.9}  and ${\bf v}$ satisfies
-\eqref{eq:10.5.10},  then
+ If ${\bf u}$ satisfies $\eqref{eq:10.5.9}$  and ${\bf v}$ satisfies
+$\eqref{eq:10.5.10}$,  then
 \begin{eqnarray*}
 {\bf y}_1 &=&{\bf x} e^{\lambda_1t},\\
 {\bf y}_2&=&{\bf u}e^{\lambda_1t}+{\bf x} te^{\lambda_1t},\mbox{
@@ -340,8 +340,8 @@ are linearly independent solutions of  ${\bf y}'=A{\bf y}$.
 \end{theorem}
 
 Again, it's beyond the scope of this book to prove that there are
-vectors ${\bf u}$ and ${\bf v}$ that satisfy \eqref{eq:10.5.9} and
-\eqref{eq:10.5.10}. Theorem~\ref{thmtype:10.5.1} implies that ${\bf y}_1$ and
+vectors ${\bf u}$ and ${\bf v}$ that satisfy $\eqref{eq:10.5.9}$ and
+$\eqref{eq:10.5.10}$. Theorem~\ref{thmtype:10.5.1} implies that ${\bf y}_1$ and
 ${\bf y}_2$ are solutions of ${\bf y}'=A{\bf y}$. We leave the rest of
 the proof to you.% (Exercise~\ref{exer:10.5.34}).
 
@@ -352,7 +352,7 @@ Use Theorem~\ref{thmtype:10.5.2} to find the general solution of
 \end{equation}
 
 \begin{explanation}  The characteristic polynomial of
-the coefficient matrix $A$ in  \eqref{eq:10.5.11} is
+the coefficient matrix $A$ in  $\eqref{eq:10.5.11}$ is
 $$
 \begin{vmatrix} 1-\lambda & 1 & 1\\ 1 & 3-\lambda
 &
@@ -380,9 +380,9 @@ Therefore
 $$
 {\bf y}_1=\begin{bmatrix}1\\0\\1\end{bmatrix}e^{2t}
 $$
-is a solution of  \eqref{eq:10.5.11}.
+is a solution of  $\eqref{eq:10.5.11}$.
 
-We  now find a second solution of  \eqref{eq:10.5.11}  in the form
+We  now find a second solution of  $\eqref{eq:10.5.11}$  in the form
 $$
 {\bf y}_2={\bf u}e^{2t}+\begin{bmatrix}1\\0\\1\end{bmatrix}te^{2t},
 $$
@@ -405,9 +405,9 @@ and
 $$
 {\bf y}_2=\begin{bmatrix}-1\\1\\0\end{bmatrix}\frac{e^{2t}}{2}+\begin{bmatrix}1\\0\\1\end{bmatrix}te^{2t}
 $$
-is a solution of  \eqref{eq:10.5.11}.
+is a solution of  $\eqref{eq:10.5.11}$.
 
-We  now find a third solution of  \eqref{eq:10.5.11}  in the form
+We  now find a third solution of  $\eqref{eq:10.5.11}$  in the form
 $$
 {\bf y}_3={\bf
 v}e^{2t}+\begin{bmatrix}-1\\1\\0\end{bmatrix}\frac{te^{2t}}{2}+\begin{bmatrix}1\\0\\1\end{bmatrix}\frac{t^2e^{2t}}{2}
@@ -432,10 +432,10 @@ $$
 {\bf y}_3=\begin{bmatrix}1\\0\\0\end{bmatrix}\frac{e^{2t}}{2}+
 \begin{bmatrix}-1\\1\\0\end{bmatrix}\frac{te^{2t}}{2}+\begin{bmatrix}1\\0\\1\end{bmatrix}\frac{t^2e^{2t}}{2}
 $$
-is a solution of  \eqref{eq:10.5.11}. Since ${\bf y}_1$, ${\bf y}_2$, and
+is a solution of  $\eqref{eq:10.5.11}$. Since ${\bf y}_1$, ${\bf y}_2$, and
 ${\bf y}_3$ are linearly independent by Theorem~\ref{thmtype:10.5.2}, they
-form a fundamental set of solutions of \eqref{eq:10.5.11}. Therefore the
-general solution of \eqref{eq:10.5.11} is
+form a fundamental set of solutions of $\eqref{eq:10.5.11}$. Therefore the
+general solution of $\eqref{eq:10.5.11}$ is
 \begin{eqnarray*}
 {\bf y} &=&c_1\begin{bmatrix}1\\0\\1\end{bmatrix}e^{2t}+
 c_2\left(\begin{bmatrix}-1\\1\\0\end{bmatrix}\frac{e^{2t}}{2}+\begin{bmatrix}1\\0\\1\end{bmatrix}te^{2t}\right)\\
@@ -459,7 +459,7 @@ then there are infinitely many vectors ${\bf u}$ such that
 \begin{equation}\label{eq:10.5.13}
 (A-\lambda_1I){\bf u}={\bf x}_3.
 \end{equation}
-If ${\bf u}$ satisfies  \eqref{eq:10.5.13}, then
+If ${\bf u}$ satisfies  $\eqref{eq:10.5.13}$, then
 \begin{eqnarray}
 {\bf y}_1&=&{\bf x}_1 e^{\lambda_1t},\nonumber\\
 {\bf y}_2&=&{\bf x}_2e^{\lambda_1t},\mbox{and }\nonumber\\
@@ -478,7 +478,7 @@ Use Theorem~\ref{thmtype:10.5.3} to find the general solution of
 
 
 \begin{explanation}  The characteristic polynomial of
-the coefficient matrix $A$ in  \eqref{eq:10.5.15} is
+the coefficient matrix $A$ in  $\eqref{eq:10.5.15}$ is
 $$
 \begin{vmatrix}-\lambda & 0 & 1\\ -1 & 1-\lambda &
 1\\ -1 & 0 & 2-\lambda\end{vmatrix}=-(\lambda-1)^3.
@@ -510,9 +510,9 @@ form a basis for the eigenspace, and
 $$
 {\bf y}_1  =\begin{bmatrix}1\\0\\1\end{bmatrix}e^t\quad\mbox{and}\quad {\bf y}_2=\begin{bmatrix}0\\1\\0\end{bmatrix}e^t
 $$
-are linearly independent solutions of   \eqref{eq:10.5.15}.
+are linearly independent solutions of   $\eqref{eq:10.5.15}$.
 
-To find a third linearly independent solution of  \eqref{eq:10.5.15}, we
+To find a third linearly independent solution of  $\eqref{eq:10.5.15}$, we
 must
 find constants $\alpha$  and $\beta$ (not both zero) such that the system
 \begin{equation}\label{eq:10.5.17}
@@ -528,14 +528,14 @@ which is row equivalent to
 \begin{bmatrix} 1 & 0 &- 1 &\vdots& -\alpha\\ 0 & 0 & 0
 &\vdots&\beta-\alpha\\ 0 & 0 & 0 &\vdots&0\end{bmatrix}.
 \end{equation}
-Therefore  \eqref{eq:10.5.17} has a solution if and only if
+Therefore  $\eqref{eq:10.5.17}$ has a solution if and only if
 $\beta=\alpha$, where $\alpha$ is arbitrary. If
-$\alpha=\beta=1$ then \eqref{eq:10.5.12} and \eqref{eq:10.5.16} yield
+$\alpha=\beta=1$ then $\eqref{eq:10.5.12}$ and $\eqref{eq:10.5.16}$ yield
 $$
 {\bf x}_3={\bf x}_1+{\bf x}_2=
 \begin{bmatrix}1\\0\\1\end{bmatrix}+\begin{bmatrix}0\\1\\0\end{bmatrix}=\begin{bmatrix}1\\1\\1\end{bmatrix},
 $$
-and the augmented matrix \eqref{eq:10.5.18}  becomes
+and the augmented matrix $\eqref{eq:10.5.18}$  becomes
 $$
 \begin{bmatrix} 1 & 0 &- 1 &\vdots& -1\\ 0 & 0 & 0
 &\vdots& 0\\ 0 & 0 & 0 &\vdots&0\end{bmatrix}.
@@ -545,16 +545,16 @@ Choosing $u_2=u_3=0$  yields
 $$
 {\bf u}=\begin{bmatrix}-1\\0\\0\end{bmatrix}.
 $$
- Therefore \eqref{eq:10.5.14} implies that
+ Therefore $\eqref{eq:10.5.14}$ implies that
 $$
 {\bf y}_3={\bf u}e^t+{\bf
 x}_3te^t=\begin{bmatrix}-1\\0\\0\end{bmatrix}e^t+\begin{bmatrix}1\\1\\1\end{bmatrix}te^t
 $$
 
-is a solution of  \eqref{eq:10.5.15}. Since ${\bf y}_1$, ${\bf y}_2$, and
+is a solution of  $\eqref{eq:10.5.15}$. Since ${\bf y}_1$, ${\bf y}_2$, and
 ${\bf y}_3$ are linearly independent by Theorem~\ref{thmtype:10.5.3},
-they form a fundamental set of solutions for \eqref{eq:10.5.15}.
-Therefore the general solution of \eqref{eq:10.5.15} is
+they form a fundamental set of solutions for $\eqref{eq:10.5.15}$.
+Therefore the general solution of $\eqref{eq:10.5.15}$ is
 $$
 {\bf y}=c_1\begin{bmatrix}1\\0\\1\end{bmatrix}e^t+c_2\begin{bmatrix}0\\1\\0\end{bmatrix}e^t
 +c_3\left(\begin{bmatrix}-1\\0\\0\end{bmatrix}e^t+\begin{bmatrix}1\\1\\1\end{bmatrix}te^t\right).
@@ -577,7 +577,7 @@ A=\begin{bmatrix}a_{11}&a_{12}\\a_{21}&a_{22}
 $$
 has a repeated eigenvalue $\lambda_1$ and the associated eigenspace is
 one-dimensional. In this case we know from Theorem~\ref{thmtype:10.5.1}
-that the general solution of \eqref{eq:10.5.19} is
+that the general solution of $\eqref{eq:10.5.19}$ is
 \begin{equation} \label{eq:10.5.20}
 {\bf y}=c_1{\bf x}e^{\lambda_1t}+c_2({\bf u}e^{\lambda_1t}+{\bf
 x}te^{\lambda_1t}),
@@ -611,16 +611,16 @@ We assume that $\lambda_1\neq0$.
 
 Let $L$ denote the line through the origin parallel to ${\bf x}$. By a
 \dfn{half-line} of $L$ we mean either of the rays obtained by
-removing the origin from $L$. Eqn.~\eqref{eq:10.5.20} is a parametric
+removing the origin from $L$. Eqn. $\eqref{eq:10.5.20}$ is a parametric
 equation of the half-line of $L$ in the direction of ${\bf x}$ if
 $c_1>0$, or of the half-line of $L$ in the direction of $-{\bf x}$ if
 $c_1<0$. The origin is the trajectory of the trivial solution ${\bf
 y}\equiv{\bf 0}$.
 
 Henceforth, we assume that $c_2\neq0$. In this case, the trajectory of
-\eqref{eq:10.5.20} can't intersect $L$, since every point of $L$ is on a
+$\eqref{eq:10.5.20}$ can't intersect $L$, since every point of $L$ is on a
 trajectory obtained by setting $c_2=0$. Therefore the trajectory of
-\eqref{eq:10.5.20} must lie entirely in one of the open half-planes
+$\eqref{eq:10.5.20}$ must lie entirely in one of the open half-planes
 bounded
 by $L$, but does not contain any point on $L$. Since the initial point
 $(y_1(0),y_2(0))$ defined by ${\bf y}(0)=c_1{\bf x}_1+c_2{\bf u}$ is
@@ -631,7 +631,7 @@ For convenience we'll call the half-plane where $c_2>0$ the
 \dfn{positive half-plane}. Similarly, the-half plane where $c_2<0$ is
 the \dfn{negative half-plane}. You should convince yourself %(Exercise~\ref{exer:10.5.35}) 
 that even though there are infinitely
-many vectors ${\bf u}$ that satisfy \eqref{eq:10.5.21}, they all define
+many vectors ${\bf u}$ that satisfy $\eqref{eq:10.5.21}$, they all define
 the same positive and negative half-planes. In the figures simply
 regard ${\bf u}$ as an arrow pointing to the positive half-plane,
 since wen't attempted to give ${\bf u}$ its proper length or
@@ -676,7 +676,7 @@ Or to the left of the observer, as shown below.
  %\includegraphics[height=1.5in]{fig100504.jpg} 
 %\end{image}
 
-Multiplying \eqref{eq:10.5.20} by $e^{-\lambda_1t}$ yields
+Multiplying $\eqref{eq:10.5.20}$ by $e^{-\lambda_1t}$ yields
 $$
 e^{-\lambda_1t}{\bf y}(t)=c_1{\bf x}+c_2{\bf u}+c_2t
 {\bf x}.
@@ -706,7 +706,7 @@ $$
 \lim_{t\rightarrow\infty}{\bf y}(t)={\bf 0}\quad\mbox{if}\quad\lambda_1<0,
 $$
  there are four possible patterns for the trajectories
-of \eqref{eq:10.5.19}, depending upon the signs of $c_2$ and $\lambda_1$.
+of $\eqref{eq:10.5.19}$, depending upon the signs of $c_2$ and $\lambda_1$.
 
 %\begin{image}
  %\includegraphics[height=1.5in]{fig100502.jpg} 

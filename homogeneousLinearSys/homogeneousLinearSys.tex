@@ -20,7 +20,7 @@ A(t){\bf y}$, where $A=A(t)$ is a continuous $n\times n$ matrix
 function on an interval $(a,b)$. The theory of linear homogeneous
 systems has much in common with the theory of linear homogeneous
 scalar equations, which we considered in
-Trench \href{https://ximera.osu.edu/ode/main/linearFirstOrderDiffEq/linearFirstOrderDiffEq}{2.1}, \href{https://ximera.osu.edu/ode/main/homogeneousLinearEquations/homogeneousLinearEquations}{5.1}, and \href{https://ximera.osu.edu/ode/main/linearHigherOrder/linearHigherOrder}{9.1}.
+\href{https://xerxes.ximera.org/differentialequations/main/linearFirstOrderDiffEq/linearFirstOrderDiffEq}{Section 2.1}, \href{https://xerxes.ximera.org/differentialequations/main/homogeneousLinearEquations/homogeneousLinearEquations}{Section 5.1}, and \href{https://xerxes.ximera.org/differentialequations/main/linearHigherOrder/linearHigherOrder}{Section 9.1}.
 
 Whenever we refer to solutions of ${\bf y}'=A(t){\bf y}$ we'll mean
 solutions on $(a,b)$. Since ${\bf y}\equiv{\bf 0}$ is obviously a
@@ -42,9 +42,9 @@ y}$ on $(a,b)$, then so is any linear combination of
 $\{{\bf y}_1,{\bf y}_2,\dots,{\bf y}_n\}$ is a \dfn{fundamental set of
 solutions of ${\bf y}'=A(t){\bf y}$ on} $(a,b)$ on if every solution of
 ${\bf y}'=A(t){\bf y}$ on $(a,b)$ can be written as a linear combination of
-${\bf y}_1, {\bf y}_2, \dots, {\bf y}_n$, as in \eqref{eq:10.3.1}.
+${\bf y}_1, {\bf y}_2, \dots, {\bf y}_n$, as in $\eqref{eq:10.3.1}$.
 In this
-case we say that \eqref{eq:10.3.1} is the \dfn{general solution of ${\bf
+case we say that $\eqref{eq:10.3.1}$ is the \dfn{general solution of ${\bf
 y}'=A(t){\bf y}$ on} $(a,b)$.
 
 
@@ -64,7 +64,7 @@ only constants $c_1, c_2, \dots, c_n$ such that
  c_1{\bf y}_1(t)+c_2{\bf y}_2(t)+\cdots+c_n{\bf y}_n(t)=0,\quad
 a<t<b,
 \end{equation}
-are $c_1=c_2=\cdots=c_n=0$. If \eqref{eq:10.3.2} holds for some set of
+are $c_1=c_2=\cdots=c_n=0$. If $\eqref{eq:10.3.2}$ holds for some set of
 constants $c_1, c_2, \dots, c_n$ that are not all zero, then $\{{\bf
 y}_1,{\bf y}_2,\dots,{\bf y}_n\}$ is \dfn{linearly dependent} on
 $(a,b)$
@@ -207,11 +207,10 @@ y_{n1}&y_{n2}&\cdots&y_{nn} \\
 \end{vmatrix}
 \end{equation}
 is called the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Wronski.html}{Wronskian} of $\{{\bf y}_1,{\bf y}_2,\dots,{\bf
+\href{https://en.wikipedia.org/wiki/Wronskian}{Wronskian} of $\{{\bf y}_1,{\bf y}_2,\dots,{\bf
 y}_n\}$. It can be shown 
 %(Exercises~\ref{exer:10.3.2} and \ref{exer:10.3.3})
-that this definition is analogous to definitions of the Wronskian of
-scalar functions given in Trench \href{https://ximera.osu.edu/ode/main/homogeneousLinearEquations/homogeneousLinearEquations}{5.1} and \href{https://ximera.osu.edu/ode/main/linearHigherOrder/linearHigherOrder}{9.1}.
+that this definition is analogous to definitions of the Wronskian of scalar functions given in \href{https://xerxes.ximera.org/differentialequations/main/homogeneousLinearEquations/homogeneousLinearEquations}{Section 5.1} and \href{https://xerxes.ximera.org/differentialequations/main/linearHigherOrder/linearHigherOrder}{Section 9.1}.
 The next theorem is analogous to
 Theorems~\ref{thmtype:5.1.4} and
 \ref{thmtype:9.1.3}. %The proof is sketched in
@@ -239,7 +238,7 @@ matrix $A$,
 $$
 \mbox{tr}(A)=a_{11}+a_{22}+\cdots+a_{nn},
 $$
-and  \eqref{eq:10.3.6} can be written as
+and  $\eqref{eq:10.3.6}$ can be written as
 $$
 W(t)=W(t_0)\exp\left(
 \int^t_{t_0}\mbox{tr}(A(s))\,
@@ -279,10 +278,10 @@ at all points in $(a,b)$.
 \end{theorem}
 
 
-We say that $Y$ in \eqref{eq:10.3.4} is a \dfn{fundamental matrix} for
+We say that $Y$ in $\eqref{eq:10.3.4}$ is a \dfn{fundamental matrix} for
 ${\bf y}'=A(t){\bf y}$ if any (and therefore all) of the statements
 \ref{item:10.3.3a}-\ref{item:10.3.3e} of Theorem~\ref{thmtype:10.3.2} are true for the
-columns of $Y$. In this case, \eqref{eq:10.3.3} implies that the general
+columns of $Y$. In this case, $\eqref{eq:10.3.3}$ implies that the general
 solution of ${\bf y}'=A(t){\bf y}$ can be written as ${\bf y}=Y{\bf
 c}$, where ${\bf c}$ is an arbitrary constant $n$-vector.
 
@@ -300,12 +299,12 @@ on $(-\infty,\infty)$.  (Verify.)
 \begin{enumerate}
 \item\label{item:10.3.2a} % (a)
 Compute the Wronskian of $\{{\bf y}_1,{\bf y}_2\}$
-directly from the definition \eqref{eq:10.3.5}
+directly from the definition $\eqref{eq:10.3.5}$
 \item\label{item:10.3.2b} % (b)
-Verify Abel's formula \eqref{eq:10.3.6} for the Wronskian of
+Verify Abel's formula $\eqref{eq:10.3.6}$ for the Wronskian of
 $\{{\bf y}_1,{\bf y}_2\}$.
 \item\label{item:10.3.2c} % (c)
-Find the general solution of \eqref{eq:10.3.7}.
+Find the general solution of $\eqref{eq:10.3.7}$.
 \item\label{item:10.3.2d} % (d)
  Solve the initial value problem
 \begin{equation} \label{eq:10.3.8}
@@ -317,7 +316,7 @@ Find the general solution of \eqref{eq:10.3.7}.
 
 \begin{explanation}
 \ref{item:10.3.2a}
-From \eqref{eq:10.3.5}
+From $\eqref{eq:10.3.5}$
 \begin{equation} \label{eq:10.3.9}
 W(t)=\begin{vmatrix}-e^{2t}&-e^{-t}\\2e^{2t}&
 e^{-t}\end{vmatrix}=
@@ -330,25 +329,25 @@ A=\begin{bmatrix}-4&-3\\ 6&5\end{bmatrix},
 $$
 so
 tr$(A)=-4+5=1$. If $t_0$ is an arbitrary real number then
-\eqref{eq:10.3.6}  implies that
+$\eqref{eq:10.3.6}$  implies that
 $$
 W(t)=W(t_0)\exp{\left(\int_{t_0}^t1\,ds\right)}=
 \begin{bmatrix}
 -e^{2t_0}&-e^{-t_0}\\2e^{2t_0}&e^{-t_0}\end{bmatrix}e^{(t-t_0)}
 =e^{t_0}e^{t-t_0}=e^t,
 $$
-which is consistent with \eqref{eq:10.3.9}.
+which is consistent with $\eqref{eq:10.3.9}$.
 
 \ref{item:10.3.2c} Since $W(t)\ne0$,
 Theorem~\ref{thmtype:10.3.3} implies that $\{{\bf y}_1,{\bf y}_2\}$ is
-a fundamental set of solutions  of \eqref{eq:10.3.7} and
+a fundamental set of solutions  of $\eqref{eq:10.3.7}$ and
 $$
 Y=\begin{bmatrix}-e^{2t}&-e^{-t}\\2e^{2t}&
 e^{-t}\end{bmatrix}
 $$
-is a fundamental matrix for \eqref{eq:10.3.7}.
+is a fundamental matrix for $\eqref{eq:10.3.7}$.
  Therefore the general
-solution of \eqref{eq:10.3.7} is
+solution of $\eqref{eq:10.3.7}$ is
 \begin{equation} \label{eq:10.3.10}
 {\bf y}=c_1{\bf y}_1+c_2{\bf y}_2=
 c_1\begin{bmatrix} -e^{2t}\\2e^{2t}\end{bmatrix}+c_2\begin{bmatrix}-e^{-t}\\e^{-t}\end{bmatrix}
@@ -358,8 +357,8 @@ e^{-t}\end{bmatrix}
 \end{equation}
 
 \ref{item:10.3.2d}
-Setting $t=0$ in \eqref{eq:10.3.10} and imposing the initial condition
-in \eqref{eq:10.3.8} yields
+Setting $t=0$ in $\eqref{eq:10.3.10}$ and imposing the initial condition
+in $\eqref{eq:10.3.8}$ yields
 $$
 c_1\begin{bmatrix}-1 \\2\end{bmatrix}+c_2
 \begin{bmatrix}-1 \\1\end{bmatrix}=
@@ -371,14 +370,14 @@ Thus,
 2c_1+c_2&=&-5.
 \end{eqnarray*}
 The solution of this system is $c_1=-1$, $c_2=-3$.  Substituting these
-values into  \eqref{eq:10.3.10} yields
+values into  $\eqref{eq:10.3.10}$ yields
 $$
 {\bf y}=-\begin{bmatrix}-e^{2t} \\ 2e^{2t}\end{bmatrix}-3
 \begin{bmatrix}-e^{-t} \\ e^{-t}\end{bmatrix}=
 \begin{bmatrix} e^{2t}+3e^{-t} \\-2e^{2t}-3e^{-t}
 \end{bmatrix}
 $$
-as the solution of  \eqref{eq:10.3.8}.
+as the solution of  $\eqref{eq:10.3.8}$.
 \end{explanation}
 \end{example}
 

@@ -71,7 +71,7 @@ y_{n2}\end{bmatrix},\quad \cdots,\quad
 y_{nn}\end{bmatrix}
 $$
 is a fundamental set of solutions of the complementary system.
-In \href{https://ximera.osu.edu/ode/main/homogeneousLinearSys/homogeneousLinearSys}{Trench 10.3} we saw that $Y'=A(t)Y$. We seek a
+In \href{https://xerxes.ximera.org/differentialequations/main/homogeneousLinearSys/homogeneousLinearSys}{Section 10.3} we saw that $Y'=A(t)Y$. We seek a
 particular solution of
 \begin{equation} \label{eq:10.7.1}
 {\bf y}'=A(t){\bf y}+{\bf f}(t)
@@ -80,14 +80,14 @@ particular solution of
 \begin{equation} \label{eq:10.7.2}
 {\bf y}_p=Y{\bf u},
 \end{equation}
- where ${\bf u}$ is to be determined. Differentiating \eqref{eq:10.7.2} yields
+ where ${\bf u}$ is to be determined. Differentiating $\eqref{eq:10.7.2}$ yields
 \begin{eqnarray*}
  {\bf y}_p'&=&Y' {\bf u}+Y {\bf u}'
 \\&=&A Y {\bf u}+Y {\bf u}'\mbox{ (since $Y'=AY$)}\\&=&
  A{\bf y}_p+Y {\bf u}'\mbox{ (since $Y{\bf u}={\bf y}_p$)}.
 \end{eqnarray*}
-Comparing this with  \eqref{eq:10.7.1} shows that ${\bf y}_p=Y{\bf u}$ is a
-solution of \eqref{eq:10.7.1} if and only if
+Comparing this with  $\eqref{eq:10.7.1}$ shows that ${\bf y}_p=Y{\bf u}$ is a
+solution of $\eqref{eq:10.7.1}$ if and only if
 $$
 Y{\bf u}'={\bf f}.
 $$
@@ -99,7 +99,7 @@ zero, since any particular solution will suffice.
 %Exercise~\ref{exer:10.7.22} sketches a proof that 
 This method is analogous
 to the method of variation of parameters discussed in
-Trench \href{https://ximera.osu.edu/ode/main/variationOfParameters/variationOfParameters}{5.7} and \href{https://ximera.osu.edu/ode/main/varParHigherOrder/varParHigherOrder}{9.4} for scalar linear
+\href{https://xerxes.ximera.org/differentialequations/main/variationOfParameters/variationOfParameters}{Section 5.7} and \href{https://xerxes.ximera.org/differentialequations/main/varParHigherOrder/varParHigherOrder}{Section 9.4} for scalar linear
 equations.
 
 \begin{example}\label{example:10.7.1} 
@@ -112,7 +112,7 @@ Find a particular solution of the system
 \end{equation}
 which we considered in Example~\ref{example:10.2.1}.
 \item\label{item:10.7.1b} % (b)
-Find the general solution of  \eqref{eq:10.7.3}.
+Find the general solution of  $\eqref{eq:10.7.3}$.
 \end{enumerate}
 
 \begin{explanation}
@@ -125,19 +125,19 @@ $$
 \begin{vmatrix}1-\lambda&2\\2&1-\lambda\end{vmatrix}=
 (\lambda+1)(\lambda-3).
 $$
-Using the method of \href{https://ximera.osu.edu/ode/main/constCoeffHomSysI/constCoeffHomSysI}{Trench 10.4}, we find that
+Using the method of \href{https://xerxes.ximera.org/differentialequations/main/constCoeffHomSysI/constCoeffHomSysI}{Section 10.4}, we find that
 $$
 {\bf y}_1=\begin{bmatrix}e^{3t}\\e^{3t}\end{bmatrix}
 \quad\mbox{and}\quad
 {\bf y}_2=\begin{bmatrix}e^{-t}\\-e^{-t}\end{bmatrix}
 $$
-are linearly independent solutions of \eqref{eq:10.7.4}.
+are linearly independent solutions of $\eqref{eq:10.7.4}$.
 Therefore
 $$
 Y=\begin{bmatrix}e^{3t}&e^{-t}\\e^{3t}&-e^{-t}\end{bmatrix}
 $$
-is a fundamental matrix for \eqref{eq:10.7.4}. We seek a particular
-solution ${\bf y}_p=Y{\bf u}$ of \eqref{eq:10.7.3}, where $Y{\bf u}'={\bf f}$; that is,
+is a fundamental matrix for $\eqref{eq:10.7.4}$. We seek a particular
+solution ${\bf y}_p=Y{\bf u}$ of $\eqref{eq:10.7.3}$, where $Y{\bf u}'={\bf f}$; that is,
 $$
 \begin{bmatrix}e^{3t}&e^{-t}\\e^{3t}&-e^{-t}\end{bmatrix}
 \begin{bmatrix}u_1'\\u_2'\end{bmatrix}
@@ -178,11 +178,11 @@ e^{3t}&-e^{-t}\end{bmatrix}
 \begin{bmatrix}15e^t\\e^{5t}\end{bmatrix}
 =\frac{1}{5}\begin{bmatrix}8e^{4t}\\7e^{4t}\end{bmatrix}
 $$
-is a particular solution of  \eqref{eq:10.7.3}.
+is a particular solution of  $\eqref{eq:10.7.3}$.
 
 
 \ref{item:10.7.1b} From Theorem~\ref{thmtype:10.7.1}, the general solution of
-\eqref{eq:10.7.3} is
+$\eqref{eq:10.7.3}$ is
 \begin{equation} \label{eq:10.7.5}
 {\bf y}={\bf y}_p+c_1{\bf y}_1+c_2{\bf y}_2=
 \frac{1}{5}\begin{bmatrix}8e^{4t}\\7e^{4t}\end{bmatrix}
@@ -197,7 +197,7 @@ $$
 $$
 where ${\bf c}$ is an arbitrary constant vector.
 
-Writing \eqref{eq:10.7.5} in terms of
+Writing $\eqref{eq:10.7.5}$ in terms of
 coordinates yields
 \begin{eqnarray*}
 y_1&=&\frac{8}{5}e^{4t}+c_1e^{3t}+c_2e^{-t}\\
@@ -228,7 +228,7 @@ is  a fundamental matrix for the complementary system.
 
 \begin{explanation}
 We seek a particular solution
-${\bf y}_p=Y{\bf u}$ of \eqref{eq:10.7.6} where
+${\bf y}_p=Y{\bf u}$ of $\eqref{eq:10.7.6}$ where
  $Y{\bf u}'={\bf f}$; that is,
 $$
 \begin{bmatrix} e^{4t}&-1\\e^{6t}&e^{2t}\end{bmatrix}
@@ -266,7 +266,7 @@ $$
 \begin{bmatrix}3e^{-4t}+2e^{-6t}\\6e^{-2t}+12t\end{bmatrix}
 =\frac{1}{24}\begin{bmatrix}4e^{-2t}+12t-3\\-3e^{2t}(4t+1)-8\end{bmatrix}
 $$
-is a particular solution of  \eqref{eq:10.7.6}.
+is a particular solution of  $\eqref{eq:10.7.6}$.
 \end{explanation}
 \end{example}
 
@@ -284,7 +284,7 @@ is a fundamental matrix for the complementary system on $(-\infty,0)$
 and $(0,\infty)$.
 
 \begin{explanation}
-We seek a particular solution ${\bf y}_p=Y{\bf u}$ of \eqref{eq:10.7.7}
+We seek a particular solution ${\bf y}_p=Y{\bf u}$ of $\eqref{eq:10.7.7}$
 where $Y{\bf u}'={\bf f}$; that is,
 $$
 \begin{bmatrix}2t&3t^2\\1&2t\end{bmatrix}\begin{bmatrix}u_1'\\u_2'\end{bmatrix}
@@ -320,7 +320,7 @@ $$
 \begin{bmatrix}t^2-t^3\\t^2-t\end{bmatrix}
 =\begin{bmatrix}t^3(t-1)\\t^2(t-1)\end{bmatrix}
 $$
-is a particular solution of  \eqref{eq:10.7.7}.
+is a particular solution of  $\eqref{eq:10.7.7}$.
 \end{explanation}
 \end{example}
 
@@ -334,11 +334,11 @@ y}+\begin{bmatrix}e^{t}\\0\\e^{-t}
 \end{bmatrix}.
 \end{equation}
 \item\label{item:10.7.4b} % (b)
-Find the general solution of  \eqref{eq:10.7.8}.
+Find the general solution of  $\eqref{eq:10.7.8}$.
 \end{enumerate}
 
 \begin{explanation}\ref{item:10.7.4a} 
-The complementary system for \eqref{eq:10.7.8} is
+The complementary system for $\eqref{eq:10.7.8}$ is
 \begin{equation} \label{eq:10.7.9}
 {\bf y}'=\begin{bmatrix}2&-1&-1\\1&0&-1\\1&-1&0\end{bmatrix}{\bf y}.
 \end{equation}
@@ -348,21 +348,21 @@ $$
 \end{vmatrix}=
 -\lambda(\lambda-1)^2.
 $$
-Using the method of \href{https://ximera.osu.edu/ode/main/constCoeffHomSysI/constCoeffHomSysI}{Trench 10.4}, we find that
+Using the method of \href{https://xerxes.ximera.org/differentialequations/main/constCoeffHomSysI/constCoeffHomSysI}{Section 10.4}, we find that
 $$
 {\bf y}_1=\begin{bmatrix}1\\1\\1\end{bmatrix},\quad
 {\bf y}_2=\begin{bmatrix}e^t\\e^t\\0\end{bmatrix},
 \quad\mbox{and}\quad
 {\bf y}_3=\begin{bmatrix}e^t\\0\\e^t\end{bmatrix}
 $$
-are linearly independent solutions of \eqref{eq:10.7.9}.
+are linearly independent solutions of $\eqref{eq:10.7.9}$.
 Therefore
 $$
 Y=\begin{bmatrix}1&e^t&e^t\\1&e^t&0\\1&0&e^t\end{bmatrix}
 $$
-is a fundamental matrix for  \eqref{eq:10.7.9}.
+is a fundamental matrix for  $\eqref{eq:10.7.9}$.
 We seek a particular solution  ${\bf y}_p=Y{\bf u}$ of
-\eqref{eq:10.7.8}, where
+$\eqref{eq:10.7.8}$, where
 $Y{\bf u}'={\bf f}$; that is,
 $$
 \begin{bmatrix}1&e^t&e^t\\1&e^t&0\\1&0&e^t\end{bmatrix}
@@ -406,11 +406,11 @@ e^t(t-1)-e^{-t}
 \end{bmatrix}
 \end{array}
 $$
-is a particular solution of  \eqref{eq:10.7.8}.
+is a particular solution of  $\eqref{eq:10.7.8}$.
 
 \ref{item:10.7.4b}
 From Theorem~\ref{thmtype:10.7.1} the general solution of
-\eqref{eq:10.7.8} is
+$\eqref{eq:10.7.8}$ is
 $$
 {\bf y}={\bf y}_p+c_1{\bf y}_1+c_2{\bf y}_2+c_3{\bf y}_3=
 \begin{bmatrix}e^t(2t-1)-\frac{e^{-t}}{2}\\
@@ -448,7 +448,7 @@ is a fundamental matrix for the complementary system.
 
 
 \begin{explanation}
-We seek a particular solution of  \eqref{eq:10.7.10} in the form
+We seek a particular solution of  $\eqref{eq:10.7.10}$ in the form
 ${\bf y}_p=Y{\bf u}$, where $Y{\bf u}'={\bf f}$; that is,
 $$
 \begin{bmatrix}e^t&0&e^{2t}\\0&e^{3t}&e^{3t}\\e^{-t}&1&0
@@ -493,12 +493,9 @@ $$
 \end{bmatrix}=\frac{1}{2}\begin{bmatrix}e^t(t+1)-1\\
 -e^t\\e^{-t}(t-1)\end{bmatrix}
 $$
-is a particular solution of  \eqref{eq:10.7.10}.
+is a particular solution of  $\eqref{eq:10.7.10}$.
 \end{explanation}
 \end{example}
-
-
-
 
 \section*{Text Source}
 Trench, William F., "Elementary Differential Equations" (2013). Faculty Authored and Edited Books \& CDs. 8. (CC-BY-NC-SA)
