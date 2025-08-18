@@ -621,8 +621,8 @@ table.tabular td {
 	width: max(30vw, 20rem)
 }
 
-/* 2023-09: gebruik data-toc-label  (via tellen in TeX) ipv data-nav-counter  (via tellen in JS) */
-.toc li::before {
+/* 2023-09: use  data-toc-label  (via count-in-(supported)-TeX) ipv data-nav-counter  (via count-in-JS) */
+/* .toc li::before {
     content: attr(data-toc-label) "  ";
 	min-width: 2.5rem;
     padding-right: 0.5rem;
@@ -632,7 +632,7 @@ table.tabular td {
     content: attr(data-toc-label) "  ";
     padding-left: 2.7rem;
     padding-right: 0.5rem;
-}
+} */
 
 
 /* correct layout of footer */
